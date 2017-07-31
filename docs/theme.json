@@ -1,0 +1,20 @@
+{
+  "foundation-palette": {
+    "primary": "#3CAFDA",
+    "secondary": "#22537A",
+    "success": "#37C0C9",
+    "warning": "#F3BC26",
+    "alert": "#DD3B4C"
+  },
+  "light-gray": "#CED4DA",
+  "medium-gray": "#9DAAB1",
+  "dark-gray": "#576265",
+  "black": "#354042",
+  "white": "#FEFEFE",
+  "global-radius": "1.5rem",
+  "body-font-family": "Lato, sans serif !default;",
+  "font-family-monospace": "monospace !default",
+  "input-background-invalid": "#FEFEFE",
+  "input-error-font-weight": "normal",
+  "progress-background":"#CED4DA"
+}

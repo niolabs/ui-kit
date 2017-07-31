@@ -1,0 +1,28 @@
+@import '../common';
+@import '~foundation-sites/scss/components/button';
+@import '~foundation-sites/scss/components/button-group';
+
+@include foundation-button-group;
+
+.button-group {
+  .button{
+    border-radius: 0!important;
+    &:first-child{
+      border-radius: 1.5rem 0 0 1.5rem!important;
+    }
+    &:last-child{
+      border-radius: 0 1.5rem 1.5rem 0!important;
+    }
+  }
+  &.stacked {
+    .button{
+      border-radius: 0!important;
+      &:first-child{
+        border-radius: 1.5rem 1.5rem 0 0!important;
+      }
+      &:last-child{
+        border-radius: 0 0 1.5rem 1.5rem!important;
+      }
+    }
+  }
+}

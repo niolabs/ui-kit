@@ -1,0 +1,9 @@
+@import '../common';
+@import '~foundation-sites/scss/components/button';
+
+@include foundation-button;
+
+.button,
+button{
+  outline: none!important;
+}

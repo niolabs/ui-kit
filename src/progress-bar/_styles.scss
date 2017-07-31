@@ -1,0 +1,13 @@
+@import '../common';
+@import '~foundation-sites/scss/forms/progress';
+@import '~foundation-sites/scss/components/progress-bar';
+
+@include foundation-progress-bar;
+
+.progress{
+  overflow:hidden;
+}
+
+.progress-meter {
+  border-radius: 1.5rem 0 0 1.5rem;
+}

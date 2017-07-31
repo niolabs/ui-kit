@@ -1,0 +1,39 @@
+@import '../src/typography';
+
+.top-bar {
+  position:fixed;
+  top:0;
+  z-index:2;
+  background:#354042;
+}
+
+.content-holder {
+  position:absolute;
+  top:40px;
+  height: calc(100vh - 40px);
+}
+
+.app-content {
+  height: calc(100vh - 40px);
+}
+
+code {
+  margin: 0 .2rem 1rem;
+  border-radius: .4rem;
+  background: #f4f5f6;
+  padding: .2rem .5rem;
+  white-space: nowrap;
+  font-size: 86%;
+  overflow-x:auto;
+}
+
+pre {
+  font-family: 'Menlo', 'Consolas', 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', monospace;
+
+  & > code {
+    display: block;
+    border-radius: 0;
+    padding: 1rem 1.5rem;
+    white-space: pre;
+  }
+}
