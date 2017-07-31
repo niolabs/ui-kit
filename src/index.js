@@ -1,4 +1,4 @@
-export { Grid, Row, Column } from './grid';
+export { Grid, Row, Column } from './components/grid';
 export {
   FormField,
   FormFieldInput,
@@ -7,7 +7,7 @@ export {
   FormFieldHelp,
   FormFieldInline,
   FormFieldButton,
-} from './forms';
+} from './components/forms';
 export {
   Visibility,
   ShowForScreenSize,
@@ -21,52 +21,49 @@ export {
   ShowForScreenReader,
   HideForScreenReader,
   ShowOnFocus,
-} from './visibility';
-export { Float, ClearFix } from './float';
+} from './components/visibility';
+export { Float, ClearFix } from './components/float';
 
-export { Print, ShowForPrint, HideForPrint } from './print';
+export { Print, ShowForPrint, HideForPrint } from './components/print';
 export {
   TypographyHelpers,
   Subheader,
   Lead,
   UnbulletedList,
   Statistic,
-} from './typography-helpers';
-export { TextAlignment } from './text-alignment';
+} from './components/typography-helpers';
+export { TextAlignment } from './components/text-alignment';
 
-export { Button } from './button';
-export { ButtonGroup } from './button-group';
-export { CloseButton } from './close-button';
+export { Button } from './components/button';
+export { ButtonGroup } from './components/button-group';
+export { CloseButton } from './components/close-button';
 export {
   Switch,
   RadioSwitch,
   SwitchCheckedLabel,
   SwitchUncheckedLabel,
   SwitchPadelLabel,
-} from './switch';
+} from './components/switch';
 
-export { Menu, MenuItem } from './menu';
-export { TopBar, TopBarItem, TopBarTitle } from './top-bar';
+export { Menu, MenuItem } from './components/menu';
+export { TopBar, TopBarItem, TopBarTitle } from './components/top-bar';
 
-export { Accordion, AccordionItem } from './accordion';
-export { Callout } from './callout';
-export { Dropdown, LinkWithDropdown } from './dropdown';
-export { MediaObject, MediaObjectSection } from './media-object';
-export { MenuIcon } from './menu-icon';
-export { OffCanvas, OffCanvasContent, OffCanvasContainer } from './off-canvas';
-export { Reveal } from './reveal';
-export { Table } from './table';
-export { Tabs, Tab } from './tabs';
-export { TitleBar, TitleBarItem, TitleBarTitle, TitleBarMenuIcon } from './title-bar';
+export { Accordion, AccordionItem } from './components/accordion';
+export { Callout } from './components/callout';
+export { Dropdown, LinkWithDropdown } from './components/dropdown';
+export { MediaObject, MediaObjectSection } from './components/media-object';
+export { MenuIcon } from './components/menu-icon';
+export { OffCanvas, OffCanvasContent, OffCanvasContainer } from './components/off-canvas';
+export { Reveal } from './components/reveal';
+export { Table } from './components/table';
+export { Tabs, Tab } from './components/tabs';
+export { TitleBar, TitleBarItem, TitleBarTitle, TitleBarMenuIcon } from './components/title-bar';
 
-export { Badge } from './badge';
-export { FlexVideo } from './flex-video';
-export { Label } from './label';
-export { ProgressBar } from './progress-bar';
-export { Thumbnail } from './thumbnail';
-export { Tooltip, LinkWithTooltip } from './tooltip';
+export { Badge } from './components/badge';
+export { Label } from './components/label';
+export { ProgressBar } from './components/progress-bar';
+export { Thumbnail } from './components/thumbnail';
+export { Tooltip, LinkWithTooltip } from './components/tooltip';
 
-export { ToggleSwitch, ToggleSwitchItem } from './toggle-switch';
-
-export { Fade } from './fade';
-export { Collapse } from './collapse';
+export { Fade } from './components/fade';
+export { Collapse } from './components/collapse';

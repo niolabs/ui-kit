@@ -1,0 +1,18 @@
+@import '../../common';
+@import '../../../node_modules/foundation-sites/scss/components/accordion';
+
+@include foundation-accordion;
+
+.accordion-item {
+  border-bottom: 0;
+}
+
+.accordion-title {
+  border-bottom: 0;
+}
+
+.accordion-content {
+  border-top: $accordion-content-border;
+  border-bottom: 0;
+}
+

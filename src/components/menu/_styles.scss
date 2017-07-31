@@ -1,0 +1,11 @@
+@import '../../common';
+@import '../../../node_modules/foundation-sites/scss/components/menu';
+
+@include foundation-menu;
+
+@if $global-flexbox {
+  .menu {
+    width: initial;
+  }
+}
+

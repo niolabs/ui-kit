@@ -5,9 +5,9 @@ nbiolabs-themed Foundation Sites components implemented in React and compatible 
 ## Installation
 
 ```
-npm install --save react-nuik-playground
+npm install --save @nio/ui-kit
 ```
 
-Each component uses locally scoped CSS by requiring the subset of the Foundation stylesheets it needs.
+Each component uses locally scoped CSS by requiring the subset of the Foundation stylesheets it needs, with additional theming performed inside each component's _styles.scss file.
 
-If you want to use CSS modules and customize Foundation at the same time, look at /examples/css-modules-themed which uses https://www.npmjs.com/package/jsontosass-loader to inject sass variables that override Foundation's default settings.
+To change the theme to match your brand colors, simply update the
