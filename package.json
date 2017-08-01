@@ -7,11 +7,11 @@
     "lib"
   ],
   "scripts": {
-    "docs": "npm run build && npm run build-docs && node server.js docs/webpack.config.js --dev",
     "clean": "rimraf lib docs/lib",
     "lint": "eslint src && eslint docs && sass-lint --verbose",
     "build": "npm run clean && babel --quiet ./src --out-dir ./lib && cpy \"**/*.scss\" ../lib --parents --cwd=src",
-    "build-docs": "npm run build && webpack --config docs/webpack.config.js"
+    "build-docs": "npm run build && webpack --config docs/webpack.config.js",
+    "start-docs": "npm run build-docs && node server.js docs/webpack.config.js --dev"
   },
   "repository": {
     "type": "git",
