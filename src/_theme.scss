@@ -1,0 +1,75 @@
+$white: #FEFEFE;
+$black: #354042;
+$gray-dark: #576265;
+$gray: #9DAAB1 ;
+$gray-light: #CED4DA;
+$gray-lighter: #eceeef;
+$gray-lightest: #f7f7f9;
+
+$blue:   #3CAFDA;
+$green:  #37C0C9;
+$teal:   #22537A;
+$orange: #F3BC26;
+$red:    #DD3B4C;
+
+$brand-primary: $blue;
+$brand-success: $green;
+$brand-info: $teal;
+$brand-warning: $orange;
+$brand-danger: $red;
+
+$state-success-text: $green;
+$state-success-bg:  lighten($green, 40%);
+$state-success-border: darken($green, 5%);
+
+$state-info-text: $teal;
+$state-info-bg:  lighten($teal, 40%);
+$state-info-border: darken($teal, 5%);
+
+$state-warning-text: $orange;
+$state-warning-bg:  lighten($orange, 40%);
+$state-warning-border: darken($orange, 5%);
+$mark-bg: $state-warning-bg;
+
+$state-danger-text: $red;
+$state-danger-bg: lighten($state-danger-text, 40%);
+$state-danger-border: darken($state-danger-text, 5%);
+
+$font-family-sans: Lato, sans serif !default;
+$font-family-mono: monospace !default;
+
+$btn-border-radius: 2rem;
+$btn-border-radius-lg: 2rem;
+$btn-border-radius-sm: 2rem;
+
+$input-border-radius: 2rem;
+$input-border-radius-lg: 2rem;
+$input-border-radius-sm: 2rem;
+
+:global(code) {
+  display:block;
+  padding: 1rem!important;
+  font-size: 75%!important;
+  overflow-x:auto;
+  white-space: pre;
+}
+
+:global(a) {
+  text-decoration:none!important;
+}
+
+:global(div[role="group"]) {
+  button:first-child {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+  }
+  button:last-child{
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+  }
+  button:not(:first-child):not(:last-child){
+    border-radius: 0!important;
+  }
+}
+
+

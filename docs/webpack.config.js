@@ -6,14 +6,12 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 /* eslint-enable import/no-extraneous-dependencies */
 
-const themePath = path.join(__dirname, 'theme.json');
-
 module.exports = {
   entry: path.join(__dirname, 'app.js'),
 
   output: {
-    path: path.join(__dirname, 'lib'),
-    filename: '[name]-[chunkhash].js',
+    path: path.join(__dirname, 'public'),
+    filename: '[chunkhash].min.js',
     publicPath: '/',
   },
 
@@ -27,46 +25,24 @@ module.exports = {
       favicon: path.join(__dirname, 'favicon.ico'),
       inject: 'body',
     }),
-    new ExtractTextPlugin('main-[contenthash].css'),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin(),
+    new ExtractTextPlugin('[contenthash].min.css'),
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
   ],
 
-  sassLoader: {
-    precision: 8,
-  },
-
-  postcss: [
-    autoprefixer({
-      browsers: [
-        'Android >= 4',
-        'Chrome >= 20',
-        'Firefox >= 24',
-        'Explorer >= 9',
-        'Edge >= 1',
-        'iOS >= 6',
-        'Opera >= 12',
-        'Safari >= 6',
-      ],
-    }),
-  ],
-
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
       },
       {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract(
-          'style',
-          `css?modules!postcss!sass!jsontosass?path=${themePath}`
-        ),
+          { fallback: 'style-loader?sourceMap', use: [ 'css-loader?modules&importLoaders=1&localIdentName=[hash:base64:5]', 'postcss-loader', 'sass-loader'] }
+        )
       },
-    ],
+    ]
   },
 };

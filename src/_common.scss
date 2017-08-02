@@ -1,11 +1,10 @@
-@import '~foundation-sites/scss/util/util';
-@import '~foundation-sites/scss/global';
-@import '~foundation-sites/scss/typography/base';
-@import '~foundation-sites/scss/typography/print';
+@import './theme';
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/code';
+@import '~bootstrap/scss/utilities';
 
-@include foundation-global-styles;
-@include foundation-typography-base;
-@include foundation-print-styles;
+
 
 
 
