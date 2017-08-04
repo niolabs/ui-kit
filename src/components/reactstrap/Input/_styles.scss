@@ -1,0 +1,10 @@
+@import '../theme';@import "../../../../node_modules/bootstrap/scss/variables";@import "../../../../node_modules/bootstrap/scss/mixins";
+@import '../../../../node_modules/bootstrap/scss/forms';
+
+:local(select) {
+  border-radius:.25rem!important;
+}
+:local(textarea) {
+  border-radius:.25rem!important;
+}
+

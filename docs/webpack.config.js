@@ -3,11 +3,10 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const autoprefixer = require('autoprefixer');
 /* eslint-enable import/no-extraneous-dependencies */
 
 module.exports = {
-  entry: path.join(__dirname, 'app.js'),
+  entry: path.join(__dirname, 'index.js'),
 
   output: {
     path: path.join(__dirname, 'public'),
@@ -15,14 +14,20 @@ module.exports = {
     publicPath: '/',
   },
 
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    compress: true,
+    port: 3000,
+    historyApiFallback: true,
+  },
+
   plugins: [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
     new HtmlWebpackPlugin({
-      title: 'niolabs UIKit Component Library',
       template: path.join(__dirname, 'index.html'),
-      favicon: path.join(__dirname, 'favicon.ico'),
+      favicon: path.join(__dirname, 'favicon.png'),
       inject: 'body',
     }),
     new ExtractTextPlugin('[contenthash].min.css'),
@@ -39,10 +44,11 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract(
-          { fallback: 'style-loader?sourceMap', use: [ 'css-loader?modules&importLoaders=1&localIdentName=[hash:base64:5]', 'postcss-loader', 'sass-loader'] }
-        )
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader?importLoaders=1&minimize=true', 'sass-loader'],
+        }),
       },
-    ]
+    ],
   },
 };
