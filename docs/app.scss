@@ -1,14 +1,14 @@
 @import '../src/nio';
 
 body,
-#app-nav,
 #app-container{
   min-width:320px;
 }
 
-#app-nav{
-  padding: 1rem!important;
+#logo{
+  height: 40px;
 }
+
 #app-container{
   margin-top:70px;
   height: calc(100vh - 70px);
@@ -17,7 +17,6 @@ body,
   display: -moz-box;
   display: -ms-box;
   display: box;
-
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
@@ -31,8 +30,8 @@ body,
   height: calc(100vh - 70px);
   overflow:hidden;
   overflow-y:auto;
-  width: 280px;
-  -ms-flex: 0 280px;
+  width: 284px;
+  -ms-flex: 0 284px;
   -webkit-box-flex:  0;
   -moz-box-flex:  0;
   -ms-box-flex:  0;

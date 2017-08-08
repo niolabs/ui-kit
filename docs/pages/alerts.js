@@ -6,7 +6,7 @@ export default class DocsPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>Alert</h1>
+        <h1>Alerts</h1>
         <hr />
         <h4>Import</h4>
         <code>

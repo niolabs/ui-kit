@@ -1,10 +1,23 @@
+// custom components
+export { default as NavbarToggler } from './components/custom/NavbarToggler';
+export { default as Loader } from './components/custom/Loader';
+
+// themed victorycharts components
+export { default as VictoryBar } from './components/victorycharts/VictoryBar';
+export { default as VictoryPie } from './components/victorycharts/VictoryPie';
+export { default as VictoryArea } from './components/victorycharts/VictoryArea';
+export { default as VictoryChart } from './components/victorycharts/VictoryChart';
+export { default as VictoryContainer } from './components/victorycharts/VictoryContainer';
+export { default as VictoryAxis } from './components/victorycharts/VictoryAxis';
+
+// themed reactstrap components
 export { default as Alert } from './components/reactstrap/Alert';
 export { default as Badge } from './components/reactstrap/Badge';
 export { default as Breadcrumb } from './components/reactstrap/Breadcrumb';
 export { default as BreadcrumbItem } from './components/reactstrap/BreadcrumbItem';
 export { default as Button } from './components/reactstrap/Button';
 export { default as ButtonGroup } from './components/reactstrap/ButtonGroup';
-export { default as ButtonDropdown } from './components/reactstrap/ButtonGroup';
+export { default as ButtonDropdown } from './components/reactstrap/ButtonDropdown';
 export { default as ButtonToolbar } from './components/reactstrap/ButtonToolbar';
 export { default as Card } from './components/reactstrap/Card';
 export { default as CardBlock } from './components/reactstrap/CardBlock';
@@ -46,7 +59,6 @@ export { default as ModalHeader } from './components/reactstrap/ModalHeader';
 export { default as Nav } from './components/reactstrap/Nav';
 export { default as Navbar } from './components/reactstrap/Navbar';
 export { default as NavbarBrand } from './components/reactstrap/NavbarBrand';
-export { default as NavbarToggler } from './components/reactstrap/NavbarToggler';
 export { default as NavDropdown } from './components/reactstrap/NavDropdown';
 export { default as NavItem } from './components/reactstrap/NavItem';
 export { default as NavLink } from './components/reactstrap/NavLink';
@@ -58,12 +70,16 @@ export { default as PopoverContent } from './components/reactstrap/PopoverConten
 export { default as PopoverTitle } from './components/reactstrap/PopoverTitle';
 export { default as Progress } from './components/reactstrap/Progress';
 export { default as Row } from './components/reactstrap/Row';
+export { default as Table } from './components/reactstrap/Table';
+export { default as TabContent } from './components/reactstrap/TabContent';
+export { default as TabPane } from './components/reactstrap/TabPane';
+export { default as Tooltip } from './components/reactstrap/Tooltip';
+export { default as UncontrolledAlert } from './components/reactstrap/UncontrolledAlert';
+export { default as UncontrolledButtonDropdown } from './components/reactstrap/UncontrolledButtonDropdown';
+export { default as UncontrolledDropdown } from './components/reactstrap/UncontrolledDropdown';
+export { default as UncontrolledNavDropdown } from './components/reactstrap/UncontrolledNavDropdown';
+export { default as UncontrolledTooltip } from './components/reactstrap/UncontrolledTooltip';
 
-export { default as VictoryBar } from './components/victorycharts/VictoryBar';
-export { default as VictoryPie } from './components/victorycharts/VictoryPie';
-export { default as VictoryChart } from './components/victorycharts/VictoryChart';
-export { default as VictoryContainer } from './components/victorycharts/VictoryContainer';
-export { default as VictoryAxis } from './components/victorycharts/VictoryAxis';
 
 
 

@@ -42,14 +42,19 @@ import { Progress } from '@nio/ui-kit';`
         <br />
         <div className="text-center">0%</div>
         <Progress />
+        <br />
         <div className="text-center">25%</div>
         <Progress value="25" />
+        <br />
         <div className="text-center">50%</div>
         <Progress value={50} />
+        <br />
         <div className="text-center">75%</div>
         <Progress value={75} />
+        <br />
         <div className="text-center">100%</div>
         <Progress value="100" />
+        <br />
         <div className="text-center">Multiple bars</div>
         <Progress multi>
           <Progress bar value="15" />

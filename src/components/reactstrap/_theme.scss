@@ -17,6 +17,7 @@ $brand-success: $green;
 $brand-info: $teal;
 $brand-warning: $orange;
 $brand-danger: $red;
+$brand-inverse: $black;
 
 $state-success-text: $green;
 $state-success-bg:  lighten($green, 40%);
@@ -37,6 +38,8 @@ $state-danger-border: darken($state-danger-text, 5%);
 
 $font-family-sans: Lato, sans serif;
 $font-family-mono: monospace;
+
+$progress-height: 2rem;
 
 :global(code) {
   display:block;

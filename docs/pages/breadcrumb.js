@@ -6,7 +6,7 @@ export default class DocsPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>Breadcrumb</h1>
+        <h1>Breadcrumbs</h1>
         <hr />
         <h4>Import</h4>
         <code>
@@ -20,15 +20,31 @@ import { Breadcrumb, BreadcrumbItem } from '@nio/ui-kit';`
         <code>
           {
             `<Breadcrumb>
+  <BreadcrumbItem active>Home</BreadcrumbItem>
+</Breadcrumb>
+<Breadcrumb>
   <BreadcrumbItem><a href="#">Home</a></BreadcrumbItem>
   <BreadcrumbItem active>Library</BreadcrumbItem>
+</Breadcrumb>
+<Breadcrumb>
+  <BreadcrumbItem><a href="#">Home</a></BreadcrumbItem>
+  <BreadcrumbItem><a href="#">Library</a></BreadcrumbItem>
+  <BreadcrumbItem active>Data</BreadcrumbItem>
 </Breadcrumb>`
           }
         </code>
         <br />
         <Breadcrumb>
+          <BreadcrumbItem active>Home</BreadcrumbItem>
+        </Breadcrumb>
+        <Breadcrumb>
           <BreadcrumbItem><a href="#">Home</a></BreadcrumbItem>
           <BreadcrumbItem active>Library</BreadcrumbItem>
+        </Breadcrumb>
+        <Breadcrumb>
+          <BreadcrumbItem><a href="#">Home</a></BreadcrumbItem>
+          <BreadcrumbItem><a href="#">Library</a></BreadcrumbItem>
+          <BreadcrumbItem active>Data</BreadcrumbItem>
         </Breadcrumb>
       </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ButtonDropdown, DropdownItem, DropdownMenu, DropdownToggle } from '../../src/index';
+import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -8,28 +8,33 @@ export default class DocsPage extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      dropdownOpen: true
+      dropdownOpen: false,
     };
   }
 
   toggle() {
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen
+      dropdownOpen: !this.state.dropdownOpen,
     });
   }
 
   render() {
     return (
       <div>
-        <h1>Dropdown</h1>
+        <h1>Button Dropdown</h1>
+        <hr />
+        <h4>Import</h4>
+        <code>
+          {
+            `// Import with local scoped class names (via CSS Modules)
+import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from '@nio/ui-kit';`
+          }
+        </code>
         <hr />
         <h4>Use</h4>
         <code>
           {
-            `// Import with local scoped class names (via CSS Modules)
-import { ButtonDropdown, DropdownItem, DropdownMenu, DropdownToggle } from '@nio/ui-kit';
-
-constructor(props) {
+            `constructor(props) {
   super(props);
 
   this.toggle = this.toggle.bind(this);

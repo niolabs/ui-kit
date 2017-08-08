@@ -1,4 +1,4 @@
-import { NavbarToggler as ImportedComponent } from 'reactstrap';
+import { TabContent as ImportedComponent } from 'reactstrap';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themr } from 'react-css-themr';
