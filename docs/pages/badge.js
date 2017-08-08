@@ -1,91 +1,78 @@
 import React from 'react';
 
-import { Badge } from '../../src/components/badge/index';
-import { ShowForScreenReader } from '../../src/components/visibility/index';
+import { Badge } from '../../src/index';
 
-const BadgePage = () => (
-  <div>
-    <h1>Badge</h1>
-    <p>
-      The badge is a basic component that displays a number.
-    </p>
-    <hr />
-    <h2>Basics</h2>
-    <p>Importing the Badge component:</p>
-    <pre>
-      <code>
-        {
-`// Import with local scoped class names (via CSS Modules)
-import { Badge } from '@nio/ui-kit/lib/components/badge';`
-        }
-      </code>
-    </pre>
-    <pre>
-      <code>
-        {
-        '<Badge>1</Badge>'
-        }
-      </code>
-    </pre>
-    <p>
-      <Badge>1</Badge>
-    </p>
-    <hr />
-    <h2>Coloring</h2>
-    <p>
-      Give a Badge additional meaning by setting the <code>color</code> prop. Possible values
-      are primary, secondary, success, alert and warning.
-    </p>
-    <pre>
-      <code>
-        {
-`<Badge color="primary">1</Badge>
-<Badge color="secondary">2</Badge>
-<Badge color="success">3</Badge>
-<Badge color="alert">A</Badge>
-<Badge color="warning">B</Badge>`
-        }
-      </code>
-    </pre>
-    <p>
-      <Badge color="primary">1</Badge>
-      &nbsp;
-      <Badge color="secondary">2</Badge>
-      &nbsp;
-      <Badge color="success">3</Badge>
-      &nbsp;
-      <Badge color="alert">A</Badge>
-      &nbsp;
-      <Badge color="warning">B</Badge>
-    </p>
-    <hr />
-    <h2>Accessibility</h2>
-    <p>
-      A Badge will typically be describing another element on the page. To bind the two elements
-      together, give the badge an <code>id</code>, and reference that <code>id</code> in an
-      <code>aria-describedby</code> attribute on the main element. The Badge content itself
-      might need more context for users that use screen readers. You can add extra text inside
-      the badge by wrapping the text with the ShowForScreenReader component.
-    </p>
-    <pre>
-      <code>
-        {
-`<label aria-describedby="messageCount">Unread Messages</label>
-  <Badge id="messageCount">
-  12
-  <ShowForScreenReader>Unread Messages</ShowForScreenReader>
-</Badge>`
-        }
-      </code>
-    </pre>
-    <p>
-      <label htmlFor="messageCount" aria-describedby="messageCount">Unread Messages</label>
-      <Badge id="messageCount">
-        12
-        <ShowForScreenReader>Unread Messages</ShowForScreenReader>
-      </Badge>
-    </p>
-  </div>
-);
-
-export default BadgePage;
+export default class DocsPage extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Badge</h1>
+        <hr />
+        <h4>Import</h4>
+        <code>
+          {
+            `// Import with local scoped class names (via CSS Modules)
+import { Badge } from '@nio/ui-kit';`
+          }
+        </code>
+        <hr />
+        <h4>Use</h4>
+        <code>
+          {
+            `<h1>Heading <Badge>New</Badge></h1>
+<h2>Heading <Badge>New</Badge></h2>
+<h3>Heading <Badge>New</Badge></h3>
+<h4>Heading <Badge>New</Badge></h4>
+<h5>Heading <Badge>New</Badge></h5>
+<h6>Heading <Badge>New</Badge></h6>`
+          }
+        </code>
+        <br />
+        <h1>Heading <Badge>New</Badge></h1>
+        <h2>Heading <Badge>New</Badge></h2>
+        <h3>Heading <Badge>New</Badge></h3>
+        <h4>Heading <Badge>New</Badge></h4>
+        <h5>Heading <Badge>New</Badge></h5>
+        <h6>Heading <Badge>New</Badge></h6>
+        <hr />
+        <h4>Colors</h4>
+        <code>
+          {
+            `<Badge>default</Badge>{' '}
+<Badge color="primary">primary</Badge>{' '}
+<Badge color="success">success</Badge>{' '}
+<Badge color="info">info</Badge>{' '}
+<Badge color="warning">warning</Badge>{' '}
+<Badge color="danger">danger</Badge>`
+          }
+        </code>
+        <br />
+        <Badge>default</Badge>{' '}
+        <Badge color="primary">primary</Badge>{' '}
+        <Badge color="success">success</Badge>{' '}
+        <Badge color="info">info</Badge>{' '}
+        <Badge color="warning">warning</Badge>{' '}
+        <Badge color="danger">danger</Badge>
+        <hr />
+        <h4>Pills</h4>
+        <code>
+          {
+            `<Badge color="default" pill>default</Badge>{' '}
+<Badge color="primary" pill>primary</Badge>{' '}
+<Badge color="success" pill>success</Badge>{' '}
+<Badge color="info" pill>info</Badge>{' '}
+<Badge color="warning" pill>warning</Badge>{' '}
+<Badge color="danger" pill>danger</Badge>`
+          }
+        </code>
+        <br />
+        <Badge color="default" pill>default</Badge>{' '}
+        <Badge color="primary" pill>primary</Badge>{' '}
+        <Badge color="success" pill>success</Badge>{' '}
+        <Badge color="info" pill>info</Badge>{' '}
+        <Badge color="warning" pill>warning</Badge>{' '}
+        <Badge color="danger" pill>danger</Badge>
+      </div>
+    );
+  }
+}

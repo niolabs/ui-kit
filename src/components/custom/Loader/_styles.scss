@@ -1,0 +1,91 @@
+@import '../../reactstrap/theme';
+@import '../../../../node_modules/bootstrap/scss/variables';
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($white, 0.8);
+  @supports (backdrop-filter: blur(2px)) {
+    backdrop-filter: blur(2px);
+    background-color: rgba($white, 0.5);
+  }
+}
+
+%loader__decoration {
+  position: absolute;
+  top: 50%; left: 50%;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.outer {
+  @extend %loader__decoration;
+  $animation: unique-id();
+  animation: $animation 1s infinite ease-in-out;
+  animation-delay: -0.25s;
+  @keyframes #{$animation} {
+    from, to { transform: translate(-50%, -50%) scale(2.5); }
+    50% { transform: translate(-50%, -50%) scale(1.5); }
+  }
+  &.primary{
+    background-color: rgba($brand-primary, 0.15);
+  }
+  &.success{
+    background-color: rgba($brand-success, 0.15);
+  }
+  &.danger{
+    background-color: rgba($brand-danger, 0.15);
+  }
+  &.warning{
+    background-color: rgba($brand-warning, 0.15);
+  }
+}
+
+.middle {
+  @extend %loader__decoration;
+  $animation: unique-id();
+  animation: $animation 1s infinite ease-in-out;
+  animation-delay: -0.333s;
+  @keyframes #{$animation} {
+    from, to { transform: translate(-50%, -50%) scale(1.75); }
+    50% { transform: translate(-50%, -50%) scale(1.25); }
+  }
+  &.primary{
+    background-color: rgba($brand-primary, 0.25);
+  }
+  &.success{
+    background-color: rgba($brand-success, 0.25);
+  }
+  &.danger{
+    background-color: rgba($brand-danger, 0.25);
+  }
+  &.warning{
+    background-color: rgba($brand-warning, 0.25);
+  }
+}
+
+.inner {
+  @extend %loader__decoration;
+  $animation: unique-id();
+  animation: $animation 1s infinite ease-in-out;
+  @keyframes #{$animation} {
+    from, to { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(0.75); }
+  }
+  &.primary{
+    background-color: $brand-primary;
+  }
+  &.success{
+    background-color: $brand-success;
+  }
+  &.danger{
+    background-color: $brand-danger;
+  }
+  &.warning{
+    background-color: $brand-warning;
+  }
+}

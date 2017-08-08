@@ -1,119 +1,135 @@
-import React, { Component } from 'react';
+import React from 'react';
+import classnames from 'classnames';
 
-import { Tabs, Tab } from '../../src/components/tabs/index';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from '../../src/index';
 
-export default class TabPage extends Component {
-  state = {
-    activeKey: '1',
-  };
+export default class DocsPage extends React.Component {
+  constructor(props) {
+    super(props);
 
-  handleSelect = activeKey => this.setState({ activeKey });
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      activeTab: '1',
+    };
+  }
+
+  toggle(tab) {
+    if (this.state.activeTab !== tab) {
+      this.setState({
+        activeTab: tab,
+      });
+    }
+  }
 
   render() {
-    const { activeKey } = this.state;
-
     return (
       <div>
         <h1>Tabs</h1>
-        <p>
-          Easily reveal content using clickable tabs, preserving space and avoiding distraction.
-        </p>
         <hr />
-        <Tabs activeKey={activeKey} onSelect={this.handleSelect}>
-          <Tab eventKey="1" title="Tab 1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Tab>
-          <Tab eventKey="2" title="Tab 2">
-            Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut
-            eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non
-            venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.
-          </Tab>
-          <Tab eventKey="3" title="Tab 3">
-            <img
-              role="presentation"
-              src="http://foundation.zurb.com/sites/docs/assets/img/rectangle-3.jpg"
-            />
-          </Tab>
-          <Tab eventKey="4" title="Tab 4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Tab>
-          <Tab eventKey="5" title="Tab 5">
-            <img
-              role="presentation"
-              src="http://foundation.zurb.com/sites/docs/assets/img/rectangle-3.jpg"
-            />
-          </Tab>
-          <Tab eventKey="6" title="Tab 6">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Tab>
-        </Tabs>
+        <h4>Import</h4>
+        <code>
+          {
+            `// Import with local scoped class names (via CSS Modules)
+import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from '@nio/ui-kit';`
+          }
+        </code>
+        <hr />
+        <h4>Use</h4>
+        <code>
+          {
+            `<Nav tabs>
+  <NavItem>
+    <NavLink
+      className={classnames({ active: this.state.activeTab === '1' })}
+      onClick={() => { this.toggle('1'); }}
+    >
+      Tab1
+    </NavLink>
+  </NavItem>
+  <NavItem>
+    <NavLink
+      className={classnames({ active: this.state.activeTab === '2' })}
+      onClick={() => { this.toggle('2'); }}
+    >
+      Moar Tabs
+    </NavLink>
+  </NavItem>
+</Nav>
+<TabContent activeTab={this.state.activeTab}>
+  <TabPane tabId="1">
+    <Row>
+      <Col sm="12">
+        <h4>Tab 1 Contents</h4>
+      </Col>
+    </Row>
+  </TabPane>
+  <TabPane tabId="2">
+    <Row>
+      <Col sm="6">
+        <Card block>
+          <CardTitle>Special Title Treatment</CardTitle>
+          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+          <Button>Go somewhere</Button>
+        </Card>
+      </Col>
+      <Col sm="6">
+        <Card block>
+          <CardTitle>Special Title Treatment</CardTitle>
+          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+          <Button>Go somewhere</Button>
+        </Card>
+      </Col>
+    </Row>
+  </TabPane>
+</TabContent>`
+          }
+        </code>
         <br />
-        <Tabs defaultActiveKey="3">
-          <Tab eventKey="1" id="tab1" title="Tab 1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Tab>
-          <Tab eventKey="2" id="tab2" title="Tab 2">
-            Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut
-            eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non
-            venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.
-          </Tab>
-          <Tab eventKey="3" id="tab3" title="Tab 3">
-            <img
-              role="presentation"
-              src="http://foundation.zurb.com/sites/docs/assets/img/rectangle-3.jpg"
-            />
-          </Tab>
-          <Tab eventKey="4" id="tab4" title="Tab 4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Tab>
-          <Tab eventKey="5" id="tab5" title="Tab 5">
-            <img
-              role="presentation"
-              src="http://foundation.zurb.com/sites/docs/assets/img/rectangle-3.jpg"
-            />
-          </Tab>
-          <Tab eventKey="6" id="tab6" title="Tab 6">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Tab>
-        </Tabs>
-        <br />
-        <Tabs defaultActiveKey="2" vertical>
-          <Tab eventKey="1" title="Tab 1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Tab>
-          <Tab eventKey="2" title="Tab 2">
-            Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut
-            eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non
-            venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.
-          </Tab>
-          <Tab eventKey="3" title="Tab 3">
-            <img
-              role="presentation"
-              src="http://foundation.zurb.com/sites/docs/assets/img/rectangle-3.jpg"
-            />
-          </Tab>
-          <Tab eventKey="4" title="Tab 4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Tab>
-          <Tab eventKey="5" title="Tab 5">
-            <img
-              role="presentation"
-              src="http://foundation.zurb.com/sites/docs/assets/img/rectangle-3.jpg"
-            />
-          </Tab>
-          <Tab eventKey="6" title="Tab 6">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Tab>
-        </Tabs>
+        <Nav tabs>
+          <NavItem>
+            <NavLink
+              className={classnames({ active: this.state.activeTab === '1' })}
+              onClick={() => { this.toggle('1'); }}
+            >
+              Tab1
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              className={classnames({ active: this.state.activeTab === '2' })}
+              onClick={() => { this.toggle('2'); }}
+            >
+              Moar Tabs
+            </NavLink>
+          </NavItem>
+        </Nav>
+        <TabContent activeTab={this.state.activeTab}>
+          <TabPane tabId="1">
+            <Row>
+              <Col sm="12">
+                <h4>Tab 1 Contents</h4>
+              </Col>
+            </Row>
+          </TabPane>
+          <TabPane tabId="2">
+            <Row>
+              <Col sm="6">
+                <Card block>
+                  <CardTitle>Special Title Treatment</CardTitle>
+                  <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                  <Button>Go somewhere</Button>
+                </Card>
+              </Col>
+              <Col sm="6">
+                <Card block>
+                  <CardTitle>Special Title Treatment</CardTitle>
+                  <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                  <Button>Go somewhere</Button>
+                </Card>
+              </Col>
+            </Row>
+          </TabPane>
+        </TabContent>
       </div>
     );
   }

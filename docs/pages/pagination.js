@@ -1,42 +1,93 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import { Pagination } from '../../src/components/pagination/index';
+import { Pagination, PaginationItem, PaginationLink } from '../../src/index';
 
-function pageContentFormatter(page, activePage) {
-  if (page === activePage) {
-    return <span>You are on <strong>{page}</strong></span>;
-  }
-
-  return <span>Go to <strong>{page}</strong></span>;
-}
-
-export default class PaginationPage extends Component {
-  state = {
-    activePage: 1,
-  };
-
-  handleSelect = activePage => this.setState({ activePage });
-
+export default class DocsPage extends React.Component {
   render() {
-    const { activePage } = this.state;
-
     return (
       <div>
-        <Pagination
-          activePage={activePage}
-          numPages={20}
-          onSelect={this.handleSelect}
-        />
-        <Pagination
-          activePage={activePage}
-          alignment="center"
-          maxPages={9}
-          numPages={20}
-          nextContent="Next"
-          onSelect={this.handleSelect}
-          pageContentFormatter={pageContentFormatter}
-          previousContent="Previous"
-        />
+        <h1>Pagination</h1>
+        <hr />
+        <h4>Import</h4>
+        <code>
+          {
+            `// Import with local scoped class names (via CSS Modules)
+import { Pagination, PaginationItem, PaginationLink } from '@nio/ui-kit';`
+          }
+        </code>
+        <hr />
+        <h4>Use</h4>
+        <code>
+          {
+            `<Pagination>
+  <PaginationItem>
+    <PaginationLink previous href="#" />
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink href="#">
+      1
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink href="#">
+      2
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink href="#">
+      3
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink href="#">
+      4
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink href="#">
+      5
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink next href="#" />
+  </PaginationItem>
+</Pagination>`
+          }
+        </code>
+        <br />
+        <Pagination>
+          <PaginationItem>
+            <PaginationLink previous href="#" />
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink href="#">
+              1
+            </PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink href="#">
+              2
+            </PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink href="#">
+              3
+            </PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink href="#">
+              4
+            </PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink href="#">
+              5
+            </PaginationLink>
+          </PaginationItem>
+          <PaginationItem>
+            <PaginationLink next href="#" />
+          </PaginationItem>
+        </Pagination>
       </div>
     );
   }

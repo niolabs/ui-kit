@@ -1,0 +1,32 @@
+@import '../theme';
+@import '../../../../node_modules/bootstrap/scss/variables';
+@import '../../../../node_modules/bootstrap/scss/mixins';
+@import '../../../../node_modules/bootstrap/scss/transitions';
+@import '../../../../node_modules/bootstrap/scss/navbar';
+
+.navbar{
+  .collapse.navbar-collapse{
+    position:absolute;
+    top:70px;
+    width:100%;
+    left:0;
+    right:0;
+    overflow:hidden;
+    overflow-y:auto;
+    background-color:$white;
+    max-height: calc(100vh - 70px);
+    border-top:1px solid $gray-light;
+    .navbar-nav{
+      padding:15px;
+    }
+  }
+  &.bg-inverse {
+    .collapse.navbar-collapse {
+      color:$white;
+      background-color: $black;
+      hr{
+        border-top:1px solid $gray-light;
+      }
+    }
+  }
+}

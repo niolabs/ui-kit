@@ -1,1 +1,3 @@
-docs/lib/*
+docs/public/*
+dist/*
+node_modules/*

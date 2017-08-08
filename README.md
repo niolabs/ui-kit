@@ -1,6 +1,6 @@
 # niolabs UI Toolkit
 
-nbiolabs-themed Foundation Sites components implemented in React and compatible with CSS Modules!
+nbiolabs-themed ReactStrap and Victory Charts components implemented in React and leveraging CSS Modules!
 
 ## Installation
 
@@ -8,6 +8,6 @@ nbiolabs-themed Foundation Sites components implemented in React and compatible 
 npm install --save @nio/ui-kit
 ```
 
-Each component uses locally scoped CSS by requiring the subset of the Foundation stylesheets it needs, with additional theming performed inside each component's _styles.scss file.
+Each component uses locally scoped CSS by requiring the subset of the imported library stylesheets it needs, with additional theming performed inside each component's _styles.scss file.
 
-To change the theme to match your brand colors, simply update the
+To change the theme to match your brand colors, fork the repo and override the values in the src/_theme.scss.
