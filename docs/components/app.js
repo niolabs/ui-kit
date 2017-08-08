@@ -24,8 +24,8 @@ class App extends React.Component {
       <div>
         <Navbar id="app-nav" color="inverse" fixed="top" inverse toggleable>
           <NavbarToggler right onClick={this.toggle} isOpen={this.state.isOpen} />
-          <NavbarBrand href="/">
-            <img alt="nioLabs" src="/logo.svg" id="logo" />
+          <NavbarBrand>
+            <div id="logo" />
           </NavbarBrand>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto hidden-sm-up" navbar>

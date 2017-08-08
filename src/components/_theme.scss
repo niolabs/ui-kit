@@ -1,0 +1,102 @@
+$white: #FEFEFE;
+$black: #354042;
+$gray-dark: #576265;
+$gray: #9DAAB1 ;
+$gray-light: #CED4DA;
+$gray-lighter: #eceeef;
+$gray-lightest: #f7f7f9;
+
+$blue:   #3CAFDA;
+$green:  #37C0C9;
+$teal:   #22537A;
+$orange: #F3BC26;
+$red:    #DD3B4C;
+
+$brand-primary: $blue;
+$brand-success: $green;
+$brand-info: $teal;
+$brand-warning: $orange;
+$brand-danger: $red;
+$brand-inverse: $black;
+
+$state-success-text: $green;
+$state-success-bg:  lighten($green, 40%);
+$state-success-border: darken($green, 5%);
+
+$state-info-text: $teal;
+$state-info-bg:  lighten($teal, 40%);
+$state-info-border: darken($teal, 5%);
+
+$state-warning-text: $orange;
+$state-warning-bg:  lighten($orange, 40%);
+$state-warning-border: darken($orange, 5%);
+$mark-bg: $state-warning-bg;
+
+$state-danger-text: $red;
+$state-danger-bg: lighten($state-danger-text, 40%);
+$state-danger-border: darken($state-danger-text, 5%);
+
+$font-family-sans: "Lato", "sans-serif";
+$font-family-mono: monospace;
+
+$progress-height: 2rem;
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v13/EsvMC5un3kjyUhB9ZEPPwg.woff2) format('woff2'),
+  url('https://fonts.gstatic.com/s/lato/v13/0DeoTBMnW4sOpD0Zb8OQSALUuEpTyoUstqEm5AMlJo4.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2'),
+  url('https://fonts.gstatic.com/s/lato/v13/nQhiC-wSiJx0pvEuJl8d8A.eot'),
+  url('https://fonts.gstatic.com/s/lato/v13/nQhiC-wSiJx0pvEuJl8d8A.eot?#iefix') format('embedded-opentype'),
+  url('https://fonts.gstatic.com/s/lato/v13/1EqTbJWOZQBfhZ0e3RL9uvesZW2xOQ-xsNqO47m55DA.ttf') format('truetype'),
+  url('https://fonts.gstatic.com/l/font?kit=hLECvlEj3pKlnS4NFs8NQw&skey=2d58b92a99e1c086&v=v13#Lato') format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v13/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2'),
+  url('https://fonts.gstatic.com/s/lato/v13/MZ1aViPqjfvZwVD_tzjjkwLUuEpTyoUstqEm5AMlJo4.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+  min-width:320px;
+}
+
+body, button, input, optgroup, select, textarea {
+  font-family: "Lato", "sans-serif"!important;
+  font-weight:300!important;
+  -webkit-font-smoothing: subpixel-antialiased!important;
+  -moz-osx-font-smoothing: grayscale!important;
+}
+
+code {
+  display:block;
+  padding: 1rem!important;
+  font-size: 75%!important;
+  overflow-x:auto;
+  white-space: pre;
+}
+
+.text-center {
+  text-align:center;
+}
+
+a {
+  text-decoration:none!important;
+}

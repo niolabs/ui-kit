@@ -10,7 +10,7 @@
     "clean": "rimraf dist docs/public",
     "lint": "eslint src && eslint docs && sass-lint --verbose",
     "build": "npm run clean && babel --quiet ./src --out-dir ./dist && cpy \"**/*.scss\" ../dist --parents --cwd=src",
-    "start": "npm run build && webpack --config docs/webpack.config.js && webpack-dev-server --config docs/webpack.config.js --open --https"
+    "start": "npm run build && webpack --config docs/webpack.config.js && webpack-dev-server --config docs/webpack.config.js --https"
   },
   "repository": {
     "type": "git",
