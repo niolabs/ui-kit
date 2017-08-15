@@ -1,11 +1,12 @@
-@import '../../theme';
-@import '../../../../node_modules/bootstrap/scss/variables';
-@import '../../../../node_modules/bootstrap/scss/mixins';
-@import '../../../../node_modules/bootstrap/scss/progress';
+@import '../../../theme/nio-bootstrap-vars';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/progress';
 
-.progress{
+.progress {
   background-image: linear-gradient(darken($progress-bg, 1%), lighten($progress-bg, 1%), darken($progress-bg, 1%));
 }
-.progress-bar{
-  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(255,255,255,0.1), rgba(0,0,0,0.1));
+
+.progress-bar {
+  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(255, 255, 255, .1), rgba(0, 0, 0, .1));
 }

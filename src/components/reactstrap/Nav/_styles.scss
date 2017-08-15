@@ -1,13 +1,13 @@
-@import '../../theme';
-@import '../../../../node_modules/bootstrap/scss/variables';
-@import '../../../../node_modules/bootstrap/scss/mixins';
-@import '../../../../node_modules/bootstrap/scss/nav';
+@import '../../../theme/nio-bootstrap-vars';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/nav';
 
 .navbar {
-  min-width:320px;
-  height:70px;
+  min-width: 320px;
+  height: 70px;
 }
 
-.navbar-toggler{
-  border:none!important;
+.navbar-toggler {
+  border: 0 !important;
 }

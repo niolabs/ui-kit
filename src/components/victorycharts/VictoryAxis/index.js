@@ -1,6 +1,6 @@
 import { VictoryAxis as ImportedComponent } from 'victory';
 import React from 'react';
-import theme from '../../theme';
+import theme from '../../../theme/theme';
 
 export default class ThemedComponent extends React.Component {
   render() {

@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import IndexPage from '../pages/index';
 import LoaderPage from '../pages/loader';
+import TogglePage from '../pages/toggle';
 import AlertsPage from '../pages/alerts';
 import BadgePage from '../pages/badge';
 import BreadcrumbPage from '../pages/breadcrumb';
@@ -36,6 +37,7 @@ const Routes = () => (
     <Route exact path="/" component={IndexPage} />
     {/* Custom Components */}
     <Route component={LoaderPage} path="/loader" />
+    <Route component={TogglePage} path="/toggle" />
     {/* VictoryCharts Components */}
     <Route component={VictoryBarPage} path="/victory-bar" />
     <Route component={VictoryPiePage} path="/victory-pie" />

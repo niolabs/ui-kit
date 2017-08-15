@@ -13,6 +13,9 @@ const NavLinks = ({ toggleNav }) => (
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/loader">Loader</NavLink>
     </NavItem>
+    <NavItem>
+      <NavLink onClick={() => toggleNav(true)} to="/toggle">Toggle</NavLink>
+    </NavItem>
     <div className="mt-2 mb-1">VictoryCharts</div>
     <hr className="mt-0 mb-1" />
     <NavItem>

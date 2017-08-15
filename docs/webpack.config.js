@@ -3,7 +3,6 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-/* const CopyWebpackPlugin = require('copy-webpack-plugin'); */
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const cssNano = require('cssnano');
 /* eslint-enable import/no-extraneous-dependencies */
@@ -22,23 +21,18 @@ module.exports = {
     compress: true,
     port: 3000,
     historyApiFallback: true,
+    https: true,
   },
 
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.NODE_ENV': JSON.stringify('development'),
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'index.html'),
       favicon: path.join(__dirname, 'favicon.png'),
       inject: 'body',
     }),
-    /*
-    new CopyWebpackPlugin([
-      { from: './docs/logo.svg', to: 'logo.svg' },
-      { from: './docs/logo.svg', to: 'logo.svg' },
-    ]),
-    */
     new ExtractTextPlugin('[contenthash].min.css'),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
@@ -46,8 +40,6 @@ module.exports = {
       cssProcessorOptions: { discardComments: { removeAll: true } },
       canPrint: true,
     }),
-    new webpack.optimize.UglifyJsPlugin(),
-    new webpack.optimize.AggressiveMergingPlugin(),
   ],
 
   module: {

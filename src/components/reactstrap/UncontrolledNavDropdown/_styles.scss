@@ -1,8 +1,8 @@
-@import '../../theme';
-@import '../../../../node_modules/bootstrap/scss/variables';
-@import '../../../../node_modules/bootstrap/scss/mixins';
-@import '../../../../node_modules/bootstrap/scss/navbar';
-@import '../../../../node_modules/bootstrap/scss/nav';
-@import '../../../../node_modules/bootstrap/scss/input-group';
-@import '../../../../node_modules/bootstrap/scss/button-group';
-@import '../../../../node_modules/bootstrap/scss/dropdown';
+@import '../../../theme/nio-bootstrap-vars';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/input-group';
+@import '~bootstrap/scss/button-group';
+@import '~bootstrap/scss/dropdown';

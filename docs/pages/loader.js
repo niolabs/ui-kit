@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Col, Row, Card, CardBlock, Loader } from '../../src/index';
+import { Col, Row, Card, Loader } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {

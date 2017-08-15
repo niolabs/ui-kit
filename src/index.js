@@ -1,6 +1,7 @@
 // custom components
 export { default as NavbarToggler } from './components/custom/NavbarToggler';
 export { default as Loader } from './components/custom/Loader';
+export { default as ToggleButton } from './components/custom/ToggleButton';
 
 // themed victorycharts components
 export { default as VictoryBar } from './components/victorycharts/VictoryBar';
@@ -79,7 +80,4 @@ export { default as UncontrolledButtonDropdown } from './components/reactstrap/U
 export { default as UncontrolledDropdown } from './components/reactstrap/UncontrolledDropdown';
 export { default as UncontrolledNavDropdown } from './components/reactstrap/UncontrolledNavDropdown';
 export { default as UncontrolledTooltip } from './components/reactstrap/UncontrolledTooltip';
-
-
-
 

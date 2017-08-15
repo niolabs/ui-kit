@@ -50,8 +50,8 @@ export default class DocsPage extends React.Component {
         <h4>Additional Documentation</h4>
 
         <ul>
-          <li><a href="https://reactstrap.github.io/components/alerts/" target="_blank">ReactStrap Docs</a></li>
-          <li><a href="http://formidable.com/open-source/victory/docs" target="_blank">Victory Charts Docs</a></li>
+          <li><a href="https://reactstrap.github.io/components/alerts/" rel="noopener noreferrer" target="_blank">ReactStrap Docs</a></li>
+          <li><a href="http://formidable.com/open-source/victory/docs" rel="noopener noreferrer" target="_blank">Victory Charts Docs</a></li>
         </ul>
       </div>
     );

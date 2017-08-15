@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Form, FormGroup, Label, Input, FormText } from '../../src/index';
+import { Button, Form, FormGroup, Label, Input, FormText, RadioGroup, Radio, CheckboxGroup, Checkbox } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -62,32 +62,20 @@ import { Button, Form, FormGroup, Label, Input, FormText } from '@nio/ui-kit';`
   </FormGroup>
   <FormGroup tag="fieldset">
     <legend>Radio Buttons</legend>
-    <FormGroup check>
-      <Label check>
-        <Input type="radio" name="radio1" />{' '}
-        Option one is this and that—be sure to include why it's great
-      </Label>
-    </FormGroup>
-    <FormGroup check>
-      <Label check>
-        <Input type="radio" name="radio1" />{' '}
-        Option two can be something else and selecting it will deselect option one
-      </Label>
-    </FormGroup>
-    <FormGroup check disabled>
-      <Label check>
-        <Input type="radio" name="radio1" disabled />{' '}
-        Option three is disabled
-      </Label>
-    </FormGroup>
+    <RadioGroup name="fruit" selectedValue={this.state.selectedValue} onChange={this.handleChange}>
+      <Radio value="apple" />Apple
+      <Radio value="orange" />Orange
+      <Radio value="watermelon" />Watermelon
+    </RadioGroup>
   </FormGroup>
-  <FormGroup check>
-    <Label check>
-      <Input type="checkbox" />{' '}
-      Check me out
-    </Label>
+  <FormGroup tag="fieldset">
+    <legend>Checkboxes</legend>
+    <CheckboxGroup name="fruits" value={['kiwi', 'pineapple']} onChange={this.fruitsChanged}>
+      <Checkbox value="kiwi"/>
+      <Checkbox value="pineapple"/>
+      <Checkbox value="watermelon"/>
+    </CheckboxGroup>
   </FormGroup>
-  <Button>Submit</Button>
 </Form>`
           }
         </code>
@@ -121,11 +109,13 @@ import { Button, Form, FormGroup, Label, Input, FormText } from '@nio/ui-kit';`
               <option>5</option>
             </Input>
           </FormGroup>
-          <FormGroup>
+          <FormGroup tag="fieldset">
+            <legend>Text Area</legend>
             <Label for="exampleText">Text Area</Label>
             <Input type="textarea" name="text" id="exampleText" />
           </FormGroup>
-          <FormGroup>
+          <FormGroup tag="fieldset">
+            <legend>File Upload</legend>
             <Label for="exampleFile">File</Label>
             <Input type="file" name="file" id="exampleFile" />
             <FormText color="muted">
@@ -135,32 +125,20 @@ import { Button, Form, FormGroup, Label, Input, FormText } from '@nio/ui-kit';`
           </FormGroup>
           <FormGroup tag="fieldset">
             <legend>Radio Buttons</legend>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Option one is this and that—be sure to include why it's great
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Option two can be something else and selecting it will deselect option one
-              </Label>
-            </FormGroup>
-            <FormGroup check disabled>
-              <Label check>
-                <Input type="radio" name="radio1" disabled />{' '}
-                Option three is disabled
-              </Label>
-            </FormGroup>
+            <RadioGroup name="fruit" value={'apple'}>
+              <Radio value="apple" />Apple
+              <Radio value="orange" />Orange
+              <Radio value="watermelon" />Watermelon
+            </RadioGroup>
           </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="checkbox" />{' '}
-              Check me out
-            </Label>
+          <FormGroup tag="fieldset">
+            <legend>Checkboxes</legend>
+            <CheckboxGroup name="fruits" value={['kiwi', 'pineapple']}>
+              <Checkbox value="kiwi" />
+              <Checkbox value="pineapple" />
+              <Checkbox value="watermelon" />
+            </CheckboxGroup>
           </FormGroup>
-          <Button>Submit</Button>
         </Form>
       </div>
     );

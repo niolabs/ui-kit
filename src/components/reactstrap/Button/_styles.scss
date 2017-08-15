@@ -1,5 +1,22 @@
-@import '../../theme';
-@import '../../../../node_modules/bootstrap/scss/variables';
-@import '../../../../node_modules/bootstrap/scss/mixins';
-@import '../../../../node_modules/bootstrap/scss/buttons';
+@import '../../../theme/nio-bootstrap-vars';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '../../../theme/nio-bootstrap-mixins-button';
+@import '~bootstrap/scss/buttons';
 
+.btn {
+  &.focus,
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  &:active,
+  &.active {
+    &.focus,
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
