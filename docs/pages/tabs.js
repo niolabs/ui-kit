@@ -1,5 +1,4 @@
 import React from 'react';
-import classnames from 'classnames';
 
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from '../../src/index';
 

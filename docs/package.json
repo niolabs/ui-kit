@@ -3,7 +3,7 @@
   "description": "A demo site for @nio/ui-kit",
   "private": true,
   "scripts": {
-    "lint": "eslint . --debug && sass-lint --verbose",
+    "lint": "eslint . && sass-lint --verbose",
     "start": "rimraf public && webpack --config webpack.config.js && webpack-dev-server --config webpack.config.js"
   },
   "author": "nioinnovation",

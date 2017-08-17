@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from '../../src/index';
-
 export default class DocsPage extends React.Component {
   render() {
     return (
