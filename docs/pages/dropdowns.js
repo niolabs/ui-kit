@@ -26,7 +26,7 @@ export default class DocsPage extends React.Component {
         <h4>Import</h4>
         <code>
           {
-            `// Import with local scoped class names (via CSS Modules)
+            `// Import component (and relevant CSS)
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from '@nio/ui-kit';`
           }
         </code>

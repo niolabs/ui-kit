@@ -29,8 +29,8 @@ export default class DocsPage extends React.Component {
         <h4>Import</h4>
         <code>
           {
-            `// Import with local scoped class names (via CSS Modules)
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from '@nio/ui-kit';`
+            `// Import component (and relevant CSS)
+import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from '../../src/index';`
           }
         </code>
         <hr />
@@ -40,7 +40,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
             `<Nav tabs>
   <NavItem>
     <NavLink
-      className={classnames({ active: this.state.activeTab === '1' })}
+      className={this.state.activeTab === '1' ? 'active' : ''}
       onClick={() => { this.toggle('1'); }}
     >
       Tab1
@@ -48,7 +48,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
   </NavItem>
   <NavItem>
     <NavLink
-      className={classnames({ active: this.state.activeTab === '2' })}
+      className={this.state.activeTab === '2' ? 'active' : ''}
       onClick={() => { this.toggle('2'); }}
     >
       Moar Tabs
@@ -88,7 +88,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
         <Nav tabs>
           <NavItem>
             <NavLink
-              className={classnames({ active: this.state.activeTab === '1' })}
+              className={this.state.activeTab === '1' ? 'active' : ''}
               onClick={() => { this.toggle('1'); }}
             >
               Tab1
@@ -96,7 +96,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
           </NavItem>
           <NavItem>
             <NavLink
-              className={classnames({ active: this.state.activeTab === '2' })}
+              className={this.state.activeTab === '2' ? 'active' : ''}
               onClick={() => { this.toggle('2'); }}
             >
               Moar Tabs

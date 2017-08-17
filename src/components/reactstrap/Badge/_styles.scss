@@ -2,3 +2,7 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/badge';
+
+.badge {
+  font-weight: 400 !important;
+}

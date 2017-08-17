@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Form, FormGroup, Label, Input, FormText, RadioGroup, Radio, CheckboxGroup, Checkbox } from '../../src/index';
+import { Form, FormGroup, Label, Input, FormFeedback } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -11,8 +11,8 @@ export default class DocsPage extends React.Component {
         <h4>Import</h4>
         <code>
           {
-            `// Import with local scoped class names (via CSS Modules)
-import { Button, Form, FormGroup, Label, Input, FormText } from '@nio/ui-kit';`
+            `// Import component (and relevant CSS)
+import { Form, FormGroup, Label, Input, FormFeedback } from '@nio/ui-kit';`
           }
         </code>
         <hr />
@@ -20,6 +20,26 @@ import { Button, Form, FormGroup, Label, Input, FormText } from '@nio/ui-kit';`
         <code>
           {
             `<Form>
+  <FormGroup>
+    <Label for="exampleEmail">This is the field label</Label>
+    <Input />
+    <FormFeedback>This field is required</FormFeedback>
+  </FormGroup>
+  <FormGroup color="success">
+    <Label for="exampleEmail">Input with success</Label>
+    <Input state="success" />
+    <FormFeedback>Success! You did it!</FormFeedback>
+  </FormGroup>
+  <FormGroup color="warning">
+    <Label for="examplePassword">Input with warning</Label>
+    <Input state="warning" />
+    <FormFeedback>Whoops, check your formatting and try again.</FormFeedback>
+  </FormGroup>
+  <FormGroup color="danger">
+    <Label for="examplePassword">Input with danger</Label>
+    <Input state="danger" />
+    <FormFeedback>Oh noes! that name is already taken</FormFeedback>
+  </FormGroup>
   <FormGroup>
     <Label for="exampleEmail">Email</Label>
     <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
@@ -48,39 +68,35 @@ import { Button, Form, FormGroup, Label, Input, FormText } from '@nio/ui-kit';`
       <option>5</option>
     </Input>
   </FormGroup>
-  <FormGroup>
+  <FormGroup tag="fieldset">
     <Label for="exampleText">Text Area</Label>
     <Input type="textarea" name="text" id="exampleText" />
-  </FormGroup>
-  <FormGroup>
-    <Label for="exampleFile">File</Label>
-    <Input type="file" name="file" id="exampleFile" />
-    <FormText color="muted">
-      This is some placeholder block-level help text for the above input.
-      It's a bit lighter and easily wraps to a new line.
-    </FormText>
-  </FormGroup>
-  <FormGroup tag="fieldset">
-    <legend>Radio Buttons</legend>
-    <RadioGroup name="fruit" selectedValue={this.state.selectedValue} onChange={this.handleChange}>
-      <Radio value="apple" />Apple
-      <Radio value="orange" />Orange
-      <Radio value="watermelon" />Watermelon
-    </RadioGroup>
-  </FormGroup>
-  <FormGroup tag="fieldset">
-    <legend>Checkboxes</legend>
-    <CheckboxGroup name="fruits" value={['kiwi', 'pineapple']} onChange={this.fruitsChanged}>
-      <Checkbox value="kiwi"/>
-      <Checkbox value="pineapple"/>
-      <Checkbox value="watermelon"/>
-    </CheckboxGroup>
   </FormGroup>
 </Form>`
           }
         </code>
         <br />
         <Form>
+          <FormGroup>
+            <Label for="exampleEmail">This is the field label</Label>
+            <Input />
+            <FormFeedback>This field is required</FormFeedback>
+          </FormGroup>
+          <FormGroup color="success">
+            <Label for="exampleEmail">Input with success</Label>
+            <Input state="success" />
+            <FormFeedback>Success! You did it!</FormFeedback>
+          </FormGroup>
+          <FormGroup color="warning">
+            <Label for="examplePassword">Input with warning</Label>
+            <Input state="warning" />
+            <FormFeedback>Whoops, check your formatting and try again.</FormFeedback>
+          </FormGroup>
+          <FormGroup color="danger">
+            <Label for="examplePassword">Input with danger</Label>
+            <Input state="danger" />
+            <FormFeedback>Oh noes! that name is already taken</FormFeedback>
+          </FormGroup>
           <FormGroup>
             <Label for="exampleEmail">Email</Label>
             <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
@@ -110,34 +126,8 @@ import { Button, Form, FormGroup, Label, Input, FormText } from '@nio/ui-kit';`
             </Input>
           </FormGroup>
           <FormGroup tag="fieldset">
-            <legend>Text Area</legend>
             <Label for="exampleText">Text Area</Label>
             <Input type="textarea" name="text" id="exampleText" />
-          </FormGroup>
-          <FormGroup tag="fieldset">
-            <legend>File Upload</legend>
-            <Label for="exampleFile">File</Label>
-            <Input type="file" name="file" id="exampleFile" />
-            <FormText color="muted">
-              This is some placeholder block-level help text for the above input.
-              It is a bit lighter and easily wraps to a new line.
-            </FormText>
-          </FormGroup>
-          <FormGroup tag="fieldset">
-            <legend>Radio Buttons</legend>
-            <RadioGroup name="fruit" value={'apple'}>
-              <Radio value="apple" />Apple
-              <Radio value="orange" />Orange
-              <Radio value="watermelon" />Watermelon
-            </RadioGroup>
-          </FormGroup>
-          <FormGroup tag="fieldset">
-            <legend>Checkboxes</legend>
-            <CheckboxGroup name="fruits" value={['kiwi', 'pineapple']}>
-              <Checkbox value="kiwi" />
-              <Checkbox value="pineapple" />
-              <Checkbox value="watermelon" />
-            </CheckboxGroup>
           </FormGroup>
         </Form>
       </div>

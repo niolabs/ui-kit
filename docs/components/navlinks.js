@@ -11,19 +11,27 @@ const NavLinks = ({ toggleNav }) => (
     <div className="mt-2 mb-0">nioLabs</div>
     <hr className="mt-0 mb-1" />
     <NavItem>
+      <NavLink onClick={() => toggleNav(true)} to="/divider">Divider</NavLink>
+    </NavItem>
+    <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/loader">Loader</NavLink>
+    </NavItem>
+    <NavItem>
+      <NavLink onClick={() => toggleNav(true)} to="/radiocheckbox">RadioCheckbox</NavLink>
     </NavItem>
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/toggle">Toggle</NavLink>
     </NavItem>
     <div className="mt-2 mb-1">VictoryCharts</div>
     <hr className="mt-0 mb-1" />
+    {/*
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/victory-area">VictoryArea</NavLink>
     </NavItem>
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/victory-bar">VictoryBar</NavLink>
     </NavItem>
+    */}
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/victory-pie">VictoryPie</NavLink>
     </NavItem>
@@ -58,6 +66,9 @@ const NavLinks = ({ toggleNav }) => (
     </NavItem>
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/form">Form</NavLink>
+    </NavItem>
+    <NavItem>
+      <NavLink onClick={() => toggleNav(true)} to="/form-inverse">Form Inverse</NavLink>
     </NavItem>
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/input-group">Input Group</NavLink>

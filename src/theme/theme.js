@@ -22,7 +22,7 @@ const fontSize = 14;
 const baseProps = {
   width: 450,
   height: 300,
-  padding: 50,
+  padding: 100,
   colorScale: colors,
 };
 
@@ -131,12 +131,12 @@ export default {
         stroke: 'transparent',
         strokeWidth: 1,
       },
-      labels: assign({}, baseLabelStyles, { padding: 20 }),
+      labels: assign({}, centeredLabelStyles, { padding: 30 }),
     },
     colorScale: colors,
     width: 400,
     height: 400,
-    padding: 50,
+    padding: 60,
   },
   scatter: assign({
     style: {

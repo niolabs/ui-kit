@@ -3,4 +3,10 @@
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/dropdown';
 
+.btn-group {
+  .dropdown-menu {
+    width: 100% !important;
+  }
+}
+
 

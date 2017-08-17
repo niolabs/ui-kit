@@ -1,34 +1,17 @@
 {
-  "name": "@nio/ui-kit",
-  "version": "1.0.0",
-  "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, VictoryCharts, and CSS Modules",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "name": "nio-ui-kit-docs",
+  "description": "A demo site for @nio/ui-kit",
+  "private": true,
   "scripts": {
-    "clean": "rimraf public",
     "lint": "eslint . --debug && sass-lint --verbose",
-    "start": "webpack --config webpack.config.js && webpack-dev-server --config webpack.config.js"
+    "start": "rimraf public && webpack --config webpack.config.js && webpack-dev-server --config webpack.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nioinnovation/ui-kit.git"
-  },
-  "keywords": [
-    "react",
-    "reactstrap",
-    "css-modules",
-    "react-component"
-  ],
   "author": "nioinnovation",
   "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/nioinnovation/ui-kit/issues"
-  },
-  "homepage": "https://github.com/nioinnovation/ui-kit#readme",
   "dependencies": {
+    "@nio/ui-kit": "^1.0.0-alpha.5",
     "babel-runtime": "^6.25.0",
+    "file-loader": "^0.11.2",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -60,9 +43,11 @@
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.5.3",
     "optimize-css-assets-webpack-plugin": "^3.0.0",
+    "optimize-js-plugin": "0.0.4",
     "rimraf": "^2.6.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.5.1",
     "webpack-dev-middleware": "^1.11.0",
     "webpack-dev-server": "^2.7.1",

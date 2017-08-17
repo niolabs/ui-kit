@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavbarToggler, NavbarBrand, Nav, Collapse } from '../../dist';
+import { Navbar, NavbarToggler, NavbarBrand, Nav, Collapse } from '../../src/index';
 
 import NavLinks from './navlinks';
 import Routes from './routes';

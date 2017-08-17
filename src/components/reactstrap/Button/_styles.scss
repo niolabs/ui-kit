@@ -3,20 +3,3 @@
 @import '~bootstrap/scss/mixins';
 @import '../../../theme/nio-bootstrap-mixins-button';
 @import '~bootstrap/scss/buttons';
-
-.btn {
-  &.focus,
-  &:focus {
-    outline: none !important;
-    box-shadow: none !important;
-  }
-
-  &:active,
-  &.active {
-    &.focus,
-    &:focus {
-      outline: none !important;
-      box-shadow: none !important;
-    }
-  }
-}

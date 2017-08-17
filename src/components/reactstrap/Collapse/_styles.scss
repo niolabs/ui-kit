@@ -7,16 +7,18 @@
 .navbar {
   .collapse {
     &.navbar-collapse {
-      position: absolute;
-      top: 70px;
-      width: 100%;
-      left: 0;
-      right: 0;
-      overflow: hidden;
-      overflow-y: auto;
-      background-color: $white;
-      max-height: calc(100vh - 70px);
-      border-top: 1px solid $gray-light;
+      &.show {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        overflow-y: auto;
+        background-color: $white;
+        max-height: calc(100vh - 70px);
+        border-top: 1px solid $gray-light;
+      }
 
       .navbar-nav {
         padding: 15px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { VictoryPie, Container, Col, Row } from '../../src/index';
+import { VictoryPie, Col, Row } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -10,8 +10,8 @@ export default class DocsPage extends React.Component {
         <h4>Import</h4>
         <code>
           {
-            `// Import with local scoped class names (via CSS Modules)
-import { VictoryChart, VictoryPie } from '@nio/ui-kit';`
+            `// Import component (and relevant CSS)
+import { VictoryChart, VictoryPie } from '../../src/index';`
           }
         </code>
         <hr />
@@ -19,43 +19,61 @@ import { VictoryChart, VictoryPie } from '@nio/ui-kit';`
         <code>
           {
             `<VictoryPie
-  padAngle={1}
   data={[
-    { x: "Cats", y: 35 },
-    { x: "Dogs", y: 40 },
-    { x: "Birds", y: 55 }
+    { x: 'Cats', y: 35 },
+    { x: 'Dogs', y: 40 },
+    { x: 'Birds', y: 55 },
   ]}
 />`
           }
         </code>
         <br />
-        <Container>
-          <Row>
-            <Col xs="12" sm="6" lg="4">
-              <VictoryPie
-                padAngle={1}
-                innerRadius={100}
-                startAngle={90}
-                endAngle={-90}
-                labels={d => `${d.x}: ${d.y}`}
-                data={[
-                  { x: 'Cats', y: 35 },
-                  { x: 'Dogs', y: 40 },
-                  { x: 'Birds', y: 55 },
-                ]}
-              />
-            </Col>
-            <Col xs="12" sm="6" lg="4">
-              <VictoryPie
-                data={[
-                  { x: 'Cats', y: 35 },
-                  { x: 'Dogs', y: 40 },
-                  { x: 'Birds', y: 55 },
-                ]}
-              />
-            </Col>
-          </Row>
-        </Container>
+        <Row>
+          <Col sm="6" md="4" lg="3">
+            <VictoryPie
+              data={[
+                { x: 'Cats', y: 35 },
+                { x: 'Dogs', y: 40 },
+                { x: 'Birds', y: 55 },
+              ]}
+            />
+          </Col>
+        </Row>
+        <hr />
+        <h4>Radius &amp; Spacing</h4>
+        <code>
+          {
+            `<VictoryPie
+  padAngle={1}
+  innerRadius={100}
+  startAngle={90}
+  endAngle={-90}
+  labels={d => \`&#36{d.x}: &#36{d.y}\`}
+  data={[
+    { x: 'Cats', y: 35 },
+    { x: 'Dogs', y: 40 },
+    { x: 'Birds', y: 55 },
+  ]}
+/>`
+          }
+        </code>
+        <br />
+        <Row>
+          <Col sm="6" md="4" lg="3">
+            <VictoryPie
+              padAngle={1}
+              innerRadius={100}
+              startAngle={90}
+              endAngle={-90}
+              labels={d => `${d.x}: ${d.y}`}
+              data={[
+                { x: 'Cats', y: 35 },
+                { x: 'Dogs', y: 40 },
+                { x: 'Birds', y: 55 },
+              ]}
+            />
+          </Col>
+        </Row>
       </div>
     );
   }

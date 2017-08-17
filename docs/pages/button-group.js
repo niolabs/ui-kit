@@ -11,8 +11,8 @@ export default class DocsPage extends React.Component {
         <h4>Import</h4>
         <code>
           {
-            `// Import with local scoped class names (via CSS Modules)
-import { ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
+            `// Import component (and relevant CSS)
+import { Button, ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
           }
         </code>
         <hr />

@@ -11,9 +11,12 @@ import ButtonPage from '../pages/buttons';
 import ButtonDropdownPage from '../pages/button-dropdown';
 import ButtonGroupPage from '../pages/button-group';
 import CardPage from '../pages/card';
+import RadioCheckboxPage from '../pages/radiocheckbox';
 import CollapsePage from '../pages/collapse';
+import DividerPage from '../pages/divider';
 import DropdownsPage from '../pages/dropdowns';
 import FormPage from '../pages/form';
+import FormInversePage from '../pages/form-inverse';
 import InputGroupPage from '../pages/input-group';
 import JumbotronPage from '../pages/jumbotron';
 import LayoutPage from '../pages/layout';
@@ -38,6 +41,8 @@ const Routes = () => (
     {/* Custom Components */}
     <Route component={LoaderPage} path="/loader" />
     <Route component={TogglePage} path="/toggle" />
+    <Route component={RadioCheckboxPage} path="/radiocheckbox" />
+    <Route component={DividerPage} path="/divider" />
     {/* VictoryCharts Components */}
     <Route component={VictoryBarPage} path="/victory-bar" />
     <Route component={VictoryPiePage} path="/victory-pie" />
@@ -53,6 +58,7 @@ const Routes = () => (
     <Route component={CollapsePage} path="/collapse" />
     <Route component={DropdownsPage} path="/dropdowns" />
     <Route component={FormPage} path="/form" />
+    <Route component={FormInversePage} path="/form-inverse" />
     <Route component={InputGroupPage} path="/input-group" />
     <Route component={JumbotronPage} path="/jumbotron" />
     <Route component={LayoutPage} path="/layout" />

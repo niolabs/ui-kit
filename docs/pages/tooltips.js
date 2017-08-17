@@ -26,8 +26,8 @@ export default class DocsPage extends React.Component {
         <h4>Import</h4>
         <code>
           {
-            `// Import with local scoped class names (via CSS Modules)
-import { Tooltip, UncontrolledTooltip } from '@nio/ui-kit';`
+            `// Import component (and relevant CSS)
+import { Tooltip, UncontrolledTooltip } from '../../src/index';`
           }
         </code>
         <hr />

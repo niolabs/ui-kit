@@ -5,6 +5,7 @@ package-lock.json
 # Build directories
 src
 docs
+/nio-ui-kit-*.tgz
 
 #build tools
 .travis.yml

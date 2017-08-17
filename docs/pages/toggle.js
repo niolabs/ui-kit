@@ -2,12 +2,6 @@ import React from 'react';
 
 import { ToggleButton, Col, Row, Card } from '../../src/index';
 
-export const Check = () => (
-  <svg width="14" height="10" viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg">
-    <path d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0" fill="#fff" fillRule="evenodd" />
-  </svg>
-);
-
 export const ThumbIcon = () => (
   <div style={{
     position: 'absolute',
@@ -20,6 +14,14 @@ export const ThumbIcon = () => (
     </svg>
   </div>
 );
+
+export const Check = () => (
+  <svg width="14" height="10" viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0" fill="#fff" fillRule="evenodd" />
+  </svg>
+);
+
+
 
 export const X = () => (
   <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
@@ -36,6 +38,7 @@ export default class DocsPage extends React.Component {
       value1: false,
       value2: false,
       value3: false,
+      value4: false,
     };
   }
 
@@ -53,8 +56,8 @@ export default class DocsPage extends React.Component {
         <h4>Import</h4>
         <code>
           {
-            `// Import with local scoped class names (via CSS Modules)
-import { ToggleButton } from '@nio/ui-kit';`
+            `// Import component (and relevant CSS)
+import { ToggleButton } from '../../src/index';`
           }
         </code>
         <hr />
@@ -65,17 +68,69 @@ import { ToggleButton } from '@nio/ui-kit';`
               {
                 `<ToggleButton
   value={this.state.value1 || false}
-  onToggle={this.setState({ value1: !this.state.value1 })}
+  onToggle={value => this.setState({ value1: !this.state.value1 })}
 />`
               }
             </code>
             <Card className="p-5">
               <ToggleButton
-                value={this.state.value1 || false}
+                value={this.state.value1}
                 onToggle={value => this.setState({ value1: !value })}
               />
             </Card>
           </Col>
+        </Row>
+        <hr />
+        <h4>Custom Labels Auto-Adjust Width</h4>
+        <Row>
+          <Col xs="12" className="mb-3">
+            <code>
+              {
+                `<ToggleButton
+  inactiveLabel="monkeystuff"
+  activeLabel="no"
+  value={this.state.value2}
+  onToggle={value => this.setState({ value2: !value })}
+/><br />
+<ToggleButton
+  inactiveLabel="monkeystuff"
+  activeLabel="donkeythings"
+  value={this.state.value2}
+  onToggle={value => this.setState({ value2: !value })}
+/><br />
+<ToggleButton
+  inactiveLabel="omg this label is way too long"
+  activeLabel="i got you, fam"
+  value={this.state.value2}
+  onToggle={value => this.setState({ value2: !value })}
+/>`
+              }
+            </code>
+            <Card className="p-5">
+              <ToggleButton
+                inactiveLabel="monkeystuff"
+                activeLabel="no"
+                value={this.state.value2}
+                onToggle={value => this.setState({ value2: !value })}
+              /><br />
+              <ToggleButton
+                inactiveLabel="monkeystuff"
+                activeLabel="donkeythings"
+                value={this.state.value2}
+                onToggle={value => this.setState({ value2: !value })}
+              /><br />
+              <ToggleButton
+                inactiveLabel="omg this label is way too long"
+                activeLabel="i got you, fam"
+                value={this.state.value2}
+                onToggle={value => this.setState({ value2: !value })}
+              />
+            </Card>
+          </Col>
+        </Row>
+        <hr />
+        <h4>Icons as Labels</h4>
+        <Row>
           <Col xs="12" className="mb-3">
             <code>
               {
@@ -83,7 +138,7 @@ import { ToggleButton } from '@nio/ui-kit';`
   inactiveLabel={<X />}
   activeLabel={<Check />}
   value={this.state.value2}
-  onToggle={this.setState({ value1: !this.state.value2 })}
+  onToggle={value => this.setState({ value1: !this.state.value2 })}
 />`
               }
             </code>
@@ -91,34 +146,33 @@ import { ToggleButton } from '@nio/ui-kit';`
               <ToggleButton
                 inactiveLabel={<X />}
                 activeLabel={<Check />}
-                value={this.state.value2}
-                onToggle={value => this.setState({ value2: !value })}
+                value={this.state.value3}
+                onToggle={value => this.setState({ value3: !value })}
               />
             </Card>
           </Col>
+        </Row>
+        <hr />
+        <h4>Mini Track, Custom Width</h4>
+        <Row>
           <Col xs="12" className="mb-3">
             <code>
               {
                 `<ToggleButton
+  mini
+  width={100}
   value={this.state.value3}
-  inactiveLabel={''}
-  activeLabel={''}
-  trackStyle={{ height: 15, width: 100 }}
-  thumbAnimateRange={[-10, 56]}
-  thumbIcon={<ThumbIcon />}
-  onToggle={this.setState({ value1: !this.state.value3 })}
+  onToggle={value => this.setState({ value3: !value })}
 />`
               }
             </code>
             <Card className="p-5">
               <ToggleButton
-                value={this.state.value3}
-                inactiveLabel={''}
-                activeLabel={''}
-                trackStyle={{ height: 15, width: 100 }}
-                thumbAnimateRange={[-10, 80]}
+                mini
                 thumbIcon={<ThumbIcon />}
-                onToggle={value => this.setState({ value3: !value })}
+                width={100}
+                value={this.state.value4}
+                onToggle={value => this.setState({ value4: !value })}
               />
             </Card>
           </Col>

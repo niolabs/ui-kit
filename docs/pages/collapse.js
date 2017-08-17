@@ -21,7 +21,7 @@ export default class DocsPage extends React.Component {
         <h4>Import</h4>
         <code>
           {
-            `// Import with local scoped class names (via CSS Modules)
+            `// Import component (and relevant CSS)
 import { Collapse, Card, CardBlock, Button } from '@nio/ui-kit';`
           }
         </code>

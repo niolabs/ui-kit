@@ -22,7 +22,7 @@ export default class DocsPage extends React.Component {
 
         <code>
           {
-            '@import \'~ui-kit/nio\';'
+            '@import \'~@nio/ui-kit/dist/nio\';'
           }
         </code>
 

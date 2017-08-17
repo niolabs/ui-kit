@@ -1,13 +1,35 @@
 @mixin button-variant($color, $background, $border) {
+  line-height: 1 !important;
+  box-shadow: $btn-box-shadow;
+
   &:hover {
     background-color: lighten($background, 8%) !important;
     border-color: lighten($border, 8%) !important;
+    box-shadow: $btn-box-shadow;
   }
 
   &:active,
   &.active {
     background-color: darken($background, 8%) !important;
     border-color: darken($border, 8%) !important;
+    box-shadow: $btn-box-shadow;
+  }
+
+  &.focus,
+  &:focus,
+  &.visited,
+  &:visited {
+    outline: none !important;
+    box-shadow: $btn-box-shadow;
+  }
+
+  &:active,
+  &.active {
+    &.focus,
+    &:focus {
+      outline: none !important;
+      box-shadow: $btn-box-shadow;
+    }
   }
 
   &.disabled,
@@ -19,10 +41,13 @@
 }
 
 @mixin button-outline-variant($color, $color-hover: #fff) {
+  line-height: 1 !important;
+
   &:hover {
     border-color: lighten($color, 8%) !important;
     color: lighten($color, 8%) !important;
     background-color: transparent !important;
+    box-shadow: none !important;
   }
 
   &:active,
@@ -30,6 +55,24 @@
     border-color: darken($color, 8%) !important;
     color: darken($color, 8%) !important;
     background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  &.focus,
+  &:focus,
+  &.visited,
+  &:visited {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  &:active,
+  &.active {
+    &.focus,
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
   }
 
   &.disabled,
