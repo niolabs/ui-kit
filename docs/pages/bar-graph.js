@@ -30,13 +30,11 @@ import { BarGraph } from '@nio/ui-kit';`
   { label: 'Cat 8', value: 1034 },
   { label: 'Cat 9', value: 289 },
 ]
-<BarGraph data={data} />`
+<BarGraph width={500} height={500} data={data} />`
           }
         </Code>
         <br />
         <BarGraph
-          width={500}
-          height={500}
           data={[
             { label: 'Cat 1', value: 214 },
             { label: 'Cat 2', value: 839 },

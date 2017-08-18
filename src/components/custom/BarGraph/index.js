@@ -12,19 +12,23 @@ export default class BarGraph extends React.Component {
   componentDidMount() {
     /* eslint-disable react/no-find-dom-node */
     /* eslint-disable react/no-did-mount-set-state */
-    if (!this.props.width) {
+    if (this.props.width) {
+      this.setState({ parentWidth: this.props.width });
+    } else {
       this.setState({ parentWidth: ReactDOM.findDOMNode(this).parentNode.clientWidth });
     }
   }
 
   render() {
-    const { data, width = 600, height = 225 } = this.props;
+    const { data, width, height = 225 } = this.props;
+
+    const calculatedWidth = width || this.state.parentWidth;
 
     const sortedData = data && data.sort((a, b) => d3.ascending(a.label, b.label));
     const numberOfBars = sortedData && sortedData.length;
     const margin = { top: 10, bottom: 20, left: 0, right: 40 };
     const chartHeight = height - margin.top - margin.bottom;
-    const chartWidth = width - margin.left - margin.right;
+    const chartWidth = calculatedWidth - margin.left - margin.right;
 
     // find the extent of the data
     const valueExtent = d3.extent(data, d => d.value);
@@ -53,7 +57,7 @@ export default class BarGraph extends React.Component {
 
     return (
       <svg
-        viewBox={`0,0,${width},${height}`}
+        viewBox={`0,0,${calculatedWidth},${height}`}
         preserveAspectRatio="xMidYMin slice"
         style={{ width: '100%', paddingBottom: '40%', height: '1px', overflow: 'visible' }}
       >
