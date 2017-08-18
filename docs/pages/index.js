@@ -26,26 +26,15 @@ export default class DocsPage extends React.Component {
             '@import \'~@nio/ui-kit/dist/nio\';'
           }
         </Code>
-
-        The core CSS includes nioLabs theme overrides for bootstrap, as well as a few of the lightweight reset, normalize, mixin, and utility classes:<br /><br />
-
-        <small>
-          {'@import \'~bootstrap/scss/mixins\';'}<br />
-          {'@import \'~bootstrap/scss/normalize\';'}<br />
-          {'@import \'~bootstrap/scss/reboot\';'}<br />
-          {'@import \'~bootstrap/scss/type\';'}<br />
-          {'@import \'~bootstrap/scss/code\';'}<br />
-          {'@import \'~bootstrap/scss/utilities\';'}<br />
-          {'@import \'~bootstrap/scss/transitions\';'}<br />
-          {'@import \'~bootstrap/scss/responsive-embed\';'}<br /><br />
-        </small>
+        <br />
+        The core CSS includes nioLabs theme overrides for bootstrap, as well as a few of the lightweight reset, normalize, mixin, and utility classes.<br /><br />
 
         Each component includes only the core css CSS classes it requires for itself. The docs site that is a part of this project uses webpack to remove any duplicates from the final combined css file.
 
         <hr />
         <h4>Customize</h4>
 
-        To change the theme to match your brand colors, fork the repo and override the values in the src/_theme.scss.
+        To change the theme to match your brand colors, fork the repo and override the values in the src/_theme folder.
 
         <hr />
         <h4>Additional Documentation</h4>
