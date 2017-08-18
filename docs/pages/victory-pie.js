@@ -1,5 +1,5 @@
 import React from 'react';
-import { VictoryPie, Col, Row } from '../../src/index';
+import { VictoryPie, Col, Row, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -8,15 +8,15 @@ export default class DocsPage extends React.Component {
         <h1>Pie Chart</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
-import { VictoryChart, VictoryPie } from '../../src/index';`
+import { VictoryChart, VictoryPie, Code } from '../../src/index';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<VictoryPie
   data={[
@@ -26,7 +26,7 @@ import { VictoryChart, VictoryPie } from '../../src/index';`
   ]}
 />`
           }
-        </code>
+        </Code>
         <br />
         <Row>
           <Col sm="6" md="4" lg="3">
@@ -41,7 +41,7 @@ import { VictoryChart, VictoryPie } from '../../src/index';`
         </Row>
         <hr />
         <h4>Radius &amp; Spacing</h4>
-        <code>
+        <Code>
           {
             `<VictoryPie
   padAngle={1}
@@ -56,7 +56,7 @@ import { VictoryChart, VictoryPie } from '../../src/index';`
   ]}
 />`
           }
-        </code>
+        </Code>
         <br />
         <Row>
           <Col sm="6" md="4" lg="3">

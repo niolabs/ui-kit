@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Pagination, PaginationItem, PaginationLink } from '../../src/index';
+import { Pagination, PaginationItem, PaginationLink, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Pagination</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Pagination, PaginationItem, PaginationLink } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<Pagination>
   <PaginationItem>
@@ -53,7 +53,7 @@ import { Pagination, PaginationItem, PaginationLink } from '@nio/ui-kit';`
   </PaginationItem>
 </Pagination>`
           }
-        </code>
+        </Code>
         <br />
         <Pagination>
           <PaginationItem>

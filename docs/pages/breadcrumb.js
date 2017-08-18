@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Breadcrumb, BreadcrumbItem } from '../../src/index';
+import { Breadcrumb, BreadcrumbItem, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Breadcrumbs</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Breadcrumb, BreadcrumbItem } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<Breadcrumb>
   <BreadcrumbItem active>Home</BreadcrumbItem>
@@ -32,7 +32,7 @@ import { Breadcrumb, BreadcrumbItem } from '@nio/ui-kit';`
   <BreadcrumbItem active>Data</BreadcrumbItem>
 </Breadcrumb>`
           }
-        </code>
+        </Code>
         <br />
         <Breadcrumb>
           <BreadcrumbItem active>Home</BreadcrumbItem>

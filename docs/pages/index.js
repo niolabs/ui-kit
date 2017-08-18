@@ -1,4 +1,5 @@
 import React from 'react';
+import { Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -11,20 +12,20 @@ export default class DocsPage extends React.Component {
         <hr />
         <h4>Install</h4>
 
-        <code>
+        <Code>
           {
             'npm install --save @nio/ui-kit;'
           }
-        </code>
+        </Code>
 
         <hr />
         <h4>Import Core CSS</h4>
 
-        <code>
+        <Code>
           {
             '@import \'~@nio/ui-kit/dist/nio\';'
           }
-        </code>
+        </Code>
 
         The core CSS includes nioLabs theme overrides for bootstrap, as well as a few of the lightweight reset, normalize, mixin, and utility classes:<br /><br />
 

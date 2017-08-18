@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { InputGroup, InputGroupAddon, Input } from '../../src/index';
+import { InputGroup, InputGroupAddon, Input, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Input Group</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { InputGroup, InputGroupAddon, Input } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<InputGroup>
   <InputGroupAddon>@</InputGroupAddon>
@@ -50,7 +50,7 @@ import { InputGroup, InputGroupAddon, Input } from '@nio/ui-kit';`
   <InputGroupAddon>.00</InputGroupAddon>
 </InputGroup>`
           }
-        </code>
+        </Code>
         <br />
         <InputGroup>
           <InputGroupAddon>@</InputGroupAddon>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Progress } from '../../src/index';
+import { Progress, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Progress</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Progress } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<div className="text-center">0%</div>
 <Progress />
@@ -38,7 +38,7 @@ import { Progress } from '@nio/ui-kit';`
   <Progress bar color="danger" value="5" />
 </Progress>`
           }
-        </code>
+        </Code>
         <br />
         <div className="text-center">0%</div>
         <Progress />

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Nav, NavItem, NavLink } from '../../src/index';
+import { Nav, NavItem, NavLink, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Navs</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Nav, NavItem, NavLink } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<p>List Based</p>
 <Nav>
@@ -40,7 +40,7 @@ import { Nav, NavItem, NavLink } from '@nio/ui-kit';`
   <NavLink href="#">Link</NavLink> <NavLink href="#">Link</NavLink> <NavLink href="#">Another Link</NavLink> <NavLink disabled href="#">Disabled Link</NavLink>
 </Nav>`
           }
-        </code>
+        </Code>
         <br />
         <p>List Based</p>
         <Nav>

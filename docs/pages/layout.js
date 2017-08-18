@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Row, Col } from '../../src/index';
+import { Container, Row, Col, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Grid</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Container, Row, Col } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<Container>
   <Row className="text-white">
@@ -36,7 +36,7 @@ import { Container, Row, Col } from '@nio/ui-kit';`
   </Row>
 </Container>`
           }
-        </code>
+        </Code>
         <br />
         <Container>
           <Row className="text-white">

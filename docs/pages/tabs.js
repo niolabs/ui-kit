@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from '../../src/index';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -26,15 +26,15 @@ export default class DocsPage extends React.Component {
         <h1>Tabs</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from '../../src/index';`
+import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Code } from '../../src/index';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<Nav tabs>
   <NavItem>
@@ -82,7 +82,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
   </TabPane>
 </TabContent>`
           }
-        </code>
+        </Code>
         <br />
         <Nav tabs>
           <NavItem>

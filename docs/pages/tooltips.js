@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Tooltip, UncontrolledTooltip } from '../../src/index';
+import { Tooltip, UncontrolledTooltip, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -24,22 +24,22 @@ export default class DocsPage extends React.Component {
         <h1>Tooltips</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
-import { Tooltip, UncontrolledTooltip } from '../../src/index';`
+import { Tooltip, UncontrolledTooltip, Code } from '../../src/index';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<p>Somewhere in here is a <a href="#" id="TooltipExample">tooltip</a>.</p>
 <Tooltip placement="right" isOpen={this.state.tooltipOpen} target="TooltipExample" toggle={this.toggle}>
   Hello world!
 </Tooltip>`
           }
-        </code>
+        </Code>
         <br />
         <p>Somewhere in here is a <a href="#" id="TooltipExample">tooltip</a>.</p>
         <Tooltip placement="right" isOpen={this.state.tooltipOpen} target="TooltipExample" toggle={this.toggle}>
@@ -47,14 +47,14 @@ import { Tooltip, UncontrolledTooltip } from '../../src/index';`
         </Tooltip>
         <hr />
         <h4>Uncontrolled Tooltip</h4>
-        <code>
+        <Code>
           {
             `<p>Somewhere in here is a <a href="#" id="UncontrolledTooltipExample">tooltip</a>.</p>
 <UncontrolledTooltip placement="right" target="UncontrolledTooltipExample">
   Hello world!
 </UncontrolledTooltip>`
           }
-        </code>
+        </Code>
         <br />
         <p>Somewhere in here is a <a href="#" id="UncontrolledTooltipExample">tooltip</a>.</p>
         <UncontrolledTooltip placement="right" target="UncontrolledTooltipExample">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, FormGroup, FormFeedback, Label, Input, Card } from '../../src/index';
+import { Form, FormGroup, FormFeedback, Label, Input, Card, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Form Inverse</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Form, FormGroup, FormFeedback, Label, Input, Card } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<Form>
   <FormGroup>
@@ -74,7 +74,7 @@ import { Form, FormGroup, FormFeedback, Label, Input, Card } from '@nio/ui-kit';
   </FormGroup>
 </Form>`
           }
-        </code>
+        </Code>
         <br />
         <Card block inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
           <Form>

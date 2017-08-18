@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Row, VictoryBar, VictoryChart, VictoryAxis } from '../../src/index';
+import { Container, Col, Row, VictoryBar, VictoryChart, VictoryAxis, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -15,15 +15,15 @@ export default class DocsPage extends React.Component {
         <h1>Bar Chart</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
-import { VictoryChart, VictoryBar } from '../../src/index';`
+import { VictoryChart, VictoryBar, Code } from '../../src/index';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<VictoryChart
   domainPadding={20}
@@ -35,7 +35,7 @@ import { VictoryChart, VictoryBar } from '../../src/index';`
   />
 </VictoryChart>`
           }
-        </code>
+        </Code>
         <br />
         <Container>
           <Row>

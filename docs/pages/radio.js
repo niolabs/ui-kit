@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Radio } from '../../src/index';
+import { Radio, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -29,15 +29,15 @@ export default class DocsPage extends React.Component {
         <h1>Radio</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Radio } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `constructor(props) {
   super(props);
@@ -63,7 +63,7 @@ render() {
   return (<Radio name="Possible Options" onChange={this.handleChange} options={this.options} defaultValue={this.state.defaultValue} />);
 }`
           }
-        </code>
+        </Code>
         <br />
         <Radio name="Possible Options" onChange={this.handleChange} options={this.options} defaultValue={this.state.defaultValue} /><br />
         Current Value: {JSON.stringify(this.state.value)}

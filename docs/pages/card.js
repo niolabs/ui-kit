@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, CardBlock, CardText, CardTitle, Button } from '../../src/index';
+import { Card, CardBlock, CardText, CardTitle, Button, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Card</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<Card>
   <CardBlock>
@@ -37,7 +37,7 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
   </CardBlock>
 </Card>`
           }
-        </code>
+        </Code>
         <br />
         <Card>
           <CardBlock>
@@ -58,7 +58,7 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
         </Card>
         <hr />
         <h4>Inverse Theme</h4>
-        <code>
+        <Code>
           {
             `<Card inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
   <CardBlock>
@@ -78,7 +78,7 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
   </CardBlock>
 </Card>`
           }
-        </code>
+        </Code>
         <br />
         <Card inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
           <CardBlock>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from '../../src/index';
+import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -24,15 +24,15 @@ export default class DocsPage extends React.Component {
         <h1>Button Dropdown</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `constructor(props) {
   super(props);
@@ -66,7 +66,7 @@ render() {
   );
 }`
           }
-        </code>
+        </Code>
         <br />
         <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
           <DropdownToggle caret>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from '../../src/index';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -24,15 +24,15 @@ export default class DocsPage extends React.Component {
         <h1>Modals</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `constructor(props) {
   super(props);
@@ -68,7 +68,7 @@ render() {
 }
 `
           }
-        </code>
+        </Code>
         <br />
         <div>
           <Button color="danger" onClick={this.toggle}>Open Modal</Button>

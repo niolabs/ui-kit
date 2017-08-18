@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from '../../src/index';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -23,15 +23,15 @@ export default class DocsPage extends React.Component {
         <h1>Navbar</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<Navbar color="inverse" fixed="top" inverse toggleable>
   <NavbarToggler right onClick={this.toggle} isOpen={this.state.isOpen} />
@@ -50,7 +50,7 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
   </Collapse>
 </Navbar>`
           }
-        </code>
+        </Code>
         <br />
         <Navbar color="inverse" inverse toggleable>
           <NavbarToggler right onClick={this.toggle} isOpen={this.state.isOpen} />

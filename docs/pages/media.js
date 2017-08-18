@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Media } from '../../src/index';
+import { Media, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Media</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Media } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<Media>
 <Media left href="#">
@@ -31,7 +31,7 @@ import { Media } from '@nio/ui-kit';`
 </Media>
 </Media>`
           }
-        </code>
+        </Code>
         <br />
         <Media>
           <Media left href="#">

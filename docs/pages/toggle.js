@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ToggleButton, Col, Row, Card } from '../../src/index';
+import { ToggleButton, Col, Row, Card, Code } from '../../src/index';
 
 export const ThumbIcon = () => (
   <div style={{
@@ -52,24 +52,24 @@ export default class DocsPage extends React.Component {
         <h1>Toggle</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
-import { ToggleButton } from '../../src/index';`
+import { ToggleButton, Code } from '../../src/index';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
         <Row>
           <Col xs="12" className="mb-3">
-            <code>
+            <Code>
               {
                 `<ToggleButton
   value={this.state.value1 || false}
   onToggle={value => this.setState({ value1: !this.state.value1 })}
 />`
               }
-            </code>
+            </Code>
             <Card className="p-5">
               <ToggleButton
                 value={this.state.value1}
@@ -82,7 +82,7 @@ import { ToggleButton } from '../../src/index';`
         <h4>Custom Labels Auto-Adjust Width</h4>
         <Row>
           <Col xs="12" className="mb-3">
-            <code>
+            <Code>
               {
                 `<ToggleButton
   inactiveLabel="monkeystuff"
@@ -103,7 +103,7 @@ import { ToggleButton } from '../../src/index';`
   onToggle={value => this.setState({ value2: !value })}
 />`
               }
-            </code>
+            </Code>
             <Card className="p-5">
               <ToggleButton
                 inactiveLabel="monkeystuff"
@@ -130,7 +130,7 @@ import { ToggleButton } from '../../src/index';`
         <h4>Icons as Labels</h4>
         <Row>
           <Col xs="12" className="mb-3">
-            <code>
+            <Code>
               {
                 `<ToggleButton
   inactiveLabel={<X />}
@@ -139,7 +139,7 @@ import { ToggleButton } from '../../src/index';`
   onToggle={value => this.setState({ value1: !this.state.value2 })}
 />`
               }
-            </code>
+            </Code>
             <Card className="p-5">
               <ToggleButton
                 inactiveLabel={<X />}
@@ -154,7 +154,7 @@ import { ToggleButton } from '../../src/index';`
         <h4>Mini Track, Custom Width</h4>
         <Row>
           <Col xs="12" className="mb-3">
-            <code>
+            <Code>
               {
                 `<ToggleButton
   mini
@@ -163,7 +163,7 @@ import { ToggleButton } from '../../src/index';`
   onToggle={value => this.setState({ value3: !value })}
 />`
               }
-            </code>
+            </Code>
             <Card className="p-5">
               <ToggleButton
                 mini

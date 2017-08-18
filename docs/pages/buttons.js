@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '../../src/index';
+import { Button, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Buttons</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Button, ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<Button color="primary">primary</Button>{' '}
 <Button color="secondary">secondary</Button>{' '}
@@ -27,7 +27,7 @@ import { Button, ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
 <Button color="danger">danger</Button>{' '}
 <Button color="link">link</Button>`
           }
-        </code>
+        </Code>
         <br />
         <Button color="primary" className="mb-3">primary</Button>{' '}
         <Button color="secondary" className="mb-3">secondary</Button>{' '}
@@ -38,7 +38,7 @@ import { Button, ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
         <Button color="link" className="mb-3">link</Button>
         <hr />
         <h4>Outline</h4>
-        <code>
+        <Code>
           {
             `<Button outline color="primary">primary</Button>{' '}
 <Button outline color="secondary">secondary</Button>{' '}
@@ -47,7 +47,7 @@ import { Button, ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
 <Button outline color="warning">warning</Button>{' '}
 <Button outline color="danger">danger</Button>`
           }
-        </code>
+        </Code>
         <br />
         <Button outline color="primary" className="mb-3">primary</Button>{' '}
         <Button outline color="secondary" className="mb-3">secondary</Button>{' '}
@@ -66,19 +66,19 @@ import { Button, ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
         </div>
         <hr />
         <h4>Sizing</h4>
-        <code>
+        <Code>
           {
             `<Button color="primary" size="sm">Small Button</Button>{' '}
 <Button color="secondary">Normal Button</Button>{' '}
 <Button color="success" size="lg">Large Button</Button>`
           }
-        </code>
+        </Code>
         <br />
         <Button color="primary" size="sm" className="mb-3">Small Button</Button>{' '}
         <Button color="secondary" className="mb-3">Normal Button</Button>{' '}
         <Button color="success" size="lg" className="mb-3">Large Button</Button><hr />
         <h4>Disabled</h4>
-        <code>
+        <Code>
           {
             `<Button disabled color="primary" className="mb-3">primary</Button>{' '}
 <Button disabled color="secondary" className="mb-3">secondary</Button>{' '}
@@ -95,7 +95,7 @@ import { Button, ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
 <Button disabled outline color="warning" className="mb-3">warning</Button>{' '}
 <Button disabled outline color="danger" className="mb-3">danger</Button>`
           }
-        </code>
+        </Code>
         <br />
         <Button disabled color="primary" className="mb-3">primary</Button>{' '}
         <Button disabled color="secondary" className="mb-3">secondary</Button>{' '}

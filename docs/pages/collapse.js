@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Collapse, Card, CardBlock, Button } from '../../src/index';
+import { Collapse, Card, CardBlock, Button, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -19,15 +19,15 @@ export default class DocsPage extends React.Component {
         <h1>Collapse</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Collapse, Card, CardBlock, Button } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `constructor(props) {
   super(props);
@@ -58,7 +58,7 @@ render() {
   );
 }`
           }
-        </code>
+        </Code>
         <br />
         <Button color="primary" className="mb-3" onClick={this.toggle}>Toggle</Button>
         <Collapse isOpen={this.state.collapse}>

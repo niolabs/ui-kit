@@ -1,4 +1,5 @@
 import React from 'react';
+import { Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,7 +10,7 @@ export default class DocsPage extends React.Component {
         nioLabs makes use of the standard &lt;hr /&gt; tag, with a className modifier for a dashed divider.
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `standard divider
 <hr />
@@ -17,7 +18,7 @@ export default class DocsPage extends React.Component {
 dashed divider
 <hr className="dashed" /> `
           }
-        </code>
+        </Code>
         <br />
         standard divider<br />
         <hr />

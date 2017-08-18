@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, ButtonGroup, ButtonToolbar } from '../../src/index';
+import { Button, ButtonGroup, ButtonToolbar, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Button Group</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Button, ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<ButtonGroup>
   <Button color="primary">Left</Button>
@@ -25,7 +25,7 @@ import { Button, ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
   <Button color="success">Right</Button>
 </ButtonGroup>`
           }
-        </code>
+        </Code>
         <br />
         <ButtonGroup>
           <Button color="primary">Left</Button>
@@ -34,7 +34,7 @@ import { Button, ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
         </ButtonGroup>
         <hr />
         <h4>Button Toolbar</h4>
-        <code>
+        <Code>
           {
             `<ButtonToolbar>
   <ButtonGroup>
@@ -51,7 +51,7 @@ import { Button, ButtonGroup, ButtonToolbar } from '@nio/ui-kit';`
   <Button>8</Button>
 </ButtonToolbar>`
           }
-        </code>
+        </Code>
         <br />
         <ButtonToolbar>
           <ButtonGroup>

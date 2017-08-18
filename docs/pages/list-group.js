@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ListGroup, ListGroupItem } from '../../src/index';
+import { ListGroup, ListGroupItem, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>List Group</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { ListGroup, ListGroupItem } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<ListGroup>
   <ListGroupItem>Cras justo odio</ListGroupItem>
@@ -27,7 +27,7 @@ import { ListGroup, ListGroupItem } from '@nio/ui-kit';`
   <ListGroupItem>Vestibulum at eros</ListGroupItem>
 </ListGroup>`
           }
-        </code>
+        </Code>
         <br />
         <ListGroup>
           <ListGroupItem>Cras justo odio</ListGroupItem>

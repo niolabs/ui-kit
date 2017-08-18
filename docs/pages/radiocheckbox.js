@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Col, Card, RadioCheckbox } from '../../src/index';
+import { Row, Col, Card, RadioCheckbox, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -56,17 +56,17 @@ export default class DocsPage extends React.Component {
         <h1>RadioCheckbox</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { RadioCheckbox } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <Row>
           <Col xs="12" md="6" className="mb-3">
             <h4>Use Radio</h4>
-            <code>
+            <Code>
               {
                 `<RadioCheckbox
   type="radio"
@@ -74,7 +74,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
   options={{label: 'Option 1', value: 'Option 1'}}
 />`
               }
-            </code>
+            </Code>
             <Card className="p-3">
               <RadioCheckbox
                 type="radio"
@@ -86,7 +86,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
           </Col>
           <Col xs="12" md="6" className="mb-3">
             <h4>Use Checkbox</h4>
-            <code>
+            <Code>
               {
                 `<RadioCheckbox
   type="checkbox"
@@ -94,7 +94,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
   options={{label: 'Option 1', value: 'Option 1'}}
 />`
               }
-            </code>
+            </Code>
             <Card className="p-3">
               <RadioCheckbox
                 type="checkbox"
@@ -110,7 +110,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
         <br />
         <Row>
           <Col xs="12" md="6" className="mb-3">
-            <code>
+            <Code>
               {
                 `<RadioCheckbox
   type="radio"
@@ -124,7 +124,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
   ]}
 />`
               }
-            </code>
+            </Code>
             <Card className="p-3">
               <RadioCheckbox
                 type="radio"
@@ -141,7 +141,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
             </Card>
           </Col>
           <Col xs="12" md="6" className="mb-3">
-            <code>
+            <Code>
               {
                 `<RadioCheckbox
   type="checkbox"
@@ -155,7 +155,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
   ]}
 />`
               }
-            </code>
+            </Code>
             <Card className="p-3">
               <RadioCheckbox
                 type="checkbox"
@@ -177,7 +177,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
         <br />
         <Row>
           <Col xs="12" md="6" className="mb-3">
-            <code>
+            <Code>
               {
                 `<RadioCheckbox
   type="radio"
@@ -195,7 +195,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
   ]}
 />`
               }
-            </code>
+            </Code>
             <Card className="p-3">
               <RadioCheckbox
                 type="radio"
@@ -213,7 +213,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
             </Card>
           </Col>
           <Col xs="12" md="6" className="mb-3">
-            <code>
+            <Code>
               {
                 `<RadioCheckbox
   type="checkbox"
@@ -231,7 +231,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
   ]}
 />`
               }
-            </code>
+            </Code>
             <Card className="p-3">
               <RadioCheckbox
                 type="checkbox"

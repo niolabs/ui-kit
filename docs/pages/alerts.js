@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { Alert } from '../../src/index';
+import { Alert, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,21 +8,21 @@ export default class DocsPage extends React.Component {
         <h1>Alerts</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Alert } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<Alert color="success">
 <strong>Well done!</strong> You successfully read this important alert message.
 </Alert>`
           }
-        </code>
+        </Code>
         <br />
         <Alert color="success">
           <strong>Well done!</strong> You successfully read this important alert message.

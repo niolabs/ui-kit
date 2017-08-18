@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Popover, PopoverTitle, PopoverContent } from '../../src/index';
+import { Button, Popover, PopoverTitle, PopoverContent, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -24,15 +24,15 @@ export default class DocsPage extends React.Component {
         <h1>Popovers</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Button, Popover, PopoverTitle, PopoverContent } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `constructor(props) {
   super(props);
@@ -63,7 +63,7 @@ render() {
   );
 }`
           }
-        </code>
+        </Code>
         <br />
         <Button id="Popover1" onClick={this.toggle}>
           Launch Popover

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Table } from '../../src/index';
+import { Table, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -9,15 +9,15 @@ export default class DocsPage extends React.Component {
         <h1>Tables</h1>
         <hr />
         <h4>Import</h4>
-        <code>
+        <Code>
           {
             `// Import component (and relevant CSS)
 import { Table } from '@nio/ui-kit';`
           }
-        </code>
+        </Code>
         <hr />
         <h4>Use</h4>
-        <code>
+        <Code>
           {
             `<Table>
   <thead>
@@ -50,7 +50,7 @@ import { Table } from '@nio/ui-kit';`
   </tbody>
 </Table>`
           }
-        </code>
+        </Code>
         <br />
         <Table>
           <thead>
@@ -84,7 +84,7 @@ import { Table } from '@nio/ui-kit';`
         </Table>
         <hr />
         <h4>Striped Table</h4>
-        <code>
+        <Code>
           {
             `<Table striped>
   <thead>
@@ -117,7 +117,7 @@ import { Table } from '@nio/ui-kit';`
   </tbody>
 </Table>`
           }
-        </code>
+        </Code>
         <br />
         <Table striped>
           <thead>
@@ -151,7 +151,7 @@ import { Table } from '@nio/ui-kit';`
         </Table>
         <hr />
         <h4>Bordered Table</h4>
-        <code>
+        <Code>
           {
             `<Table bordered>
   <thead>
@@ -184,7 +184,7 @@ import { Table } from '@nio/ui-kit';`
   </tbody>
 </Table>`
           }
-        </code>
+        </Code>
         <br />
         <Table bordered>
           <thead>
