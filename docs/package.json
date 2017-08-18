@@ -3,12 +3,13 @@
   "description": "A demo site for @nio/ui-kit",
   "private": true,
   "scripts": {
-    "start": "rimraf public && webpack --config webpack.config.js && webpack-dev-server --config webpack.config.js"
+    "start": "rimraf public && webpack --config webpack.config.js && webpack-dev-server --config webpack.config.js",
+    "deploy": "rimraf public && webpack --config webpack.config.js && scp -r public ubuntu@uikit.nioinstances.com:/home/ubuntu/ui/ui_kit_docs"
   },
   "author": "nioinnovation",
   "license": "UNLICENSED",
   "dependencies": {
-    "@nio/ui-kit": "^1.0.0-alpha.12",
+    "@nio/ui-kit": "^1.0.0-alpha.13",
     "babel-runtime": "^6.26.0",
     "file-loader": "^0.11.2",
     "prop-types": "^15.5.10",

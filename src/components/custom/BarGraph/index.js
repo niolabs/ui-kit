@@ -2,19 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import * as d3 from 'd3';
+import { debounce } from 'lodash';
 
 export default class BarGraph extends React.Component {
   constructor() {
     super();
     this.state = { parentWidth: 600 };
+    this.updateDimensions = debounce(this.updateDimensions.bind(this), 250);
   }
 
   componentDidMount() {
-    /* eslint-disable react/no-find-dom-node */
-    /* eslint-disable react/no-did-mount-set-state */
+    window.addEventListener('resize', this.updateDimensions);
+    this.updateDimensions();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions);
+  }
+
+  updateDimensions() {
     if (this.props.width) {
       this.setState({ parentWidth: this.props.width });
     } else {
+      /* eslint-disable react/no-find-dom-node */
+      /* eslint-disable react/no-did-mount-set-state */
       this.setState({ parentWidth: ReactDOM.findDOMNode(this).parentNode.clientWidth });
     }
   }
