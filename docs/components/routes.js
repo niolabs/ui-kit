@@ -6,12 +6,14 @@ import LoaderPage from '../pages/loader';
 import TogglePage from '../pages/toggle';
 import AlertsPage from '../pages/alerts';
 import BadgePage from '../pages/badge';
+import BarGraphPage from '../pages/bar-graph';
 import BreadcrumbPage from '../pages/breadcrumb';
 import ButtonPage from '../pages/buttons';
 import ButtonDropdownPage from '../pages/button-dropdown';
 import ButtonGroupPage from '../pages/button-group';
 import CardPage from '../pages/card';
 import RadioCheckboxPage from '../pages/radiocheckbox';
+import CodePage from '../pages/code';
 import CollapsePage from '../pages/collapse';
 import DividerPage from '../pages/divider';
 import DropdownsPage from '../pages/dropdowns';
@@ -39,6 +41,8 @@ const Routes = () => (
   <Switch>
     <Route exact path="/" component={IndexPage} />
     {/* Custom Components */}
+    <Route component={BarGraphPage} path="/bar-graph" />
+    <Route component={CodePage} path="/code" />
     <Route component={LoaderPage} path="/loader" />
     <Route component={TogglePage} path="/toggle" />
     <Route component={RadioCheckboxPage} path="/radiocheckbox" />

@@ -7,6 +7,7 @@ export { default as Loader } from './components/custom/Loader';
 export { default as ToggleButton } from './components/custom/ToggleButton';
 export { default as RadioCheckbox } from './components/custom/RadioCheckbox';
 export { default as Code } from './components/custom/Code';
+export { default as BarGraph } from './components/custom/BarGraph';
 
 // themed victorycharts components
 export { default as VictoryBar } from './components/victorycharts/VictoryBar';

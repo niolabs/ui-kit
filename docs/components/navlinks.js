@@ -11,6 +11,12 @@ const NavLinks = ({ toggleNav }) => (
     <div className="mt-2 mb-0">nioLabs</div>
     <hr className="mt-0 mb-1" />
     <NavItem>
+      <NavLink onClick={() => toggleNav(true)} to="/bar-graph">Bar Graph</NavLink>
+    </NavItem>
+    <NavItem>
+      <NavLink onClick={() => toggleNav(true)} to="/code">Code</NavLink>
+    </NavItem>
+    <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/divider">Divider</NavLink>
     </NavItem>
     <NavItem>
@@ -24,14 +30,6 @@ const NavLinks = ({ toggleNav }) => (
     </NavItem>
     <div className="mt-2 mb-1">VictoryCharts</div>
     <hr className="mt-0 mb-1" />
-    {/*
-    <NavItem>
-      <NavLink onClick={() => toggleNav(true)} to="/victory-area">VictoryArea</NavLink>
-    </NavItem>
-    <NavItem>
-      <NavLink onClick={() => toggleNav(true)} to="/victory-bar">VictoryBar</NavLink>
-    </NavItem>
-    */}
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/victory-pie">VictoryPie</NavLink>
     </NavItem>
