@@ -1,6 +1,6 @@
 {
   "name": "@nio/ui-kit",
-  "version": "1.0.0-alpha.15",
+  "version": "1.0.0-alpha.22",
   "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, VictoryCharts, and CSS Modules",
   "main": "dist/index.js",
   "files": [
@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "lint": "eslint src && eslint docs && sass-lint --verbose",
-    "build": "rimraf dist && babel --quiet ./src --out-dir ./dist && cpy \"**/*.scss\" ../dist --parents --cwd=src"
+    "build": "rimraf dist && babel --quiet ./src --out-dir ./dist && cpy \"**/*.scss\" ../dist --parents --cwd=src",
+    "publish-package": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,7 @@
   },
   "homepage": "https://github.com/nioinnovation/ui-kit#readme",
   "dependencies": {
-    "@nio/icons": "^0.3.0-alpha.1",
+    "@nio/icons": "^0.3.0-alpha.2",
     "bootstrap": "=4.0.0-alpha.6",
     "d3": "^4.10.0",
     "highlight.js": "^9.12.0",

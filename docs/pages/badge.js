@@ -38,40 +38,40 @@ import { Badge } from '@nio/ui-kit';`
         <h4>Colors</h4>
         <Code>
           {
-            `<Badge>default</Badge>{' '}
-<Badge color="primary">primary</Badge>{' '}
-<Badge color="success">success</Badge>{' '}
-<Badge color="info">info</Badge>{' '}
-<Badge color="warning">warning</Badge>{' '}
+            `<Badge>default</Badge>
+<Badge color="primary">primary</Badge>
+<Badge color="success">success</Badge>
+<Badge color="info">info</Badge>
+<Badge color="warning">warning</Badge>
 <Badge color="danger">danger</Badge>`
           }
         </Code>
         <br />
-        <Badge>default</Badge>{' '}
-        <Badge color="primary">primary</Badge>{' '}
-        <Badge color="success">success</Badge>{' '}
-        <Badge color="info">info</Badge>{' '}
-        <Badge color="warning">warning</Badge>{' '}
-        <Badge color="danger">danger</Badge>
+        <Badge className="mr-3">default</Badge>
+        <Badge className="mr-3" color="primary">primary</Badge>
+        <Badge className="mr-3" color="success">success</Badge>
+        <Badge className="mr-3" color="info">info</Badge>
+        <Badge className="mr-3" color="warning">warning</Badge>
+        <Badge className="mr-3" color="danger">danger</Badge>
         <hr />
         <h4>Pills</h4>
         <Code>
           {
-            `<Badge color="default" pill>default</Badge>{' '}
-<Badge color="primary" pill>primary</Badge>{' '}
-<Badge color="success" pill>success</Badge>{' '}
-<Badge color="info" pill>info</Badge>{' '}
-<Badge color="warning" pill>warning</Badge>{' '}
+            `<Badge color="default" pill>default</Badge>
+<Badge color="primary" pill>primary</Badge>
+<Badge color="success" pill>success</Badge>
+<Badge color="info" pill>info</Badge>
+<Badge color="warning" pill>warning</Badge>
 <Badge color="danger" pill>danger</Badge>`
           }
         </Code>
         <br />
-        <Badge color="default" pill>default</Badge>{' '}
-        <Badge color="primary" pill>primary</Badge>{' '}
-        <Badge color="success" pill>success</Badge>{' '}
-        <Badge color="info" pill>info</Badge>{' '}
-        <Badge color="warning" pill>warning</Badge>{' '}
-        <Badge color="danger" pill>danger</Badge>
+        <Badge className="mr-3" color="default" pill>default</Badge>
+        <Badge className="mr-3" color="primary" pill>primary</Badge>
+        <Badge className="mr-3" color="success" pill>success</Badge>
+        <Badge className="mr-3" color="info" pill>info</Badge>
+        <Badge className="mr-3" color="warning" pill>warning</Badge>
+        <Badge className="mr-3" color="danger" pill>danger</Badge>
       </div>
     );
   }

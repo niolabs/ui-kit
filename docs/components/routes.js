@@ -19,6 +19,7 @@ import DividerPage from '../pages/divider';
 import DropdownsPage from '../pages/dropdowns';
 import FormPage from '../pages/form';
 import FormInversePage from '../pages/form-inverse';
+import IconPage from '../pages/icon';
 import InputGroupPage from '../pages/input-group';
 import JumbotronPage from '../pages/jumbotron';
 import LayoutPage from '../pages/layout';
@@ -43,10 +44,11 @@ const Routes = () => (
     {/* Custom Components */}
     <Route component={BarGraphPage} path="/bar-graph" />
     <Route component={CodePage} path="/code" />
+    <Route component={DividerPage} path="/divider" />
+    <Route component={IconPage} path="/icon" />
     <Route component={LoaderPage} path="/loader" />
     <Route component={TogglePage} path="/toggle" />
     <Route component={RadioCheckboxPage} path="/radiocheckbox" />
-    <Route component={DividerPage} path="/divider" />
     {/* VictoryCharts Components */}
     <Route component={VictoryBarPage} path="/victory-bar" />
     <Route component={VictoryPiePage} path="/victory-pie" />

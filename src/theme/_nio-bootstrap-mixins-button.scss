@@ -1,6 +1,16 @@
 @mixin button-variant($color, $background, $border) {
   line-height: 1 !important;
   box-shadow: $btn-box-shadow;
+  text-transform: lowercase;
+  height: 36px;
+
+  &.btn-sm {
+    height: 22px;
+  }
+
+  &.btn-lg {
+    height: 45px;
+  }
 
   &:hover {
     background-color: lighten($background, 8%) !important;
@@ -42,6 +52,16 @@
 
 @mixin button-outline-variant($color, $color-hover: #fff) {
   line-height: 1 !important;
+  text-transform: lowercase;
+  height: 36px;
+
+  &.btn-sm {
+    height: 22px;
+  }
+
+  &.btn-lg {
+    height: 45px;
+  }
 
   &:hover {
     border-color: lighten($color, 8%) !important;

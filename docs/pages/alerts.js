@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Alert, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {

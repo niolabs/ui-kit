@@ -38,7 +38,11 @@ $state-danger-border: darken($state-danger-text, 5%);
 
 $font-family-sans: 'Lato', 'sans-serif';
 $font-family-mono: monospace;
+
 $font-size-base: .875rem; // Assumes the browser default, typically `16px`
+$font-size-lg:   1rem;
+$font-size-sm:   .6rem;
+$font-size-xs:   .5rem;
 
 $progress-height: 2rem;
 
@@ -46,12 +50,12 @@ $btn-box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
 $btn-border-radius: 2rem;
 $btn-border-radius-lg: 2rem;
 $btn-border-radius-sm: 2rem;
-$btn-padding-x: 2rem;
-$btn-padding-y: .5rem;
-$btn-padding-x-sm: 2rem;
-$btn-padding-y-sm: .25rem;
-$btn-padding-x-lg: 2rem;
-$btn-padding-y-lg: .5rem;
+$btn-padding-x: 34px;
+$btn-padding-y: 10px;
+$btn-padding-x-sm: 25px;
+$btn-padding-y-sm: 5px;
+$btn-padding-x-lg: 50px;
+$btn-padding-y-lg: 13px;
 
 $input-box-shadow: inset 0 2px 6px rgba($black, .075);
 $input-border-radius: 7px;
