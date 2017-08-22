@@ -9,7 +9,7 @@
   "author": "nioinnovation",
   "license": "UNLICENSED",
   "dependencies": {
-    "@nio/ui-kit": "^1.0.0-alpha.14",
+    "@nio/ui-kit": "^1.0.0-alpha.15",
     "babel-runtime": "^6.26.0",
     "file-loader": "^0.11.2",
     "prop-types": "^15.5.10",

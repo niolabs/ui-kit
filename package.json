@@ -1,6 +1,6 @@
 {
   "name": "@nio/ui-kit",
-  "version": "1.0.0-alpha.14",
+  "version": "1.0.0-alpha.15",
   "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, VictoryCharts, and CSS Modules",
   "main": "dist/index.js",
   "files": [
@@ -23,14 +23,12 @@
   "dependencies": {
     "@nio/icons": "^0.3.0-alpha.1",
     "bootstrap": "=4.0.0-alpha.6",
-    "chart.js": "^2.6.0",
     "d3": "^4.10.0",
     "highlight.js": "^9.12.0",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-chartjs": "^0.8.0",
     "react-css-themr": "^2.1.2",
     "react-dom": "^15.6.1",
     "react-toggle-button": "^2.1.0",
