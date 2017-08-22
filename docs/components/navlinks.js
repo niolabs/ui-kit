@@ -29,6 +29,9 @@ const NavLinks = ({ toggleNav }) => (
       <NavLink onClick={() => toggleNav(true)} to="/radiocheckbox">RadioCheckbox</NavLink>
     </NavItem>
     <NavItem>
+      <NavLink onClick={() => toggleNav(true)} to="/selectdropdown">SelectDropdown</NavLink>
+    </NavItem>
+    <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/toggle">Toggle</NavLink>
     </NavItem>
     <div className="mt-2 mb-1">VictoryCharts</div>

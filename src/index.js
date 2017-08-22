@@ -6,6 +6,7 @@ export { default as RadioCheckbox } from './components/custom/RadioCheckbox';
 export { default as Code } from './components/custom/Code';
 export { default as BarGraph } from './components/custom/BarGraph';
 export { default as Icon } from './components/custom/Icon';
+export { default as SelectDropdown } from './components/custom/SelectDropdown';
 
 // themed victorycharts components
 export { default as VictoryBar } from './components/victorycharts/VictoryBar';

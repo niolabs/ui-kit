@@ -1,7 +1,6 @@
 @mixin button-variant($color, $background, $border) {
   line-height: 1 !important;
   box-shadow: $btn-box-shadow;
-  text-transform: lowercase;
   height: 36px;
 
   &.btn-sm {
@@ -47,12 +46,12 @@
     background-color: #e6e9ee !important;
     border-color: #ced4da !important;
     color: #9daab1 !important;
+    box-shadow: none !important;
   }
 }
 
 @mixin button-outline-variant($color, $color-hover: #fff) {
   line-height: 1 !important;
-  text-transform: lowercase;
   height: 36px;
 
   &.btn-sm {
@@ -99,5 +98,6 @@
   &:disabled {
     color: #9daab1 !important;
     border-color: #ced4da !important;
+    box-shadow: none !important;
   }
 }

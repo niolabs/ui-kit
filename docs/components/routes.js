@@ -31,6 +31,7 @@ import NavsPage from '../pages/navs';
 import PaginationPage from '../pages/pagination';
 import PopoversPage from '../pages/popovers';
 import ProgressPage from '../pages/progress';
+import SelectDropdownPage from '../pages/selectdropdown';
 import TablesPage from '../pages/tables';
 import TabsPage from '../pages/tabs';
 import TooltipsPage from '../pages/tooltips';
@@ -49,6 +50,7 @@ const Routes = () => (
     <Route component={LoaderPage} path="/loader" />
     <Route component={TogglePage} path="/toggle" />
     <Route component={RadioCheckboxPage} path="/radiocheckbox" />
+    <Route component={SelectDropdownPage} path="/selectdropdown" />
     {/* VictoryCharts Components */}
     <Route component={VictoryBarPage} path="/victory-bar" />
     <Route component={VictoryPiePage} path="/victory-pie" />
