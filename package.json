@@ -1,6 +1,6 @@
 {
   "name": "@nio/ui-kit",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, VictoryCharts, and CSS Modules",
   "main": "dist/index.js",
   "files": [
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/nioinnovation/ui-kit#readme",
   "dependencies": {
     "@nio/icons": "^0.3.0-alpha.2",
+    "babel-runtime": "^6.26.0",
     "bootstrap": "=4.0.0-alpha.6",
     "d3": "^4.10.0",
     "highlight.js": "^9.12.0",
