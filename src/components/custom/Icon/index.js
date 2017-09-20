@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './_styles.scss';
-import '../../../../node_modules/@nio/icons/dist/nioicons.css';
 
 export default class Icon extends React.Component {
   render() {

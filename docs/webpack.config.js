@@ -4,7 +4,6 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeJsPlugin = require('optimize-js-plugin');
 const cssNano = require('cssnano');
 /* eslint-enable import/no-extraneous-dependencies */
@@ -27,11 +26,10 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('production') }),
+    new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('dev') }),
     new HtmlWebpackPlugin({ template: path.join(__dirname, 'index.html'), favicon: path.join(__dirname, 'favicon.png'), inject: 'body' }),
     new ExtractTextPlugin('[contenthash].min.css'),
     new OptimizeCssAssetsPlugin({ assetNameRegExp: /\.css$/g, cssProcessor: cssNano, cssProcessorOptions: { discardComments: { removeAll: true } }, canPrint: true }),
-    new UglifyJSPlugin({ minimize: true }),
     new OptimizeJsPlugin({ sourceMap: false }),
   ],
 
