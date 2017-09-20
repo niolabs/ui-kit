@@ -27,7 +27,7 @@ module.exports = {
 
   plugins: [
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('dev') }),
-    new HtmlWebpackPlugin({ template: path.join(__dirname, 'index.html'), favicon: path.join(__dirname, 'favicon.png'), inject: 'body' }),
+    new HtmlWebpackPlugin({ template: path.join(__dirname, 'index.html'), favicon: path.join(__dirname, 'favicon.ico'), inject: 'body' }),
     new ExtractTextPlugin('[contenthash].min.css'),
     new OptimizeCssAssetsPlugin({ assetNameRegExp: /\.css$/g, cssProcessor: cssNano, cssProcessorOptions: { discardComments: { removeAll: true } }, canPrint: true }),
     new OptimizeJsPlugin({ sourceMap: false }),
