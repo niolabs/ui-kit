@@ -3,7 +3,8 @@
   "description": "A demo site for @nio/ui-kit",
   "private": true,
   "scripts": {
-    "start": "rimraf public && webpack --config webpack.config.js && webpack-dev-server --config webpack.config.js"
+    "build": "rimraf public && webpack --config webpack.config.js",
+    "start": "npm run build && webpack-dev-server --config webpack.config.js"
   },
   "author": "nioinnovation",
   "license": "UNLICENSED",
