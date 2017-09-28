@@ -10,13 +10,11 @@ const cssNano = require('cssnano');
 
 module.exports = {
   entry: path.join(__dirname, 'index.js'),
-
   output: {
     path: path.join(__dirname, 'public'),
     filename: '[chunkhash].min.js',
     publicPath: '/',
   },
-
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     compress: true,
@@ -24,7 +22,6 @@ module.exports = {
     historyApiFallback: true,
     https: true,
   },
-
   plugins: [
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('production') }),
     new HtmlWebpackPlugin({ template: path.join(__dirname, 'index.html'), favicon: path.join(__dirname, 'favicon.ico'), inject: 'body' }),
@@ -32,7 +29,6 @@ module.exports = {
     new OptimizeCssAssetsPlugin({ assetNameRegExp: /\.css$/g, cssProcessor: cssNano, cssProcessorOptions: { discardComments: { removeAll: true } }, canPrint: true }),
     new OptimizeJsPlugin({ sourceMap: false }),
   ],
-
   module: {
     rules: [
       {
