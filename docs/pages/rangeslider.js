@@ -45,7 +45,7 @@ import { RangeSlider } from '@nio/ui-kit';`
           step={1}
           value={this.state.limit}
           tooltip={false}
-          onChangeComplete={() => console.log(`sending value: ${this.state.limit}`)}
+          onChangeComplete={() => console.log(`sending value: ${this.state.limit}`)} // eslint-disable-line no-console
           onChange={value => this.setState({ limit: value })}
         />
         <RangeSlider
@@ -55,7 +55,7 @@ import { RangeSlider } from '@nio/ui-kit';`
           step={1}
           value={this.state.limit}
           tooltip={false}
-          onChangeComplete={() => console.log(`sending value: ${this.state.limit}`)}
+          onChangeComplete={() => console.log(`sending value: ${this.state.limit}`)} // eslint-disable-line no-console
           onChange={value => this.setState({ limit: value })}
         />
         <RangeSlider
@@ -65,7 +65,7 @@ import { RangeSlider } from '@nio/ui-kit';`
           step={1}
           value={this.state.limit}
           tooltip={false}
-          onChangeComplete={() => console.log(`sending value: ${this.state.limit}`)}
+          onChangeComplete={() => console.log(`sending value: ${this.state.limit}`)} // eslint-disable-line no-console
           onChange={value => this.setState({ limit: value })}
         />
         <RangeSlider
@@ -75,7 +75,7 @@ import { RangeSlider } from '@nio/ui-kit';`
           step={1}
           value={this.state.limit}
           tooltip={false}
-          onChangeComplete={() => console.log(`sending value: ${this.state.limit}`)}
+          onChangeComplete={() => console.log(`sending value: ${this.state.limit}`)} // eslint-disable-line no-console
           onChange={value => this.setState({ limit: value })}
         />
       </div>

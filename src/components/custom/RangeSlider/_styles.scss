@@ -6,41 +6,49 @@
   box-shadow: none;
   background: $gray;
   border-radius: 25px;
-  margin:0;
+  margin: 0;
 
   &-horizontal {
     height: 25px;
   }
+
   .rangeslider__handle {
-    box-shadow: rgba(0, 0, 0, 0.12) 0 0 2px, rgba(0, 0, 0, 0.24) 0 2px 4px;
+    box-shadow: rgba(0, 0, 0, .12) 0 0 2px, rgba(0, 0, 0, .24) 0 2px 4px;
     width: 23px;
     height: 23px;
     border-radius: 23px;
-    outline: none!important;
-    &:after {
+    outline: none !important;
+
+    &::after {
       display: none;
     }
+
   }
+
   .rangeslider__fill {
     box-shadow: none;
     border-radius: 25px 0 0 25px;
     background-color: $brand-success;
   }
+
   &.success {
     .rangeslider__fill {
       background-color: $brand-success;
     }
   }
+
   &.danger {
     .rangeslider__fill {
       background-color: $brand-danger;
     }
   }
+
   &.warning {
     .rangeslider__fill {
       background-color: $brand-warning;
     }
   }
+
   &.info {
     .rangeslider__fill {
       background-color: $brand-info;

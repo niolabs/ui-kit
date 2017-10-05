@@ -53,6 +53,7 @@ export { default as FormText } from './components/reactstrap/FormText';
 export { default as Input } from './components/reactstrap/Input';
 export { default as InputGroup } from './components/reactstrap/InputGroup';
 export { default as InputGroupAddon } from './components/reactstrap/InputGroupAddon';
+export { default as InputGroupButton } from './components/reactstrap/InputGroupButton';
 export { default as Jumbotron } from './components/reactstrap/Jumbotron';
 export { default as Label } from './components/reactstrap/Label';
 export { default as ListGroup } from './components/reactstrap/ListGroup';
