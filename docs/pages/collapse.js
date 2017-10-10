@@ -46,7 +46,7 @@ render() {
       <br />
       <Collapse isOpen={this.state.collapse}>
         <Card>
-          <CardBlock>
+          <CardBlock className="p-3">
           Anim pariatur cliche reprehenderit,
           enim eiusmod high life accusamus terry richardson ad squid. Nihil
           anim keffiyeh helvetica, craft beer labore wes anderson cred
@@ -63,7 +63,7 @@ render() {
         <Button color="primary" className="mb-3" onClick={this.toggle}>Toggle</Button>
         <Collapse isOpen={this.state.collapse}>
           <Card>
-            <CardBlock>
+            <CardBlock className="p-3">
               Anim pariatur cliche reprehenderit,
               enim eiusmod high life accusamus terry richardson ad squid. Nihil
               anim keffiyeh helvetica, craft beer labore wes anderson cred

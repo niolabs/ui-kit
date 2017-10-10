@@ -25,7 +25,7 @@ import { Loader } from '@nio/ui-kit';`
                 '<Loader />'
               }
             </Code>
-            <Card>
+            <Card className="p-3">
               <Loader />
               <br /><br /><br /><br />
             </Card>
@@ -36,7 +36,7 @@ import { Loader } from '@nio/ui-kit';`
                 '<Loader color="success" />'
               }
             </Code>
-            <Card>
+            <Card className="p-3">
               <Loader color="success" />
               <br /><br /><br /><br />
             </Card>
@@ -47,7 +47,7 @@ import { Loader } from '@nio/ui-kit';`
                 '<Loader color="warning" />'
               }
             </Code>
-            <Card>
+            <Card className="p-3">
               <Loader color="warning" />
               <br /><br /><br /><br />
             </Card>
@@ -58,7 +58,7 @@ import { Loader } from '@nio/ui-kit';`
                 '<Loader color="danger" />'
               }
             </Code>
-            <Card>
+            <Card className="p-3">
               <Loader color="danger" />
               <br /><br /><br /><br />
             </Card>

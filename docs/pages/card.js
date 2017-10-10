@@ -20,7 +20,7 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
         <Code>
           {
             `<Card>
-  <CardBlock>
+  <CardBlock className="p-3">
     <CardTitle>Card Section 1</CardTitle>
     <CardText>
       With supporting text below as a natural lead-in to additional content.
@@ -28,7 +28,7 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
     <Button>Action 1</Button>
   </CardBlock>
   <hr className="dashed" />
-  <CardBlock>
+  <CardBlock className="p-3">
     <CardTitle>Card Section 2</CardTitle>
     <CardText>
       With supporting text below as a natural lead-in to additional content.
@@ -40,7 +40,7 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
         </Code>
         <br />
         <Card>
-          <CardBlock>
+          <CardBlock className="p-3">
             <CardTitle>Card Section 1</CardTitle>
             <CardText>
               With supporting text below as a natural lead-in to additional content.
@@ -48,7 +48,7 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
             <Button>Action 1</Button>
           </CardBlock>
           <hr className="dashed" />
-          <CardBlock>
+          <CardBlock className="p-3">
             <CardTitle>Card Section 2</CardTitle>
             <CardText>
               With supporting text below as a natural lead-in to additional content.
@@ -61,7 +61,7 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
         <Code>
           {
             `<Card inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-  <CardBlock>
+  <CardBlock className="p-3">
     <CardTitle>Card Section 1</CardTitle>
     <CardText>
       With supporting text below as a natural lead-in to additional content.
@@ -69,7 +69,7 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
     <Button>Action 1</Button>
   </CardBlock>
   <hr className="dashed" />
-  <CardBlock>
+  <CardBlock className="p-3">
     <CardTitle>Card Section 2</CardTitle>
     <CardText>
       With supporting text below as a natural lead-in to additional content.
@@ -81,7 +81,7 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
         </Code>
         <br />
         <Card inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-          <CardBlock>
+          <CardBlock className="p-3">
             <CardTitle>Card Section 1</CardTitle>
             <CardText>
               With supporting text below as a natural lead-in to additional content.
@@ -89,7 +89,7 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
             <Button>Action 1</Button>
           </CardBlock>
           <hr className="dashed" />
-          <CardBlock>
+          <CardBlock className="p-3">
             <CardTitle>Card Section 2</CardTitle>
             <CardText>
               With supporting text below as a natural lead-in to additional content.

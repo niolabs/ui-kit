@@ -76,7 +76,7 @@ import { Form, FormGroup, FormFeedback, Label, Input, Card } from '@nio/ui-kit';
           }
         </Code>
         <br />
-        <Card block inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+        <Card block className="p-3" inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
           <Form>
             <FormGroup>
               <Label for="exampleEmail">This is the field label</Label>
