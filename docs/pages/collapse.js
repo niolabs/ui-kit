@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Collapse, Card, CardBlock, Button, Code } from '../../src/index';
+import { Collapse, Card, CardBody, Button, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -22,7 +22,7 @@ export default class DocsPage extends React.Component {
         <Code>
           {
             `// Import component (and relevant CSS)
-import { Collapse, Card, CardBlock, Button } from '@nio/ui-kit';`
+import { Collapse, Card, CardBody, Button } from '@nio/ui-kit';`
           }
         </Code>
         <hr />
@@ -46,12 +46,12 @@ render() {
       <br />
       <Collapse isOpen={this.state.collapse}>
         <Card>
-          <CardBlock className="p-3">
+          <CardBody className="p-3">
           Anim pariatur cliche reprehenderit,
           enim eiusmod high life accusamus terry richardson ad squid. Nihil
           anim keffiyeh helvetica, craft beer labore wes anderson cred
           nesciunt sapiente ea proident.
-          </CardBlock>
+          </CardBody>
         </Card>
       </Collapse>
     </div>
@@ -63,12 +63,12 @@ render() {
         <Button color="primary" className="mb-3" onClick={this.toggle}>Toggle</Button>
         <Collapse isOpen={this.state.collapse}>
           <Card>
-            <CardBlock className="p-3">
+            <CardBody className="p-3">
               Anim pariatur cliche reprehenderit,
               enim eiusmod high life accusamus terry richardson ad squid. Nihil
               anim keffiyeh helvetica, craft beer labore wes anderson cred
               nesciunt sapiente ea proident.
-            </CardBlock>
+            </CardBody>
           </Card>
         </Collapse>
       </div>

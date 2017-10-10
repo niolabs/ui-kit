@@ -27,7 +27,7 @@ export { default as ButtonGroup } from './components/reactstrap/ButtonGroup';
 export { default as ButtonDropdown } from './components/reactstrap/ButtonDropdown';
 export { default as ButtonToolbar } from './components/reactstrap/ButtonToolbar';
 export { default as Card } from './components/reactstrap/Card';
-export { default as CardBlock } from './components/reactstrap/CardBlock';
+export { default as CardBody } from './components/reactstrap/CardBody';
 export { default as CardColumns } from './components/reactstrap/CardColumns';
 export { default as CardDeck } from './components/reactstrap/CardDeck';
 export { default as CardFooter } from './components/reactstrap/CardFooter';

@@ -1,4 +1,4 @@
-import { CardBlock as ImportedComponent } from 'reactstrap';
+import { CardBody as ImportedComponent } from 'reactstrap';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themr } from 'react-css-themr';

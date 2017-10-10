@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, CardBlock, CardText, CardTitle, Button, Code } from '../../src/index';
+import { Card, CardBody, CardText, CardTitle, Button, Code } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -12,7 +12,7 @@ export default class DocsPage extends React.Component {
         <Code>
           {
             `// Import component (and relevant CSS)
-import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } from '@nio/ui-kit';`
+import { Card, CardBody, CardFooter, CardHeader, CardText, CardTitle, Button } from '@nio/ui-kit';`
           }
         </Code>
         <hr />
@@ -20,82 +20,82 @@ import { Card, CardBlock, CardFooter, CardHeader, CardText, CardTitle, Button } 
         <Code>
           {
             `<Card>
-  <CardBlock className="p-3">
+  <CardBody className="p-3">
     <CardTitle>Card Section 1</CardTitle>
     <CardText>
       With supporting text below as a natural lead-in to additional content.
     </CardText>
     <Button>Action 1</Button>
-  </CardBlock>
+  </CardBody>
   <hr className="dashed" />
-  <CardBlock className="p-3">
+  <CardBody className="p-3">
     <CardTitle>Card Section 2</CardTitle>
     <CardText>
       With supporting text below as a natural lead-in to additional content.
     </CardText>
     <Button>Action 2</Button>
-  </CardBlock>
+  </CardBody>
 </Card>`
           }
         </Code>
         <br />
         <Card>
-          <CardBlock className="p-3">
+          <CardBody className="p-3">
             <CardTitle>Card Section 1</CardTitle>
             <CardText>
               With supporting text below as a natural lead-in to additional content.
             </CardText>
             <Button>Action 1</Button>
-          </CardBlock>
+          </CardBody>
           <hr className="dashed" />
-          <CardBlock className="p-3">
+          <CardBody className="p-3">
             <CardTitle>Card Section 2</CardTitle>
             <CardText>
               With supporting text below as a natural lead-in to additional content.
             </CardText>
             <Button>Action 2</Button>
-          </CardBlock>
+          </CardBody>
         </Card>
         <hr />
         <h4>Inverse Theme</h4>
         <Code>
           {
             `<Card inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-  <CardBlock className="p-3">
+  <CardBody className="p-3">
     <CardTitle>Card Section 1</CardTitle>
     <CardText>
       With supporting text below as a natural lead-in to additional content.
     </CardText>
     <Button>Action 1</Button>
-  </CardBlock>
+  </CardBody>
   <hr className="dashed" />
-  <CardBlock className="p-3">
+  <CardBody className="p-3">
     <CardTitle>Card Section 2</CardTitle>
     <CardText>
       With supporting text below as a natural lead-in to additional content.
     </CardText>
     <Button>Action 2</Button>
-  </CardBlock>
+  </CardBody>
 </Card>`
           }
         </Code>
         <br />
         <Card inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-          <CardBlock className="p-3">
+          <CardBody className="p-3">
             <CardTitle>Card Section 1</CardTitle>
             <CardText>
               With supporting text below as a natural lead-in to additional content.
             </CardText>
             <Button>Action 1</Button>
-          </CardBlock>
+          </CardBody>
           <hr className="dashed" />
-          <CardBlock className="p-3">
+          <CardBody className="p-3">
             <CardTitle>Card Section 2</CardTitle>
             <CardText>
               With supporting text below as a natural lead-in to additional content.
             </CardText>
             <Button>Action 2</Button>
-          </CardBlock>
+          </CardBody>
         </Card>
       </div>
     );
