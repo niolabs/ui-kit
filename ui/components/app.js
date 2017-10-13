@@ -4,7 +4,7 @@ import { Navbar, NavbarToggler, NavbarBrand, Nav, Collapse } from '../../src/ind
 import NavLinks from './navlinks';
 import Routes from './routes';
 
-import '../app.scss';
+import '../assets/app.scss';
 
 class App extends React.Component {
   constructor(props) {
