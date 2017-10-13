@@ -28,16 +28,15 @@
     "d3": "^4.11.0",
     "highlight.js": "^9.12.0",
     "lodash": "^4.17.4",
-    "moment": "^2.18.1",
+    "moment": "^2.19.1",
     "prop-types": "^15.6.0",
     "react": "^15.6.2",
     "react-css-themr": "^2.1.2",
     "react-dom": "^15.6.2",
     "react-rangeslider": "^2.2.0",
     "react-toggle-button": "^2.1.0",
-    "react-transition-group": "^1.2.1",
     "reactstrap": "^5.0.0-alpha.3",
-    "victory": "^0.21.5"
+    "victory": "^0.23.1"
   },
   "bundledDependencies": [
     "@nio/icons",
@@ -51,16 +50,15 @@
     "react-css-themr",
     "react-dom",
     "react-toggle-button",
-    "react-transition-group",
     "reactstrap",
     "victory"
   ],
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^7.1.5",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^7.2.3",
-    "babel-plugin-react-transform": "^2.0.2",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-react-transform": "^3.0.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
@@ -72,7 +70,7 @@
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-postcss": "^2.0.2",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
     "rimraf": "^2.6.2",
     "sass-lint": "^1.12.0"
