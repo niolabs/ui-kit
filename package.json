@@ -1,6 +1,6 @@
 {
   "name": "@nio/ui-kit",
-  "version": "1.0.0-beta.14",
+  "version": "1.0.0-beta.12",
   "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, VictoryCharts, and CSS Modules",
   "deploymentUrl": "uikit.niolabs.com",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
     "d3": "^4.11.0",
     "highlight.js": "^9.12.0",
     "lodash": "^4.17.4",
-    "moment": "^2.19.1",
+    "moment": "^2.18.1",
     "prop-types": "^15.6.0",
     "react": "^15.6.2",
     "react-css-themr": "^2.1.2",
@@ -58,7 +58,7 @@
     "victory"
   ],
   "devDependencies": {
-    "autoprefixer": "^7.1.5",
+    "autoprefixer": "^7.1.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
