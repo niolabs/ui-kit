@@ -29,7 +29,7 @@ export default class DocsPage extends React.Component {
         <Code>
           {
             `// Import component (and relevant CSS)
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Code } from '../../src/index';`
+import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Code } from '@nio/ui-kit';`
           }
         </Code>
         <hr />

@@ -11,7 +11,7 @@ export default class DocsPage extends React.Component {
         <Code>
           {
             `// Import component (and relevant CSS)
-import { VictoryChart, VictoryPie, Code } from '../../src/index';`
+import { VictoryPie } from '@nio/ui-kit';`
           }
         </Code>
         <hr />

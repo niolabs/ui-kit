@@ -55,7 +55,7 @@ export default class DocsPage extends React.Component {
         <Code>
           {
             `// Import component (and relevant CSS)
-import { ToggleButton, Code } from '../../src/index';`
+import { ToggleButton, Code } from '@nio/ui-kit';`
           }
         </Code>
         <hr />
