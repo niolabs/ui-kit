@@ -87,8 +87,8 @@ import { Icon } from '@nio/ui-kit';`
         <hr />
         <h4>Inventory</h4>
         <br />
-        {iconList.map(icon => (
-          <div>
+        {iconList.map((icon, i) => (
+          <div key={i}>
             <Row>
               <Col xs="2">
                 <Icon name={icon} />

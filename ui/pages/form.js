@@ -30,11 +30,6 @@ import { Form, FormGroup, Label, Input, FormFeedback } from '@nio/ui-kit';`
     <Input state="success" />
     <FormFeedback>Success! You did it!</FormFeedback>
   </FormGroup>
-  <FormGroup color="warning">
-    <Label for="examplePassword">Input with warning</Label>
-    <Input state="warning" />
-    <FormFeedback>Whoops, check your formatting and try again.</FormFeedback>
-  </FormGroup>
   <FormGroup color="danger">
     <Label for="examplePassword">Input with danger</Label>
     <Input state="danger" />
@@ -84,17 +79,12 @@ import { Form, FormGroup, Label, Input, FormFeedback } from '@nio/ui-kit';`
           </FormGroup>
           <FormGroup color="success">
             <Label for="exampleEmail">Input with success</Label>
-            <Input state="success" />
+            <Input valid />
             <FormFeedback>Success! You did it!</FormFeedback>
-          </FormGroup>
-          <FormGroup color="warning">
-            <Label for="examplePassword">Input with warning</Label>
-            <Input state="warning" />
-            <FormFeedback>Whoops, check your formatting and try again.</FormFeedback>
           </FormGroup>
           <FormGroup color="danger">
             <Label for="examplePassword">Input with danger</Label>
-            <Input state="danger" />
+            <Input valid={false} />
             <FormFeedback>Oh noes! that name is already taken</FormFeedback>
           </FormGroup>
           <FormGroup>

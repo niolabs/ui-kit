@@ -33,13 +33,13 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
         <h4>Use</h4>
         <Code>
           {
-            `<Navbar color="inverse" fixed="top" inverse toggleable>
+            `<Navbar color="inverse">
   <NavbarToggler right onClick={this.toggle} isOpen={this.state.isOpen} />
   <NavbarBrand>
     <div id="logo" />
   </NavbarBrand>
   <Collapse isOpen={this.state.isOpen} navbar>
-    <Nav className="ml-auto hidden-sm-up" navbar>
+    <Nav className="ml-auto" navbar>
       <NavItem>
         <NavLink href="/">Docs</NavLink>
       </NavItem>
@@ -52,7 +52,7 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
           }
         </Code>
         <br />
-        <Navbar color="inverse" inverse toggleable>
+        <Navbar color="inverse">
           <NavbarToggler right onClick={this.toggle} isOpen={this.state.isOpen} />
           <NavbarBrand>
             <div id="logo" />

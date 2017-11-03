@@ -27,17 +27,12 @@ import { Form, FormGroup, FormFeedback, Label, Input, Card } from '@nio/ui-kit';
   </FormGroup>
   <FormGroup color="success">
     <Label for="exampleEmail">Input with success</Label>
-    <Input className="inverse" state="success" />
+    <Input className="inverse" valid />
     <FormFeedback>Success! You did it!</FormFeedback>
-  </FormGroup>
-  <FormGroup color="warning">
-    <Label for="examplePassword">Input with warning</Label>
-    <Input className="inverse" state="warning" />
-    <FormFeedback>Whoops, check your formatting and try again.</FormFeedback>
   </FormGroup>
   <FormGroup color="danger">
     <Label for="examplePassword">Input with danger</Label>
-    <Input className="inverse" state="danger" />
+    <Input className="inverse" valid={false} />
     <FormFeedback>Oh noes! that name is already taken</FormFeedback>
   </FormGroup>
   <FormGroup>
@@ -76,7 +71,7 @@ import { Form, FormGroup, FormFeedback, Label, Input, Card } from '@nio/ui-kit';
           }
         </Code>
         <br />
-        <Card block className="p-3" inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+        <Card className="p-3" inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
           <Form>
             <FormGroup>
               <Label for="exampleEmail">This is the field label</Label>
@@ -85,17 +80,12 @@ import { Form, FormGroup, FormFeedback, Label, Input, Card } from '@nio/ui-kit';
             </FormGroup>
             <FormGroup color="success">
               <Label for="exampleEmail">Input with success</Label>
-              <Input className="inverse" state="success" />
+              <Input className="inverse" valid />
               <FormFeedback>Success! You did it!</FormFeedback>
-            </FormGroup>
-            <FormGroup color="warning">
-              <Label for="examplePassword">Input with warning</Label>
-              <Input className="inverse" state="warning" />
-              <FormFeedback>Whoops, check your formatting and try again.</FormFeedback>
             </FormGroup>
             <FormGroup color="danger">
               <Label for="examplePassword">Input with danger</Label>
-              <Input className="inverse" state="danger" />
+              <Input className="inverse" valid={false} />
               <FormFeedback>Oh noes! that name is already taken</FormFeedback>
             </FormGroup>
             <FormGroup>

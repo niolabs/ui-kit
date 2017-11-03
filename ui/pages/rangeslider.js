@@ -40,6 +40,7 @@ import { RangeSlider } from '@nio/ui-kit';`
         </Code>
         <br />
         <RangeSlider
+          color="success"
           min={0}
           max={100}
           step={1}
@@ -48,6 +49,7 @@ import { RangeSlider } from '@nio/ui-kit';`
           onChangeComplete={() => console.log(`sending value: ${this.state.limit}`)} // eslint-disable-line no-console
           onChange={value => this.setState({ limit: value })}
         />
+        <br />
         <RangeSlider
           color="warning"
           min={0}
@@ -58,6 +60,7 @@ import { RangeSlider } from '@nio/ui-kit';`
           onChangeComplete={() => console.log(`sending value: ${this.state.limit}`)} // eslint-disable-line no-console
           onChange={value => this.setState({ limit: value })}
         />
+        <br />
         <RangeSlider
           color="danger"
           min={0}
@@ -68,6 +71,7 @@ import { RangeSlider } from '@nio/ui-kit';`
           onChangeComplete={() => console.log(`sending value: ${this.state.limit}`)} // eslint-disable-line no-console
           onChange={value => this.setState({ limit: value })}
         />
+        <br />
         <RangeSlider
           color="info"
           min={0}

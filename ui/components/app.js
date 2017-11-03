@@ -23,8 +23,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar id="app-nav" color="inverse" fixed="top" inverse toggleable>
-          <NavbarToggler right onClick={this.toggle} isOpen={this.state.isOpen} />
+        <Navbar id="app-nav" color="inverse" fixed="top">
+          <div className="hidden-sm-up">
+            <NavbarToggler right onClick={this.toggle} isOpen={this.state.isOpen} />
+          </div>
           <NavbarBrand>
             <div id="logo" />
           </NavbarBrand>

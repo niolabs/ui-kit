@@ -2,3 +2,12 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/forms';
+
+input {
+  &.is-valid{
+    border-color: $brand-success;
+  }
+  &.is-invalid{
+    border-color: $brand-danger;
+  }
+}

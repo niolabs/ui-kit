@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ToggleButton from 'react-toggle-button';
+import ToggleButton from './react-toggle-button';
 
 export default class ThemedComponent extends React.Component {
   render() {
@@ -46,7 +46,16 @@ ThemedComponent.propTypes = {
   height: PropTypes.number,
   mini: PropTypes.bool,
   value: PropTypes.bool,
-  thumbIcon: PropTypes.string,
-  inactiveLabel: PropTypes.string,
-  activeLabel: PropTypes.bool,
+  thumbIcon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]),
+  activeLabel: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]),
+  inactiveLabel: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]),
 };

@@ -32,6 +32,11 @@ pre {
 
 a {
   text-decoration: none !important;
+  color: $brand-info!important;
+  &:hover,
+  &.active{
+    color:$brand-primary!important;
+  }
 }
 
 hr {
