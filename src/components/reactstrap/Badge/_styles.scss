@@ -1,4 +1,5 @@
 @import '../../../theme/nio-bootstrap-vars';
+@import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/badge';
@@ -6,4 +7,5 @@
 .badge {
   font-weight: 300 !important;
   font-size: $font-size-xs;
+  color: #fff !important;
 }

@@ -23,21 +23,17 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar id="app-nav" color="inverse" fixed="top">
-          <div className="hidden-sm-up">
-            <NavbarToggler right onClick={this.toggle} isOpen={this.state.isOpen} />
-          </div>
-          <NavbarBrand>
-            <div id="logo" />
-          </NavbarBrand>
+        <Navbar id="app-nav" dark fixed="top">
+          <NavbarBrand><div id="logo" /></NavbarBrand>
+          <NavbarToggler onClick={this.toggle} isOpen={this.state.isOpen} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto hidden-sm-up" navbar>
+            <Nav className="ml-auto" navbar>
               <NavLinks toggleNav={this.toggle} />
             </Nav>
           </Collapse>
         </Navbar>
         <div id="app-container">
-          <div id="app-sidebar" className="hidden-xs-down">
+          <div id="app-sidebar" className="d-none d-sm-block">
             <Nav vertical>
               <NavLinks toggleNav={this.toggle} />
             </Nav>

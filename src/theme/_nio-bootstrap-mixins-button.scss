@@ -1,7 +1,8 @@
-@mixin button-variant($color, $background, $border) {
+@mixin button-variant($background, $border) {
   line-height: 1 !important;
   box-shadow: $btn-box-shadow;
   height: 36px;
+  color:#fff !important;
 
   &.btn-sm {
     height: 22px;

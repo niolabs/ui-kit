@@ -1,8 +1,33 @@
 @import '../../../theme/nio-bootstrap-vars';
+@import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/navbar';
 
-.navbar {
-  padding: 1rem!important;
+.navbar{
+  height: 70px;
+  &.navbar-dark{
+    background: $black;
+    .collapse.show,
+    .collapsing{
+      background: $black;
+    }
+  }
+  .collapse.show,
+  .collapsing{
+    border-top:1px solid $white;
+    position:absolute;
+    width:100%;
+    background: $white;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    top:69px;
+    color: $white;
+    hr{
+      border-top-color:$white;
+    }
+    ul{
+      padding: 2rem;
+    }
+  }
 }

@@ -7,7 +7,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const OptimizeJsPlugin = require('optimize-js-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const cssNano = require('cssnano');
 /* eslint-enable import/no-extraneous-dependencies */
 
@@ -30,7 +29,6 @@ module.exports = {
     new OptimizeCssAssetsPlugin({ assetNameRegExp: /\.css$/g, cssProcessor: cssNano, cssProcessorOptions: { discardComments: { removeAll: true }}, canPrint: true }),
     new OptimizeJsPlugin({ sourceMap: false }),
     new UglifyJSPlugin({ parallel: true, sourceMap: false, cache: true, uglifyOptions: { compress: true } }),
-    new CopyWebpackPlugin([{ from: 'assets/static' }]),
     new webpack.HashedModuleIdsPlugin({ hashFunction: 'sha256', hashDigest: 'hex', hashDigestLength: 20 }),
     new webpack.optimize.ModuleConcatenationPlugin(),
   ],
