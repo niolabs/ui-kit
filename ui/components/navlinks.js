@@ -14,6 +14,9 @@ const NavLinks = ({ toggleNav }) => (
       <NavLink onClick={() => toggleNav(true)} to="/bar-graph">Bar Graph</NavLink>
     </NavItem>
     <NavItem>
+      <NavLink onClick={() => toggleNav(true)} to="/clock">Clock</NavLink>
+    </NavItem>
+    <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/code">Code</NavLink>
     </NavItem>
     <NavItem>

@@ -13,6 +13,7 @@ import ButtonDropdownPage from '../pages/button-dropdown';
 import ButtonGroupPage from '../pages/button-group';
 import CardPage from '../pages/card';
 import RadioCheckboxPage from '../pages/radiocheckbox';
+import ClockPage from '../pages/clock';
 import CodePage from '../pages/code';
 import CollapsePage from '../pages/collapse';
 import DividerPage from '../pages/divider';
@@ -45,6 +46,7 @@ const Routes = () => (
     <Route exact path="/" component={IndexPage} />
     {/* Custom Components */}
     <Route component={BarGraphPage} path="/bar-graph" />
+    <Route component={ClockPage} path="/clock" />
     <Route component={CodePage} path="/code" />
     <Route component={DividerPage} path="/divider" />
     <Route component={IconPage} path="/icon" />
