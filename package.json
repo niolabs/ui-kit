@@ -1,6 +1,6 @@
 {
   "name": "@nio/ui-kit",
-  "version": "1.0.17",
+  "version": "1.1.1",
   "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, VictoryCharts, and CSS Modules",
   "deploymentUrl": "uikit.niolabs.com",
   "main": "dist/index.js",
@@ -25,10 +25,9 @@
   "dependencies": {
     "@nio/icons": "^1.3.0",
     "bootstrap": "4.0.0-beta",
-    "d3": "^4.11.0",
+    "d3": "^4.12.0",
+    "frappe-charts": "0.0.7",
     "highlight.js": "^9.12.0",
-    "lodash": "^4.17.4",
-    "moment": "^2.19.2",
     "prop-types": "^15.6.0",
     "react": "^16.1.1",
     "react-clock": "^2.0.0",
@@ -36,34 +35,29 @@
     "react-dom": "^16.1.1",
     "react-motion": "^0.5.2",
     "react-rangeslider": "^2.2.0",
-    "react-toggle-button": "^2.1.0",
-    "reactstrap": "^5.0.0-alpha.3",
-    "victory": "^0.24.1"
+    "react-toggle-button": "^2.2.0",
+    "reactstrap": "^5.0.0-alpha.4"
   },
   "bundledDependencies": [
     "@nio/icons",
     "bootstrap",
-    "d3",
     "highlight.js",
-    "lodash",
-    "moment",
     "prop-types",
     "react",
     "react-css-themr",
     "react-dom",
     "react-toggle-button",
     "reactstrap",
-    "victory"
+    "frappe-charts"
   ],
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.2",
-    "babel-plugin-react-transform": "^3.0.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.26.0",
@@ -73,7 +67,7 @@
     "eslint-config-postcss": "^2.0.2",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-react": "^7.5.1",
     "rimraf": "^2.6.2",
     "sass-lint": "^1.12.1"
   }

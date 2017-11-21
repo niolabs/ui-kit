@@ -6,7 +6,7 @@ import LoaderPage from '../pages/loader';
 import TogglePage from '../pages/toggle';
 import AlertsPage from '../pages/alerts';
 import BadgePage from '../pages/badge';
-import BarGraphPage from '../pages/bar-graph';
+import ChartPage from '../pages/chart';
 import BreadcrumbPage from '../pages/breadcrumb';
 import ButtonPage from '../pages/buttons';
 import ButtonDropdownPage from '../pages/button-dropdown';
@@ -37,15 +37,12 @@ import RangeSliderPage from '../pages/rangeslider';
 import TablesPage from '../pages/tables';
 import TabsPage from '../pages/tabs';
 import TooltipsPage from '../pages/tooltips';
-import VictoryBarPage from '../pages/victory-bar';
-import VictoryPiePage from '../pages/victory-pie';
-import VictoryAreaPage from '../pages/victory-area';
 
 const Routes = () => (
   <Switch>
     <Route exact path="/" component={IndexPage} />
     {/* Custom Components */}
-    <Route component={BarGraphPage} path="/bar-graph" />
+    <Route component={ChartPage} path="/chart" />
     <Route component={ClockPage} path="/clock" />
     <Route component={CodePage} path="/code" />
     <Route component={DividerPage} path="/divider" />
@@ -55,10 +52,6 @@ const Routes = () => (
     <Route component={RadioCheckboxPage} path="/radiocheckbox" />
     <Route component={SelectDropdownPage} path="/selectdropdown" />
     <Route component={RangeSliderPage} path="/rangeslider" />
-    {/* VictoryCharts Components */}
-    <Route component={VictoryBarPage} path="/victory-bar" />
-    <Route component={VictoryPiePage} path="/victory-pie" />
-    <Route component={VictoryAreaPage} path="/victory-area" />
     {/* Reactstrap Components */}
     <Route component={AlertsPage} path="/alerts" />
     <Route component={BadgePage} path="/badge" />

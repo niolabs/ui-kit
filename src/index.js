@@ -4,19 +4,13 @@ export { default as Loader } from './components/custom/Loader';
 export { default as ToggleButton } from './components/custom/ToggleButton';
 export { default as RadioCheckbox } from './components/custom/RadioCheckbox';
 export { default as Code } from './components/custom/Code';
-export { default as BarGraph } from './components/custom/BarGraph';
 export { default as Icon } from './components/custom/Icon';
 export { default as SelectDropdown } from './components/custom/SelectDropdown';
 export { default as RangeSlider } from './components/custom/RangeSlider';
 export { default as Clock } from './components/custom/Clock';
 
-// themed victorycharts components
-export { default as VictoryBar } from './components/victorycharts/VictoryBar';
-export { default as VictoryPie } from './components/victorycharts/VictoryPie';
-export { default as VictoryArea } from './components/victorycharts/VictoryArea';
-export { default as VictoryChart } from './components/victorycharts/VictoryChart';
-export { default as VictoryContainer } from './components/victorycharts/VictoryContainer';
-export { default as VictoryAxis } from './components/victorycharts/VictoryAxis';
+// themed frappe chart components
+export { default as Chart } from './components/custom/Chart';
 
 // themed reactstrap components
 export { default as Alert } from './components/reactstrap/Alert';

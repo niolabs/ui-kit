@@ -11,7 +11,7 @@ const NavLinks = ({ toggleNav }) => (
     <div className="mt-2 mb-0">nioLabs</div>
     <hr className="mt-0 mb-1" />
     <NavItem>
-      <NavLink onClick={() => toggleNav(true)} to="/bar-graph">Bar Graph</NavLink>
+      <NavLink onClick={() => toggleNav(true)} to="/chart">Chart</NavLink>
     </NavItem>
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/clock">Clock</NavLink>
@@ -39,11 +39,6 @@ const NavLinks = ({ toggleNav }) => (
     </NavItem>
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/toggle">Toggle</NavLink>
-    </NavItem>
-    <div className="mt-2 mb-1">VictoryCharts</div>
-    <hr className="mt-0 mb-1" />
-    <NavItem>
-      <NavLink onClick={() => toggleNav(true)} to="/victory-pie">VictoryPie</NavLink>
     </NavItem>
     <div className="mt-2 mb-0">ReactStrap</div>
     <hr className="mt-0 mb-1" />
