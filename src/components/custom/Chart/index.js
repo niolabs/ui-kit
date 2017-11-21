@@ -31,28 +31,10 @@ export default class Chart extends React.Component {
   }
 
   componentWillReceiveProps(props) {
-    const {
-      title,
-      data,
-      type,
-      height,
-      onSelect,
-      ...rest
-    } = props;
+    const { data } = props;
 
-    if (this.c && this.c.update_values && data && data.datasets && data.labels) {
+    if (this.c.update_values) {
       this.c.update_values(data.datasets, data.labels);
-    } else {
-      this.c = new Frappe({
-        parent: this.chart,
-        title,
-        data,
-        type,
-        height,
-        is_navigable: !!onSelect,
-        colors: ['#3cafda', '#55c58f', '#37c0c9', '#f3bc27', '#dd3b4c'],
-        ...rest,
-      });
     }
   }
 
