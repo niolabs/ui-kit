@@ -6,7 +6,7 @@ export default class DocsPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>nioLABS UIKit</h1>
+        <h1>niolabs UIKit</h1>
         <hr />
         nioLabs-themed components implemented in React and configurable via standard props or via nioLabs Pubkeeper!
 

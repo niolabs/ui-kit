@@ -8,7 +8,7 @@ const NavLinks = ({ toggleNav }) => (
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/">Home</NavLink>
     </NavItem>
-    <div className="mt-2 mb-0">nioLabs</div>
+    <div className="mt-2 mb-0">niolabs</div>
     <hr className="mt-0 mb-1" />
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/chart">Chart</NavLink>
