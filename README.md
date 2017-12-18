@@ -1,6 +1,9 @@
 # niolabs UI Toolkit
 
-nioLabs-themed components implemented in React and configurable via standard props or via nioLabs Pubkeeper!
+
+niolabs-themed React components for a nio-powered UI. You can find examples of their use at https://uikit.niolabs.com.
+
+The niolabs UI Scaffold is made available under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0), the boilerplate of which is listed at the bottom of this ReadMe.
 
 ## Installation
 
@@ -16,16 +19,18 @@ npm install --save @nio/ui-kit
 @import '~nio-ui-kit/dist/nio';
 ```
 
-The core CSS includes nioLabs theme overrides for bootstrap, as well as a few of the lightweight reset, normalize, and utility classes.
+## Apache 2.0 License
 
-Each component includes only the core css CSS classes it requires for itself. The docs site that is a part of this project uses webpack nanocss to remove any duplicates from the final combined css file.
+Copyright 2017-2018 n.io innovation, LLC
 
-## Customization
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-To change the theme to match your brand colors, fork the repo and override the values in the src/theme folder documents.
+[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
-## Additional Documentation
-
-- <a href="https://reactstrap.github.io/components/alerts/" target="_blank">ReactStrap Docs</a>
-- <a href="http://formidable.com/open-source/victory/docs" target="_blank">Victory Charts Docs</a>
-
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
