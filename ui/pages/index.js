@@ -44,6 +44,23 @@ export default class DocsPage extends React.Component {
           <li><a href="https://reactstrap.github.io/components/alerts/" rel="noopener noreferrer" target="_blank">ReactStrap Docs</a></li>
           <li><a href="https://frappe.github.io/charts/" rel="noopener noreferrer" target="_blank">Frappe Charts Docs</a></li>
         </ul>
+        <hr />
+        <h4>Apache 2.0 License</h4>
+
+        Copyright 2017-2018 n.io innovation, LLC
+
+        Licensed under the Apache License, Version 2.0 (the License);
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">http://www.apache.org/licenses/LICENSE-2.0</a>
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an AS IS BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+
       </div>
     );
   }
