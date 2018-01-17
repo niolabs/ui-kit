@@ -9,7 +9,7 @@
   "author": "nioinnovation",
   "license": "UNLICENSED",
   "dependencies": {
-    "@nio/ui-kit": "^1.1.6",
+    "@nio/ui-kit": "^1.1.7",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -17,10 +17,10 @@
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.3",
+    "autoprefixer": "^7.2.5",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.0.3",
+    "babel-eslint": "^8.2.1",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -29,9 +29,9 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.26.0",
     "clean-webpack-plugin": "^0.1.17",
-    "copy-webpack-plugin": "^4.3.0",
+    "copy-webpack-plugin": "^4.3.1",
     "cpy-cli": "^1.0.1",
-    "css-loader": "^0.28.7",
+    "css-loader": "^0.28.9",
     "cssnano": "^3.10.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
@@ -43,10 +43,10 @@
     "optimize-js-plugin": "0.0.4",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
-    "uglifyjs-webpack-plugin": "^1.1.4",
+    "uglifyjs-webpack-plugin": "^1.1.6",
     "webpack": "^3.10.0",
-    "webpack-dev-middleware": "^2.0.2",
-    "webpack-dev-server": "^2.9.7",
+    "webpack-dev-middleware": "^2.0.4",
+    "webpack-dev-server": "^2.11.0",
     "webpack-hot-middleware": "^2.21.0"
   }
 }
