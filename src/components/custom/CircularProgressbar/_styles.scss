@@ -1,0 +1,67 @@
+@import '../../../theme/nio-bootstrap-vars';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+.CircularProgressbar {
+  width: 100%;
+
+  &.primary {
+    .path {
+      stroke: $brand-primary;
+    }
+    .text {
+      fill: $brand-primary;
+    }
+  }
+
+  &.success {
+    .path {
+      stroke: $brand-success;
+    }
+    .text {
+      fill: $brand-success;
+    }
+  }
+
+  &.warning {
+    .path {
+      stroke: $brand-warning;
+    }
+    .text {
+      fill: $brand-warning;
+    }
+  }
+
+  &.danger {
+    .path {
+      stroke: $brand-danger;
+    }
+    .text {
+      fill: $brand-danger;
+    }
+  }
+
+  .path {
+    stroke-linecap: square;
+    transition: stroke-dashoffset 0.5s ease 0s;
+  }
+
+  .trail {
+    stroke: $gray-lightest;
+    box-shadow: inset 0 0 3px #000;
+  }
+
+  .text {
+    fill: $brand-primary;
+    font-size: 20px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+
+  .label {
+    fill: $gray-light;
+    font-size: 10px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+}

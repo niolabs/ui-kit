@@ -9,7 +9,7 @@
   "author": "nioinnovation",
   "license": "UNLICENSED",
   "dependencies": {
-    "@nio/ui-kit": "^1.1.7",
+    "@nio/ui-kit": "^1.2.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -28,8 +28,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.26.0",
-    "clean-webpack-plugin": "^0.1.17",
-    "copy-webpack-plugin": "^4.3.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "copy-webpack-plugin": "^4.4.1",
     "cpy-cli": "^1.0.1",
     "css-loader": "^0.28.9",
     "cssnano": "^3.10.0",
@@ -43,10 +43,10 @@
     "optimize-js-plugin": "0.0.4",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
-    "uglifyjs-webpack-plugin": "^1.1.6",
+    "uglifyjs-webpack-plugin": "^1.1.8",
     "webpack": "^3.10.0",
     "webpack-dev-middleware": "^2.0.4",
-    "webpack-dev-server": "^2.11.0",
+    "webpack-dev-server": "^2.11.1",
     "webpack-hot-middleware": "^2.21.0"
   }
 }

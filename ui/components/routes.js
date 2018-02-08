@@ -14,6 +14,7 @@ import ButtonGroupPage from '../pages/button-group';
 import CardPage from '../pages/card';
 import RadioCheckboxPage from '../pages/radiocheckbox';
 import ClockPage from '../pages/clock';
+import CircularProgressBarPage from '../pages/circularprogressbar';
 import CodePage from '../pages/code';
 import CollapsePage from '../pages/collapse';
 import DividerPage from '../pages/divider';
@@ -43,6 +44,7 @@ const Routes = () => (
     <Route exact path="/" component={IndexPage} />
     {/* Custom Components */}
     <Route component={ChartPage} path="/chart" />
+    <Route component={CircularProgressBarPage} path="/circularprogressbar" />
     <Route component={ClockPage} path="/clock" />
     <Route component={CodePage} path="/code" />
     <Route component={DividerPage} path="/divider" />

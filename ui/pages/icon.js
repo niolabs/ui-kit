@@ -4,7 +4,7 @@ import { Icon, Code, Row, Col } from '../../src/index';
 
 export default class DocsPage extends React.Component {
   render() {
-    const iconList = ['add', 'add-circle', 'bang', 'block-library', 'check-mark', 'chevron-down', 'chevron-up', 'clone', 'cloud-install', 'cloud-instance', 'database', 'delete', 'double-chevron', 'edit', 'expand', 'expand-all', 'expand-window', 'follow-path', 'hardware', 'ibar-move', 'jump', 'loader', 'logo', 'logout', 'menu', 'messaging', 'minus', 'open-window', 'other', 'path-modifier', 'play', 'profile', 'projects', 'question', 'recent', 'revert', 'save', 'search', 'settings', 'share', 'signal-modifier', 'social-media', 'split-page', 'stop', 'view-only', 'warning'];
+    const iconList = ['add-circle', 'add', 'angle-double-left', 'angle-double-right', 'bang', 'block-library', 'check-mark-o', 'check-mark', 'chevron-down', 'chevron-up', 'circle-o', 'circle', 'clone', 'cloud-install', 'cloud-instance', 'command', 'database', 'delete', 'double-chevron', 'edit', 'ellipsis-v', 'expand-all', 'expand-window', 'expand', 'follow-path', 'hardware', 'ibar-move', 'jump', 'loader', 'logo', 'logout', 'menu', 'messaging', 'minus', 'open-window', 'other', 'path-modifier', 'play', 'profile', 'projects', 'question', 'recent', 'restore', 'revert', 'save', 'search', 'settings', 'share', 'signal-modifier', 'social-media', 'split-page', 'stop', 'times', 'update', 'view-only', 'warning', 'ellipsis-h', 'apps', 'bell', 'browser', 'hashtag', 'light-bulb', 'robot', 'search-alt', 'picture', 'ban', 'account', 'balloon', 'block', 'discover', 'chat-bubble', 'mail', 'billing', 'overview', 'plan', 'teams', 'users', 'download', 'video-camera'];
 
     return (
       <div>
@@ -85,23 +85,16 @@ import { Icon } from '@nio/ui-kit';`
         <br />
         <Icon name="profile" spin />
         <hr />
-        <h4>Inventory</h4>
+        <h4>Inventory (shown at size 3x)</h4>
         <br />
+        <Row>
         {iconList.map((icon, i) => (
-          <div key={i}>
-            <Row>
-              <Col xs="2">
-                <Icon name={icon} />
-              </Col>
-              <Col xs="10">
-                <Code>
-                  {`<Icon name="${icon}" />`}
-                </Code>
-              </Col>
-            </Row>
-            <br />
-          </div>
+          <Col xs="6" sm="12" md="6" lg="4" xl="3" key={i} className="text-center mb-4">
+            <Icon name={icon} size="3x" /><br /><br />
+            <Code>{`<Icon name="${icon}" />`}</Code>
+          </Col>
         ))}
+        </Row>
       </div>
     );
   }
