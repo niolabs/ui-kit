@@ -69,13 +69,7 @@ export default class CircularProgressbar extends React.Component {
   }
 
   render() {
-    const {
-      percentage,
-      textForPercentage,
-      label,
-      color,
-      strokeWidth,
-    } = this.props;
+    const { percentage, textForPercentage, label, color, strokeWidth } = this.props;
     const pathDescription = this.getPathDescription();
     const text = textForPercentage ? textForPercentage(percentage) : null;
 
