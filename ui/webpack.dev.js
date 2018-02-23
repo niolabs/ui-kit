@@ -44,13 +44,6 @@ module.exports = {
           use: ['css-loader?importLoaders=1', 'sass-loader'],
         }),
       },
-      {
-        test: /\.less$/,
-        loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'less-loader'],
-        }),
-      },
     ],
   },
 };
