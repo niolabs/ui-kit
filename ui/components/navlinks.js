@@ -4,12 +4,13 @@ import { NavLink } from 'react-router-dom';
 import { NavItem } from '../../src/index';
 
 const NavLinks = ({ toggleNav }) => (
-  <div>
+  <div id="app-subnav">
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/">Home</NavLink>
     </NavItem>
-    <div className="mt-2 mb-0">niolabs</div>
-    <hr className="mt-0 mb-1" />
+    <NavItem className="header">
+      niolabs
+    </NavItem>
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/chart">Chart</NavLink>
     </NavItem>
@@ -43,8 +44,9 @@ const NavLinks = ({ toggleNav }) => (
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/toggle">Toggle</NavLink>
     </NavItem>
-    <div className="mt-2 mb-0">ReactStrap</div>
-    <hr className="mt-0 mb-1" />
+    <NavItem className="header">
+      ReactStrap
+    </NavItem>
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/alerts">Alerts</NavLink>
     </NavItem>
