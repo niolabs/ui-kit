@@ -14,8 +14,7 @@
 
     &.active,
     &:active,
-    &.active:hover { // sass-lint:disable-line force-pseudo-nesting
-      border-radius: 7px 7px 0 0;
+    &.active:hover{ // sass-lint:disable-line force-pseudo-nesting
       background-color: inherit !important;
       border-color: $gray-light !important;
       border-bottom: 1px solid transparent !important;
@@ -33,23 +32,23 @@
       content: '\f113';
       vertical-align: top;
       display: block;
-      float: right;
+      position:absolute;
+      right: 20px;
+      top: 12px;
     }
 
   }
 
   .dropdown-menu {
-    border-top: 0;
-    border-radius: 0 0 7px 7px;
-    margin-top: 0 !important;
+    border-radius: 7px;
+    margin-top: -1px !important;
     transition: none !important;
     border-color: $gray-light !important;
     width: 100%;
-    padding: 0 0 10px;
+    padding: 10px 0;
 
     .dropdown-item {
       padding-left: 14px;
-      padding-top: 0;
       background-color: inherit !important;
 
       &:hover {
