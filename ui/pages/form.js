@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, FormGroup, Label, Input, FormFeedback, Code } from '../../dist/index';
+import { Form, FormGroup, Label, Input, FormFeedback, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   render() {

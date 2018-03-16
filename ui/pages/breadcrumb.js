@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Breadcrumb, BreadcrumbItem, Code } from '../../dist/index';
+import { Breadcrumb, BreadcrumbItem, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   render() {

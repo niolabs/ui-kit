@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Table, Code } from '../../dist/index';
+import { Table, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   render() {

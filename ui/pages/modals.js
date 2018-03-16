@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Code } from '../../dist/index';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   constructor(props) {

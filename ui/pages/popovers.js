@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Popover, PopoverTitle, PopoverContent, Code } from '../../dist/index';
+import { Button, Popover, PopoverTitle, PopoverContent, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavbarToggler, NavbarBrand, Nav, Collapse } from '../../dist/index';
+import { Navbar, NavbarToggler, NavbarBrand, Nav, Collapse } from '@nio/ui-kit';
 
 import NavLinks from './navlinks';
 import Routes from './routes';

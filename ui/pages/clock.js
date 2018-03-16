@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Code, Clock } from '../../dist/index';
+import { Code, Clock } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   constructor() {

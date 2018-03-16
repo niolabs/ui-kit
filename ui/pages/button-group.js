@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, ButtonGroup, ButtonToolbar, Code } from '../../dist/index';
+import { Button, ButtonGroup, ButtonToolbar, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   render() {

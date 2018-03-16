@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Badge, Code } from '../../dist/index';
+import { Badge, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   render() {

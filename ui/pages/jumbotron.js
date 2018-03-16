@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Jumbotron, Button, Code } from '../../dist/index';
+import { Jumbotron, Button, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   render() {

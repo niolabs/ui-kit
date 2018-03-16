@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Code } from '../../dist/index';
+import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Pagination, PaginationItem, PaginationLink, Code } from '../../dist/index';
+import { Pagination, PaginationItem, PaginationLink, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   render() {

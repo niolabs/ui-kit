@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Radio, Code } from '../../dist/index';
+import { Radio, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   constructor(props) {

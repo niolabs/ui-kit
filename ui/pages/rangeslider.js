@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { RangeSlider, Code } from '../../dist/index';
+import { RangeSlider, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   constructor() {

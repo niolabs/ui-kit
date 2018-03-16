@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Col, Code, CircularProgressBar } from '../../dist/index';
+import { Row, Col, Code, CircularProgressBar } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   render() {

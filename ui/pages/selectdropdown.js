@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SelectDropdown, Label, FormGroup, FormFeedback, Code } from '../../dist/index';
+import { SelectDropdown, Label, FormGroup, FormFeedback, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Nav, NavItem, NavLink, Code } from '../../dist/index';
+import { Nav, NavItem, NavLink, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   render() {

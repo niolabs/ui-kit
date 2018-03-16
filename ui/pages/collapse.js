@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Collapse, Card, CardBody, Button, Code } from '../../dist/index';
+import { Collapse, Card, CardBody, Button, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   constructor(props) {

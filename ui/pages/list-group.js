@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ListGroup, ListGroupItem, Code } from '../../dist/index';
+import { ListGroup, ListGroupItem, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   render() {
