@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Col, Card, RadioCheckbox, Code } from '../../src/index';
+import { Row, Col, Card, RadioCheckbox, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -12,7 +12,6 @@ export default class DocsPage extends React.Component {
       { label: 'Option 4', value: 'Option 4' },
       { label: 'Option 5', value: 'Option 5' },
     ];
-    this.option = this.options[0];
     this.state = {
       valueRadio: false,
       valueCheckbox: false,

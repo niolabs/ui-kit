@@ -2,7 +2,7 @@ import { Media as ImportedComponent } from 'reactstrap';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themr } from 'react-css-themr';
-import componentTheme from './_styles.scss';
+import componentTheme from './styles.css';
 
 @themr('themedComponent', componentTheme)
 

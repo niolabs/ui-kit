@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { InputGroup, InputGroupAddon, Input, Code } from '../../src/index';
+import { InputGroup, InputGroupAddon, Input, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {

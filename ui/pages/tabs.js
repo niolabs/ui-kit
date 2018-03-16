@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Code } from '../../src/index';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {

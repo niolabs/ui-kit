@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ListGroup, ListGroupItem, Code } from '../../src/index';
+import { ListGroup, ListGroupItem, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {

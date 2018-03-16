@@ -5,10 +5,11 @@
 @import '~bootstrap/scss/forms';
 
 input {
-  &.is-valid{
+  &.is-valid {
     border-color: $brand-success;
   }
-  &.is-invalid{
+
+  &.is-invalid {
     border-color: $brand-danger;
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Alert, Code } from '../../src/index';
+import { Alert, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {

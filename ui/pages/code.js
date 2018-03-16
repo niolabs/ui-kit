@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Code } from '../../src/index';
+import { Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {

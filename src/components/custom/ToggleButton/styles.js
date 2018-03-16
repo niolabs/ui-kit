@@ -14,9 +14,8 @@ export const reactToggle = {
   MozUserSelect: 'none',
   msUserSelect: 'none',
   userSelect: 'none',
-  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
   WebkitTapHighlightColor: 'transparent',
-}
+};
 
 const toggleLabelBase = {
   fontSize: 11,
@@ -24,7 +23,7 @@ const toggleLabelBase = {
   alignItems: 'center',
   justifyContent: 'center',
   fontFamily: "'Helvetica Neue', Helvetica, sans-serif",
-}
+};
 
 export const reactToggleScreenReaderOnly = {
   border: 0,
@@ -35,7 +34,7 @@ export const reactToggleScreenReaderOnly = {
   padding: 0,
   position: 'absolute',
   width: 1,
-}
+};
 
 export const reactToggleTrack = {
   width: '52px',
@@ -45,7 +44,7 @@ export const reactToggleTrack = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-}
+};
 
 export const reactToggleOn = {
   ...toggleLabelBase,
@@ -58,7 +57,7 @@ export const reactToggleOn = {
   width: 26,
   height: 20,
   left: 4,
-}
+};
 
 export const reactToggleOff = {
   ...toggleLabelBase,
@@ -71,7 +70,7 @@ export const reactToggleOff = {
   lineHeight: 0,
   width: 26,
   height: 20,
-}
+};
 
 export const reactToggleThumb = {
   width: '18px',
@@ -83,7 +82,7 @@ export const reactToggleThumb = {
   WebkitBoxSizing: 'border-box',
   MozBoxSizing: 'border-box',
   boxSizing: 'border-box',
-}
+};
 
 export const reactThumbCenteringContainer = {
   position: 'absolute',
@@ -95,4 +94,4 @@ export const reactThumbCenteringContainer = {
   alignSelf: 'stretch',
   alignItems: 'center',
   justifyContent: 'flex-start',
-}
+};

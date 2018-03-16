@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, ButtonGroup, ButtonToolbar, Code } from '../../src/index';
+import { Button, ButtonGroup, ButtonToolbar, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Frappe from '../../../../node_modules/frappe-charts/dist/frappe-charts.min.esm';
-import './_styles.scss';
+import './styles.css';
 
 export default class Chart extends React.Component {
   componentDidMount() {

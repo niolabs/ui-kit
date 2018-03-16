@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Icon, Code, Row, Col } from '../../src/index';
+import { Icon, Code, Row, Col } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {
@@ -88,11 +88,11 @@ import { Icon } from '@nio/ui-kit';`
         <h4>Inventory (shown at size 3x)</h4>
         <br />
         <Row>
-        {iconList.map((icon, i) => (
-          <Col xs="6" sm="12" md="6" lg="4" xl="3" key={i} className="text-center mb-4">
-            <Icon name={icon} size="3x" /><br /><br />
-            <Code>{`<Icon name="${icon}" />`}</Code>
-          </Col>
+          {iconList.map(icon => (
+            <Col xs="6" sm="12" md="6" lg="4" xl="3" key={icon} className="text-center mb-4">
+              <Icon name={icon} size="3x" /><br /><br />
+              <Code>{`<Icon name="${icon}" />`}</Code>
+            </Col>
         ))}
         </Row>
       </div>

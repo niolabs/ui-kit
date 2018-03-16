@@ -1,6 +1,6 @@
 {
   "name": "@nio/ui-kit",
-  "version": "1.3.3",
+  "version": "1.4.2",
   "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, VictoryCharts, and CSS Modules",
   "deploymentUrl": "uikit.niolabs.com",
   "main": "dist/index.js",
@@ -8,9 +8,15 @@
     "dist"
   ],
   "scripts": {
-    "lint": "eslint src && eslint docs && sass-lint --verbose",
-    "build": "rimraf dist && babel --quiet ./src --out-dir ./dist && cpy \"**/*.scss\" ../dist --parents --cwd=src",
-    "publish-package": "npm run build && npm publish"
+    "start": "node-sass --watch --recursive --importer node_modules/node-sass-magic-importer/dist/cli.js -o dist src",
+    "lint": "npm run lint-src && npm run lint-ui && npm run lint-sass",
+    "lint-src": "eslint src --fix",
+    "lint-ui": "eslint ui --fix",
+    "lint-sass": "sass-lint --verbose",
+    "build": "rimraf dist && babel --quiet ./src --out-dir ./dist && npm run copy-icons && npm run process-scss",
+    "process-scss": "node-sass --recursive --importer node_modules/node-sass-magic-importer/dist/cli.js -o dist src",
+    "copy-icons": "cpy 'nioicons.*' ../../../../dist/components/custom/Icon --parents --cwd=node_modules/@nio/icons/dist/",
+    "publish-package": "npm run lint && npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -27,6 +33,9 @@
     "bootstrap": "4.0.0",
     "frappe-charts": "^0.0.8",
     "highlight.js": "^9.12.0",
+    "node-sass": "^4.7.2",
+    "node-sass-import": "^1.1.1",
+    "node-sass-magic-importer": "^5.1.0",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-clock": "^2.2.0",

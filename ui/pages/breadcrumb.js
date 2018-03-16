@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Breadcrumb, BreadcrumbItem, Code } from '../../src/index';
+import { Breadcrumb, BreadcrumbItem, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {

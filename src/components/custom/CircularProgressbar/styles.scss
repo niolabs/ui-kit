@@ -2,13 +2,14 @@
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 
-.CircularProgressbar {
+.circular-progressbar {
   width: 100%;
 
   &.primary {
     .path {
       stroke: $brand-primary;
     }
+
     .text {
       fill: $brand-primary;
     }
@@ -18,6 +19,7 @@
     .path {
       stroke: $brand-success;
     }
+
     .text {
       fill: $brand-success;
     }
@@ -27,6 +29,7 @@
     .path {
       stroke: $brand-warning;
     }
+
     .text {
       fill: $brand-warning;
     }
@@ -36,6 +39,7 @@
     .path {
       stroke: $brand-danger;
     }
+
     .text {
       fill: $brand-danger;
     }
@@ -43,7 +47,7 @@
 
   .path {
     stroke-linecap: butt;
-    transition: stroke-dashoffset 0.5s ease 0s;
+    transition: stroke-dashoffset .5s ease 0s;
   }
 
   .trail {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Code, Chart } from '../../src';
+import { Code, Chart } from '../../dist';
 
 const randomData = () => Array.from({ length: 10 }, () => Math.floor(Math.random() * 100));
 

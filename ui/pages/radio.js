@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Radio, Code } from '../../src/index';
+import { Radio, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {

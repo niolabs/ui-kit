@@ -16,7 +16,7 @@ npm install --save @nio/ui-kit
 ## Include core CSS
 
 ```
-@import '~nio-ui-kit/dist/nio';
+@import '~@nio/ui-kit/dist/nio';
 ```
 
 ## Apache 2.0 License

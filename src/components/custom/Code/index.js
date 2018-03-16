@@ -2,7 +2,7 @@ import hljs from 'highlight.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import './_styles.scss';
+import './styles.css';
 
 export default class Code extends React.Component {
   componentDidMount() {

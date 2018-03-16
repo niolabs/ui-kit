@@ -51,9 +51,14 @@
     align-items: center;
 
     &:not(:last-child) .custom-file-label,
-    &:not(:last-child) .custom-file-label::before { @include border-right-radius(0); }
+    &:not(:last-child) .custom-file-label::before {
+      @include border-right-radius(0);
+    }
+
     &:not(:first-child) .custom-file-label,
-    &:not(:first-child) .custom-file-label::before { @include border-left-radius(0); }
+    &:not(:first-child) .custom-file-label::before {
+      @include border-left-radius(0);
+    }
   }
 }
 
@@ -84,8 +89,13 @@
   }
 }
 
-.input-group-prepend { margin-right: -$input-border-width; }
-.input-group-append { margin-left: -$input-border-width; }
+.input-group-prepend {
+  margin-right: -$input-border-width;
+}
+
+.input-group-append {
+  margin-left: -$input-border-width;
+}
 
 
 // Textual addons
@@ -94,6 +104,7 @@
 // to prepend or append to an input.
 
 .input-group-text {
+  @include border-radius($input-border-radius);
   display: flex;
   align-items: center;
   padding: $input-padding-y $input-padding-x;
@@ -106,11 +117,10 @@
   white-space: nowrap;
   background-color: $input-group-addon-bg;
   border: $input-border-width solid $input-group-addon-border-color;
-  @include border-radius($input-border-radius);
 
   // Nuke default margins from checkboxes and radios to vertically center within.
-  input[type="radio"],
-  input[type="checkbox"] {
+  input[type='radio'],
+  input[type='checkbox'] {
     margin-top: 0;
   }
 }

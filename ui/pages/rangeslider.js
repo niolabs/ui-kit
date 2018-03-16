@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { RangeSlider, Code } from '../../src/index';
+import { RangeSlider, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   constructor() {

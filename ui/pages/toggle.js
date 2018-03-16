@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ToggleButton, Col, Row, Card, Code } from '../../src/index';
+import { ToggleButton, Col, Row, Card, Code } from '../../dist/index';
 
 export const ThumbIcon = () => (
   <div style={{

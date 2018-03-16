@@ -4,29 +4,34 @@
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/navbar';
 
-.navbar{
+.navbar {
   height: 70px;
-  &.navbar-dark{
+
+  &.navbar-dark {
     background: $black;
+
     .collapse.show,
-    .collapsing{
+    .collapsing {
       background: $black;
     }
   }
+
   .collapse.show,
-  .collapsing{
-    border-top:1px solid $white;
-    position:absolute;
-    width:100%;
+  .collapsing {
+    border-top: 1px solid $white;
+    position: absolute;
+    width: 100%;
     background: $white;
     margin-left: -1rem;
     margin-right: -1rem;
-    top:69px;
+    top: 69px;
     color: $white;
-    hr{
-      border-top-color:$white;
+
+    hr {
+      border-top-color: $white;
     }
-    ul{
+
+    ul {
       padding: 2rem;
     }
   }

@@ -1,6 +1,6 @@
 import { Clock as ImportedComponent } from 'react-clock/dist/entry.nostyle';
 import React from 'react';
-import './_styles.scss';
+import './styles.css';
 
 export default class Clock extends React.Component {
   render() {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Collapse, Card, CardBody, Button, Code } from '../../src/index';
+import { Collapse, Card, CardBody, Button, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {

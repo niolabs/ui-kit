@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Tooltip, UncontrolledTooltip, Code } from '../../src/index';
+import { Tooltip, UncontrolledTooltip, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {

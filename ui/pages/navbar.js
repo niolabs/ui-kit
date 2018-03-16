@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Code } from '../../src/index';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -33,7 +33,7 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
         <h4>Use</h4>
         <Code>
           {
-            `<Navbar color="inverse">
+            `<Navbar dark>
   <NavbarToggler right onClick={this.toggle} isOpen={this.state.isOpen} />
   <NavbarBrand>
     <div id="logo" />
@@ -52,7 +52,7 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
           }
         </Code>
         <br />
-        <Navbar color="inverse">
+        <Navbar dark>
           <NavbarToggler right onClick={this.toggle} isOpen={this.state.isOpen} />
           <NavbarBrand>
             <div id="logo" />
@@ -60,10 +60,10 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">Docs</NavLink>
+                <NavLink href="https://docs.n.io">Docs</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/nioinnovation/ui-kit">Github</NavLink>
+                <NavLink href="https://github.com/niolabs/ui-kit">Github</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

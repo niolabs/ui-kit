@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, CardBody, CardText, CardTitle, Button, Code } from '../../src/index';
+import { Card, CardBody, CardText, CardTitle, Button, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {

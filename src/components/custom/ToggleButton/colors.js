@@ -71,7 +71,7 @@ export function rgbToObj(s) {
   }
 
   if (rgb && rgba) {
-    const aString = match[3] === '0' ? `0.${match[4]}` : match[3]
+    const aString = match[3] === '0' ? `0.${match[4]}` : match[3];
     return {
       r: parseInt(match[0], 10),
       g: parseInt(match[1], 10),

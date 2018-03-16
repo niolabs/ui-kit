@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './_styles.scss';
+import './styles.css';
 
 export default class ThemedComponent extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ export default class ThemedComponent extends React.Component {
   }
 
   setValue(v) {
-    let value = this.state.value;
+    let { value } = this.state;
     const isRadio = this.props.type === 'radio';
 
     if (value.indexOf(v) === -1 && isRadio) {

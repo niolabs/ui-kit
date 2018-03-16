@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Code, Clock } from '../../src/index';
+import { Code, Clock } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   constructor() {

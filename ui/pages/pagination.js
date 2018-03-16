@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Pagination, PaginationItem, PaginationLink, Code } from '../../src/index';
+import { Pagination, PaginationItem, PaginationLink, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {

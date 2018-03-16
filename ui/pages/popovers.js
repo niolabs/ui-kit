@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Popover, PopoverTitle, PopoverContent, Code } from '../../src/index';
+import { Button, Popover, PopoverTitle, PopoverContent, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {

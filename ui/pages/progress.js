@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Progress, Code } from '../../src/index';
+import { Progress, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './_styles.scss';
+import './styles.css';
 
 const MIN_PERCENTAGE = 0;
 const MAX_PERCENTAGE = 100;
@@ -74,7 +74,7 @@ export default class CircularProgressbar extends React.Component {
     const text = textForPercentage ? textForPercentage(percentage) : null;
 
     return (
-      <svg className={`CircularProgressbar ${color}`} viewBox={`0 0 ${MAX_X} ${MAX_Y}`}>
+      <svg className={`circular-progressbar ${color}`} viewBox={`0 0 ${MAX_X} ${MAX_Y}`}>
         <path
           className="trail"
           d={pathDescription}

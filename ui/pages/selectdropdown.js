@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SelectDropdown, Label, FormGroup, FormFeedback, Code } from '../../src/index';
+import { SelectDropdown, Label, FormGroup, FormFeedback, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -12,16 +12,13 @@ export default class DocsPage extends React.Component {
       { label: 'Option 4', value: 'Option 4' },
       { label: 'Option 5', value: 'Option 5' },
     ];
-    this.state = {
-      value: false,
-    };
 
     const fns = ['handleChange'];
     fns.forEach((fn) => { this[fn] = this[fn].bind(this); });
   }
 
   handleChange(e) {
-    this.setState({ value: e });
+    console.log(e); // eslint-disable-line no-console
   }
 
   render() {

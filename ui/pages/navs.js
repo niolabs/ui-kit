@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Nav, NavItem, NavLink, Code } from '../../src/index';
+import { Nav, NavItem, NavLink, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {

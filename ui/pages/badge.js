@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Badge, Code } from '../../src/index';
+import { Badge, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import './_styles.scss';
+import './styles.css';
 
 export default class ThemedComponent extends React.Component {
   constructor(props) {

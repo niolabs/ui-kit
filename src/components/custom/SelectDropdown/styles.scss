@@ -14,7 +14,7 @@
 
     &.active,
     &:active,
-    &.active:hover{ // sass-lint:disable-line force-pseudo-nesting
+    &.active:hover { // sass-lint:disable-line force-pseudo-nesting
       background-color: inherit !important;
       border-color: $gray-light !important;
       border-bottom: 1px solid transparent !important;
@@ -32,7 +32,7 @@
       content: '\f113';
       vertical-align: top;
       display: block;
-      position:absolute;
+      position: absolute;
       right: 20px;
       top: 12px;
     }

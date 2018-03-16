@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Jumbotron, Button, Code } from '../../src/index';
+import { Jumbotron, Button, Code } from '../../dist/index';
 
 export default class DocsPage extends React.Component {
   render() {
