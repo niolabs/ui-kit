@@ -6,7 +6,7 @@ import { NavItem } from '@nio/ui-kit';
 const NavLinks = ({ toggleNav }) => (
   <div id="app-subnav">
     <NavItem>
-      <NavLink onClick={() => toggleNav(true)} to="/">Home</NavLink>
+      <NavLink onClick={() => toggleNav(true)} exact to="/">Home</NavLink>
     </NavItem>
     <NavItem className="header">
       niolabs

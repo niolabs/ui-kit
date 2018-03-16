@@ -88,7 +88,6 @@
   flex-direction: row;
 
   #app-sidebar {
-    border-right:1px solid #9daab1;
     height: calc(100vh - 70px);
     overflow:hidden;
     width: 284px;
@@ -112,9 +111,9 @@
 
   .header {
     padding: 1rem 2rem !important;
-    background: #e6e9ee;
-    border-top: 1px solid #9daab1;
     border-bottom: 1px solid #9daab1;
+    border-top: 1px solid #9daab1;
+    background: #E6E9EE;
   }
 
   .nav-link,
@@ -123,9 +122,18 @@
     color: #6a7578 !important;
     padding: 1rem 2rem !important;
     border-bottom: 1px solid #e6e9ee;
+
     &.active,
     &:hover {
       color: #507CCD !important;
+    }
+
+    &.active::after{
+      content: '>';
+      display:block;
+      float: right;
+      font-weight: bold;
+      line-height: 1.2;
     }
   }
 
