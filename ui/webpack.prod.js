@@ -1,12 +1,13 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const autoprefixer = require('autoprefixer');
-const postCssFlexbugFixes = require('postcss-flexbugs-fixes');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const postCssFlexbugFixes = require('postcss-flexbugs-fixes');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const cssNano = require('cssnano');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 /* eslint-enable import/no-extraneous-dependencies */
 
 module.exports = {
@@ -42,6 +43,10 @@ module.exports = {
     }),
     new ExtractTextPlugin('[contenthash].min.css'),
     new OptimizeCssAssetsPlugin({ assetNameRegExp: /\.css$/g, cssProcessor: cssNano, cssProcessorOptions: { discardComments: { removeAll: true } }, canPrint: true }),
+    new CopyWebpackPlugin([
+      { from: path.join(__dirname, '/assets/images/'), to: 'images/' },
+      { from: path.join(__dirname, '/assets/fonts/'), to: 'fonts/' },
+    ]),
   ],
 
   module: {
