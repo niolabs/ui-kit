@@ -1,0 +1,11 @@
+@import '../../theme/nio-bootstrap-vars';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/badge';
+
+.badge {
+  font-weight: 300 !important;
+  font-size: $font-size-xs;
+  color: #fff !important;
+}

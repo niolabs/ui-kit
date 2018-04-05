@@ -1,6 +1,6 @@
 {
   "name": "@nio/ui-kit",
-  "version": "1.4.4",
+  "version": "1.5.1",
   "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, VictoryCharts, and CSS Modules",
   "deploymentUrl": "uikit.niolabs.com",
   "main": "dist/index.js",
@@ -15,7 +15,7 @@
     "lint-sass": "sass-lint --verbose",
     "build": "rimraf dist && babel --quiet ./src --out-dir ./dist && npm run copy-icons && npm run process-scss",
     "process-scss": "node-sass --recursive --importer node_modules/node-sass-magic-importer/dist/cli.js -o dist src",
-    "copy-icons": "cpy 'nioicons.*' ../../../../dist/components/custom/Icon --parents --cwd=node_modules/@nio/icons/dist/",
+    "copy-icons": "cpy 'nioicons.*' ../../../../dist/components/Icon --parents --cwd=node_modules/@nio/icons/dist/",
     "publish-package": "npm run lint && npm run build && npm publish"
   },
   "repository": {

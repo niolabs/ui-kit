@@ -1,0 +1,13 @@
+@import '../../theme/nio-bootstrap-vars';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/modal';
+
+.modal-backdrop {
+  &.fade {
+    &.show {
+      opacity: .8 !important;
+    }
+  }
+}

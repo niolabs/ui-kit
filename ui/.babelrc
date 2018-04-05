@@ -4,8 +4,8 @@
     "transform-runtime",
     "transform-decorators-legacy",
     ["transform-imports", {
-      "reactstrap": {
-        "transform": "reactstrap/lib/${member}",
+      "@nio/ui-kit": {
+        "transform": "@nio/ui-kit/dist/components/${member}",
         "preventFullImport": true
       }
     }]

@@ -1,0 +1,131 @@
+@import '../../theme/nio-bootstrap-vars';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($white, .8);
+  @supports (
+  backdrop-filter: blur(2px)) {
+    background-color: rgba($white, .5);
+  }
+}
+
+.outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  $animation: unique-id();
+  animation: $animation 1s infinite ease-in-out;
+  animation-delay: -.25s;
+  @keyframes #{$animation} {
+    from,
+    to {
+      transform: translate(-50%, -50%) scale(2.5);
+    }
+
+    50% {
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }
+
+  &.primary {
+    background-color: rgba($brand-primary, .15);
+  }
+
+  &.success {
+    background-color: rgba($brand-success, .15);
+  }
+
+  &.danger {
+    background-color: rgba($brand-danger, .15);
+  }
+
+  &.warning {
+    background-color: rgba($brand-warning, .15);
+  }
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  $animation: unique-id();
+  animation: $animation 1s infinite ease-in-out;
+  animation-delay: -.333s;
+
+  @keyframes #{$animation} {
+    from,
+    to {
+      transform: translate(-50%, -50%) scale(1.75);
+    }
+
+    50% {
+      transform: translate(-50%, -50%) scale(1.25);
+    }
+  }
+
+  &.primary {
+    background-color: rgba($brand-primary, .25);
+  }
+
+  &.success {
+    background-color: rgba($brand-success, .25);
+  }
+
+  &.danger {
+    background-color: rgba($brand-danger, .25);
+  }
+
+  &.warning {
+    background-color: rgba($brand-warning, .25);
+  }
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  $animation: unique-id();
+  animation: $animation 1s infinite ease-in-out;
+
+  @keyframes #{$animation} {
+    from,
+    to {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+      transform: translate(-50%, -50%) scale(.75);
+    }
+  }
+
+  &.primary {
+    background-color: $brand-primary;
+  }
+
+  &.success {
+    background-color: $brand-success;
+  }
+
+  &.danger {
+    background-color: $brand-danger;
+  }
+
+  &.warning {
+    background-color: $brand-warning;
+  }
+}

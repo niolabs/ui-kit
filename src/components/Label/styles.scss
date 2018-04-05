@@ -1,0 +1,16 @@
+@import '../../theme/nio-bootstrap-vars';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/forms';
+
+.form-control-label {
+  color: $brand-primary !important;
+  font-size: 10px !important;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 8px !important;
+  text-transform: lowercase;
+}
+
+
