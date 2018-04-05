@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Popover, PopoverTitle, PopoverContent, Code } from '@nio/ui-kit';
+import { Button, Popover, PopoverHeader, PopoverBody, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -56,8 +56,8 @@ render() {
         Launch Popover
       </Button>
       <Popover placement="bottom" isOpen={this.state.popoverOpen} target="Popover1" toggle={this.toggle}>
-        <PopoverTitle>Popover Title</PopoverTitle>
-        <PopoverContent>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</PopoverContent>
+        <PopoverHeader>Popover Title</PopoverHeader>
+        <PopoverBody>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</PopoverBody>
       </Popover>
     </div>
   );
@@ -69,8 +69,8 @@ render() {
           Launch Popover
         </Button>
         <Popover placement="bottom" isOpen={this.state.popoverOpen} target="Popover1" toggle={this.toggle}>
-          <PopoverTitle>Popover Title</PopoverTitle>
-          <PopoverContent>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</PopoverContent>
+          <PopoverHeader>Popover Title</PopoverHeader>
+          <PopoverBody>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</PopoverBody>
         </Popover>
       </div>
     );

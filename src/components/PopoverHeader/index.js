@@ -1,4 +1,4 @@
-import { PopoverContent as ImportedComponent } from 'reactstrap';
+import { PopoverHeader as ImportedComponent } from 'reactstrap';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themr } from 'react-css-themr';

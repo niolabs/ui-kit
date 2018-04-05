@@ -3,6 +3,7 @@
   box-shadow: $btn-box-shadow;
   height: 36px;
   color: #fff !important;
+  border-color: $border !important;
 
   &.btn-sm {
     height: 22px;
@@ -54,6 +55,7 @@
 @mixin button-outline-variant($color, $color-hover: #fff) {
   line-height: 1 !important;
   height: 36px;
+  border-color: $color !important;
 
   &.btn-sm {
     height: 22px;
