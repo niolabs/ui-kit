@@ -1,4 +1,13 @@
 {
   "presets": ["react", "env", "stage-0"],
-  "plugins": ["transform-runtime", "transform-decorators-legacy"]
+  "plugins": [
+    "transform-runtime",
+    "transform-decorators-legacy",
+    ["transform-imports", {
+      "reactstrap": {
+        "transform": "reactstrap/lib/${member}",
+        "preventFullImport": true
+      }
+    }]
+  ]
 }

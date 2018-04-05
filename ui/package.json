@@ -9,10 +9,10 @@
   "author": "nioinnovation",
   "license": "UNLICENSED",
   "dependencies": {
-    "@nio/ui-kit": "^1.4.3",
+    "@nio/ui-kit": "^1.4.4",
     "prop-types": "^15.6.1",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2"
   },
@@ -46,9 +46,9 @@
     "postcss-safe-parser": "^3.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
-    "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13",
-    "webpack-dev-middleware": "^3.1.0",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-middleware": "^3.1.2",
     "webpack-dev-server": "^3.1.1"
   }
 }
