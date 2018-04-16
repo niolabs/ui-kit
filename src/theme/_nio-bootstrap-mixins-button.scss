@@ -4,6 +4,7 @@
   height: 36px;
   color: #fff !important;
   border-color: $border !important;
+  background-color: $background !important;
 
   &.btn-sm {
     height: 22px;
@@ -56,6 +57,7 @@
   line-height: 1 !important;
   height: 36px;
   border-color: $color !important;
+  background-color: transparent !important;
 
   &.btn-sm {
     height: 22px;

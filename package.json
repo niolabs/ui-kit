@@ -1,6 +1,6 @@
 {
   "name": "@nio/ui-kit",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, VictoryCharts, and CSS Modules",
   "deploymentUrl": "uikit.niolabs.com",
   "main": "dist/index.js",
