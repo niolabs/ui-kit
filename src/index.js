@@ -8,7 +8,7 @@ export { default as Icon } from './components/Icon';
 export { default as SelectDropdown } from './components/SelectDropdown';
 export { default as RangeSlider } from './components/RangeSlider';
 export { default as Clock } from './components/Clock';
-export { default as CircularProgressBar } from './components/CircularProgressbar';
+export { default as CircularProgressBar } from './components/CircularProgressBar';
 
 // themed frappe chart components
 export { default as Chart } from './components/Chart';
