@@ -2,7 +2,7 @@
   line-height: 1 !important;
   box-shadow: $btn-box-shadow;
   height: 36px;
-  color: #fff !important;
+  color: $white !important;
   border-color: $border !important;
   background-color: $background !important;
 
@@ -57,6 +57,7 @@
   line-height: 1 !important;
   height: 36px;
   border-color: $color !important;
+  color: $color !important;
   background-color: transparent !important;
 
   &.btn-sm {

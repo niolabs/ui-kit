@@ -1,6 +1,6 @@
 {
   "name": "@nio/ui-kit",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, VictoryCharts, and CSS Modules",
   "deploymentUrl": "uikit.niolabs.com",
   "main": "dist/index.js",
@@ -33,7 +33,7 @@
     "bootstrap": "4.1.0",
     "frappe-charts": "^0.0.8",
     "highlight.js": "^9.12.0",
-    "node-sass": "^4.8.3",
+    "node-sass": "^4.9.0",
     "node-sass-import": "^2.0.0",
     "node-sass-magic-importer": "^5.1.2",
     "prop-types": "^15.6.1",
