@@ -1,4 +1,4 @@
-import { Modal as ImportedComponent } from 'reactstrap';
+import { ModalBody as ImportedComponent } from 'reactstrap';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themr } from 'react-css-themr';
