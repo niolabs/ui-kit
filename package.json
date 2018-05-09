@@ -1,6 +1,6 @@
 {
   "name": "@nio/ui-kit",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, VictoryCharts, and CSS Modules",
   "deploymentUrl": "uikit.niolabs.com",
   "main": "dist/index.js",
@@ -30,21 +30,21 @@
   "homepage": "https://github.com/nioinnovation/ui-kit#readme",
   "dependencies": {
     "@nio/icons": "^1.7.0",
-    "bootstrap": "4.1.0",
+    "bootstrap": "4.1.1",
     "frappe-charts": "^0.0.8",
     "highlight.js": "^9.12.0",
     "node-sass": "^4.9.0",
-    "node-sass-import": "^2.0.0",
+    "node-sass-import": "^2.0.1",
     "node-sass-magic-importer": "^5.1.2",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
-    "react-clock": "^2.2.1",
+    "react-clock": "^2.3.0",
     "react-css-themr": "^2.1.2",
     "react-dom": "^16.3.2",
     "react-motion": "^0.5.2",
     "react-rangeslider": "^2.2.0",
     "react-toggle-button": "^2.2.0",
-    "reactstrap": "^5.0.0"
+    "reactstrap": "^6.0.1"
   },
   "bundledDependencies": [
     "@nio/icons",
@@ -61,7 +61,7 @@
     "reactstrap"
   ],
   "devDependencies": {
-    "autoprefixer": "^8.3.0",
+    "autoprefixer": "^8.4.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
