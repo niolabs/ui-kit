@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-export default class ThemedComponent extends React.Component {
+class ThemedComponent extends React.Component {
   render() {
     const { isOpen, onClick, right, left } = this.props;
     return (
@@ -24,3 +24,5 @@ ThemedComponent.propTypes = {
   isOpen: PropTypes.bool,
   onClick: PropTypes.func,
 };
+
+export default ThemedComponent;

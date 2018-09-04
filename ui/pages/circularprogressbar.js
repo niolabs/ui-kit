@@ -23,7 +23,8 @@ import { CircularProgressBar } from '@nio/ui-kit';`
             <CircularProgressBar
               percentage={20}
             />
-            <br /><br />
+            <br />
+            <br />
             <Code>
               {
                 `<CircularProgressBar
@@ -40,7 +41,8 @@ import { CircularProgressBar } from '@nio/ui-kit';`
               percentage={20}
               label="Custom Label"
             />
-            <br /><br />
+            <br />
+            <br />
             <Code>
               {
                 `<CircularProgressBar
@@ -58,7 +60,8 @@ import { CircularProgressBar } from '@nio/ui-kit';`
               label="No Animation"
               initialAnimation={false}
             />
-            <br /><br />
+            <br />
+            <br />
             <Code>
               {
                 `<CircularProgressBar
@@ -75,7 +78,8 @@ import { CircularProgressBar } from '@nio/ui-kit';`
               label="Counter Clockwise"
               counterClockwise
             />
-            <br /><br />
+            <br />
+            <br />
             <Code>
               {
                 `<CircularProgressBar
@@ -97,7 +101,8 @@ import { CircularProgressBar } from '@nio/ui-kit';`
               color="success"
               label="Success"
             />
-            <br /><br />
+            <br />
+            <br />
             <Code>
               {
                 `<CircularProgressBar
@@ -114,7 +119,8 @@ import { CircularProgressBar } from '@nio/ui-kit';`
               color="warning"
               label="Warning"
             />
-            <br /><br />
+            <br />
+            <br />
             <Code>
               {
                 `<CircularProgressBar
@@ -131,7 +137,8 @@ import { CircularProgressBar } from '@nio/ui-kit';`
               color="danger"
               label="Danger"
             />
-            <br /><br />
+            <br />
+            <br />
             <Code>
               {
                 `<CircularProgressBar
@@ -153,7 +160,8 @@ import { CircularProgressBar } from '@nio/ui-kit';`
               percentage={20}
               label="Thin"
             />
-            <br /><br />
+            <br />
+            <br />
             <Code>
               {
                 `<CircularProgressBar
@@ -170,7 +178,8 @@ import { CircularProgressBar } from '@nio/ui-kit';`
               percentage={20}
               label="Standard"
             />
-            <br /><br />
+            <br />
+            <br />
             <Code>
               {
                 `<CircularProgressBar
@@ -187,7 +196,8 @@ import { CircularProgressBar } from '@nio/ui-kit';`
               percentage={20}
               label="Bold"
             />
-            <br /><br />
+            <br />
+            <br />
             <Code>
               {
                 `<CircularProgressBar
@@ -204,7 +214,8 @@ import { CircularProgressBar } from '@nio/ui-kit';`
               percentage={20}
               label="Fat"
             />
-            <br /><br />
+            <br />
+            <br />
             <Code>
               {
                 `<CircularProgressBar

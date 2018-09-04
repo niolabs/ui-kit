@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './styles.css';
 
-export default class ThemedComponent extends React.Component {
+class ThemedComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: false, dropdownOpen: false };
@@ -28,8 +28,10 @@ export default class ThemedComponent extends React.Component {
   }
 
   toggle() {
+    const { dropdownOpen } = this.state;
+
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen,
+      dropdownOpen: !dropdownOpen,
     });
   }
 
@@ -66,3 +68,5 @@ ThemedComponent.propTypes = {
   defaultValue: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   onChange: PropTypes.func,
 };
+
+export default ThemedComponent;

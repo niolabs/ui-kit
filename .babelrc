@@ -1,13 +1,10 @@
 {
-  "presets": ["react", "env", "stage-0"],
+  "presets": ["@babel/preset-react", "@babel/preset-env"],
   "plugins": [
-    "transform-runtime",
-    "transform-decorators-legacy",
-    ["transform-imports", {
-      "reactstrap": {
-        "transform": "reactstrap/lib/${member}",
-        "preventFullImport": true
-      }
-    }]
+    "@babel/plugin-proposal-function-bind",
+    "@babel/plugin-transform-runtime",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "transform-class-properties",
+    ["transform-imports", { "reactstrap": { "transform": "reactstrap/lib/${member}", "preventFullImport": true } }]
   ]
 }

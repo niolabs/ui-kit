@@ -41,8 +41,9 @@ export default class DocsPage extends React.Component {
   }
 
   toggle() {
+    const { togglestate } = this.state;
     this.setState({
-      togglestate: !this.state.togglestate,
+      togglestate: !togglestate,
     });
   }
 
@@ -110,13 +111,15 @@ import { ToggleButton, Code } from '@nio/ui-kit';`
                 activeLabel="no"
                 value={this.state.value2}
                 onToggle={value => this.setState({ value2: !value })}
-              /><br />
+              />
+              <br />
               <ToggleButton
                 inactiveLabel="monkeystuff"
                 activeLabel="donkeythings"
                 value={this.state.value2}
                 onToggle={value => this.setState({ value2: !value })}
-              /><br />
+              />
+              <br />
               <ToggleButton
                 inactiveLabel="omg this label is way too long"
                 activeLabel="i got you, fam"

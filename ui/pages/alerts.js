@@ -26,7 +26,9 @@ import { Alert } from '@nio/ui-kit';`
         </Code>
         <br />
         <Alert color="success">
-          <strong>Well done!</strong> You successfully read this important alert message.
+          <strong>Well done!</strong>
+          {' '}
+You successfully read this important alert message.
         </Alert>
       </div>
     );

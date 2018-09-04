@@ -13,8 +13,9 @@ export default class DocsPage extends React.Component {
   }
 
   toggle() {
+    const { popoverOpen } = this.state;
     this.setState({
-      popoverOpen: !this.state.popoverOpen,
+      popoverOpen: !popoverOpen,
     });
   }
 

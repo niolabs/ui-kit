@@ -28,7 +28,9 @@ export default class DocsPage extends React.Component {
           }
         </Code>
         <br />
-        The core CSS includes nioLabs theme overrides for bootstrap, as well as a few of the lightweight reset, normalize, mixin, and utility classes.<br /><br />
+        The core CSS includes nioLabs theme overrides for bootstrap, as well as a few of the lightweight reset, normalize, mixin, and utility classes.
+        <br />
+        <br />
 
         Each component includes only the core css CSS classes it requires for itself. The docs site that is a part of this project uses webpack to remove any duplicates from the final combined css file.
 
@@ -51,7 +53,10 @@ export default class DocsPage extends React.Component {
 
         Licensed under the Apache License, Version 2.0 (the License);
         you may not use this file except in compliance with the License.
-        You may obtain a copy of the License at <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="noopener noreferrer" target="_blank">http://www.apache.org/licenses/LICENSE-2.0</a>. Unless required by applicable law or agreed to in writing, software
+        You may obtain a copy of the License at
+        {' '}
+        <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="noopener noreferrer" target="_blank">http://www.apache.org/licenses/LICENSE-2.0</a>
+. Unless required by applicable law or agreed to in writing, software
         distributed under the License is distributed on an AS IS BASIS,
         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
         See the License for the specific language governing permissions and

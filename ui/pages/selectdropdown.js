@@ -128,7 +128,8 @@ import { SelectDropdown } from '@nio/ui-kit';`
             defaultValue={this.options[0]}
           />
           <FormFeedback>This field is required</FormFeedback>
-        </FormGroup><hr />
+        </FormGroup>
+        <hr />
         <h4>Inverse</h4>
         <Code>
           {

@@ -10,7 +10,8 @@ export default class DocsPage extends React.Component {
   }
 
   toggle() {
-    this.setState({ collapse: !this.state.collapse });
+    const { collapse } = this.state;
+    this.setState({ collapse: !collapse });
   }
 
   render() {

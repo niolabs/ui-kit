@@ -17,7 +17,9 @@ class App extends React.Component {
   }
 
   toggle(close) {
-    this.setState({ isOpen: close ? false : !this.state.isOpen });
+    const { isOpen } = this.state;
+
+    this.setState({ isOpen: close ? false : !isOpen });
   }
 
   render() {

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-export default class ThemedComponent extends React.Component {
+class ThemedComponent extends React.Component {
   render() {
     const { color } = this.props;
 
@@ -28,3 +28,5 @@ ThemedComponent.propTypes = {
     'danger',
   ]),
 };
+
+export default ThemedComponent;

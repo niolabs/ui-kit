@@ -119,7 +119,7 @@ export default class ToggleButton extends Component {
     if (color.indexOf('#') !== -1) {
       const rgbObj = hexToRGB(color);
       return `rgb(${rgbObj.r}, ${rgbObj.g}, ${rgbObj.b})`;
-    } else if (color.indexOf('rgb') === -1) {
+    } if (color.indexOf('rgb') === -1) {
       return defaultColor;
     }
     return color;
@@ -206,14 +206,14 @@ export default class ToggleButton extends Component {
     const HoverSpringConfig = this.props.internalHoverSpringSetting;
     return (
       <Motion style={{
-          opacity: spring(this.props.value ? 1 : 0, SpringConfig),
-          left: spring(
-            this.props.value ? this.props.thumbAnimateRange[1] * 10 : this.props.thumbAnimateRange[0] * 10,
-            SpringConfig,
-          ),
-          colorNumber: spring(this.props.value ? 0 : 400, SpringConfig),
-          toggleNumber: spring(this.props.value ? 400 : 0, SpringConfig),
-          hoverNumber: spring(this.state.isHover ? 400 : 0, HoverSpringConfig),
+        opacity: spring(this.props.value ? 1 : 0, SpringConfig),
+        left: spring(
+          this.props.value ? this.props.thumbAnimateRange[1] * 10 : this.props.thumbAnimateRange[0] * 10,
+          SpringConfig,
+        ),
+        colorNumber: spring(this.props.value ? 0 : 400, SpringConfig),
+        toggleNumber: spring(this.props.value ? 400 : 0, SpringConfig),
+        hoverNumber: spring(this.state.isHover ? 400 : 0, HoverSpringConfig),
       }}
       >
         {({ opacity, left, colorNumber, hoverNumber, toggleNumber }) => (
@@ -231,24 +231,24 @@ export default class ToggleButton extends Component {
             onClick={this.handleClick.bind(this)}
           >
             <div style={{
-                ...this.makeStyle({
-                  ...reactToggleTrack,
-                  ...this.props.trackStyle,
-                  ...this.interpolateColorWithHover(colorNumber, 'active', 'inactive'),
-                  ...this.props.animateTrackStyleToggle(toggleNumber / 400.0),
-                }, {
-                  ...this.props.trackStyleHover,
+              ...this.makeStyle({
+                ...reactToggleTrack,
+                ...this.props.trackStyle,
+                ...this.interpolateColorWithHover(colorNumber, 'active', 'inactive'),
+                ...this.props.animateTrackStyleToggle(toggleNumber / 400.0),
+              }, {
+                ...this.props.trackStyleHover,
                 ...this.props.animateTrackStyleHover(hoverNumber / 400.0),
-                }),
-              }}
+              }),
+            }}
             >
               <div style={{
-                  ...this.makeStyle({
-                    ...reactToggleOn,
-                    ...this.props.activeLabelStyle,
-                  }, this.props.activeLabelStyleHover),
-                  opacity,
-                }}
+                ...this.makeStyle({
+                  ...reactToggleOn,
+                  ...this.props.activeLabelStyle,
+                }, this.props.activeLabelStyleHover),
+                opacity,
+              }}
               >
                 {this.props.activeLabel}
               </div>
@@ -258,25 +258,25 @@ export default class ToggleButton extends Component {
                   ...this.props.inactiveLabelStyle,
                 }, this.props.inactiveLabelStyleHover),
                 opacity: 1 - opacity,
-                }}
+              }}
               >
                 {this.props.inactiveLabel}
               </div>
             </div>
             <div style={reactThumbCenteringContainer}>
               <div style={{
-                  ...this.makeStyle({
-                    ...reactToggleThumb,
-                    ...this.props.thumbStyle,
-                    ...this.interpolateColorWithHover(colorNumber, 'activeThumb', 'inactiveThumb'),
-                    ...this.props.animateThumbStyleToggle(toggleNumber / 400.0),
-                  }, {
-                    ...this.props.thumbStyleHover,
-                    ...this.props.animateThumbStyleHover(hoverNumber / 400.0),
-                  }),
-                  position: 'relative',
-                  left: Math.round(left / 10.0),
-                }}
+                ...this.makeStyle({
+                  ...reactToggleThumb,
+                  ...this.props.thumbStyle,
+                  ...this.interpolateColorWithHover(colorNumber, 'activeThumb', 'inactiveThumb'),
+                  ...this.props.animateThumbStyleToggle(toggleNumber / 400.0),
+                }, {
+                  ...this.props.thumbStyleHover,
+                  ...this.props.animateThumbStyleHover(hoverNumber / 400.0),
+                }),
+                position: 'relative',
+                left: Math.round(left / 10.0),
+              }}
               >
                 {this.props.thumbIcon}
               </div>

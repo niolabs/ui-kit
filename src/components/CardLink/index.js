@@ -6,7 +6,7 @@ import componentTheme from './styles.css';
 
 @themr('themedComponent', componentTheme)
 
-export default class ThemedComponent extends React.Component {
+class ThemedComponent extends React.Component {
   render() {
     const { theme, ...rest } = this.props;
     return (
@@ -18,3 +18,5 @@ export default class ThemedComponent extends React.Component {
 ThemedComponent.propTypes = {
   theme: PropTypes.object,
 };
+
+export default ThemedComponent;

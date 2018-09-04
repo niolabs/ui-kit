@@ -20,7 +20,8 @@ dashed divider
           }
         </Code>
         <br />
-        standard divider<br />
+        standard divider
+        <br />
         <hr />
         dashed divider
         <hr className="dashed" />

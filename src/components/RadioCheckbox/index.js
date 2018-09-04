@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-export default class ThemedComponent extends React.Component {
+class ThemedComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: [] };
@@ -66,3 +66,5 @@ ThemedComponent.propTypes = {
   defaultValue: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   onChange: PropTypes.func,
 };
+
+export default ThemedComponent;

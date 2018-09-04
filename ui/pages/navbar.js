@@ -11,9 +11,11 @@ export default class DocsPage extends React.Component {
       isOpen: false,
     };
   }
+
   toggle() {
+    const { isOpen } = this.state;
     this.setState({
-      isOpen: !this.state.isOpen,
+      isOpen: !isOpen,
     });
   }
 

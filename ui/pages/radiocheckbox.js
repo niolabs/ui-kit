@@ -79,8 +79,11 @@ import { RadioCheckbox } from '@nio/ui-kit';`
                 type="radio"
                 onChange={this.handleChangeRadio}
                 options={{ label: 'Option 1', value: 'Option 1' }}
-              /><br />
-              Current Value: {JSON.stringify(this.state.valueRadio)}
+              />
+              <br />
+              Current Value:
+              {' '}
+              {JSON.stringify(this.state.valueRadio)}
             </Card>
           </Col>
           <Col xs="12" md="6" className="mb-3">
@@ -99,8 +102,11 @@ import { RadioCheckbox } from '@nio/ui-kit';`
                 type="checkbox"
                 onChange={this.handleChangeCheckbox}
                 options={{ label: 'Option 1', value: 'Option 1' }}
-              /><br />
-              Current Value: {JSON.stringify(this.state.valueCheckbox)}
+              />
+              <br />
+              Current Value:
+              {' '}
+              {JSON.stringify(this.state.valueCheckbox)}
             </Card>
           </Col>
         </Row>
@@ -135,8 +141,11 @@ import { RadioCheckbox } from '@nio/ui-kit';`
                   { label: 'Option 4', value: 'Option 4' },
                   { label: 'Option 5', value: 'Option 5' },
                 ]}
-              /><br />
-              Current Value: {JSON.stringify(this.state.valueRadioArray)}
+              />
+              <br />
+              Current Value:
+              {' '}
+              {JSON.stringify(this.state.valueRadioArray)}
             </Card>
           </Col>
           <Col xs="12" md="6" className="mb-3">
@@ -166,8 +175,11 @@ import { RadioCheckbox } from '@nio/ui-kit';`
                   { label: 'Option 4', value: 'Option 4' },
                   { label: 'Option 5', value: 'Option 5' },
                 ]}
-              /><br />
-              Current Value: {JSON.stringify(this.state.valueCheckboxArray)}
+              />
+              <br />
+              Current Value:
+              {' '}
+              {JSON.stringify(this.state.valueCheckboxArray)}
             </Card>
           </Col>
         </Row>
@@ -207,8 +219,11 @@ import { RadioCheckbox } from '@nio/ui-kit';`
                   { label: 'Option 4', value: 'Option 4' },
                   { label: 'Option 5', value: 'Option 5' },
                 ]}
-              /><br />
-              Current Value: {JSON.stringify(this.state.valueRadioDefault)}
+              />
+              <br />
+              Current Value:
+              {' '}
+              {JSON.stringify(this.state.valueRadioDefault)}
             </Card>
           </Col>
           <Col xs="12" md="6" className="mb-3">
@@ -246,8 +261,11 @@ import { RadioCheckbox } from '@nio/ui-kit';`
                   { label: 'Option 4', value: 'Option 4' },
                   { label: 'Option 5', value: 'Option 5' },
                 ]}
-              /><br />
-              Current Value: {JSON.stringify(this.state.valueCheckboxDefault)}
+              />
+              <br />
+              Current Value:
+              {' '}
+              {JSON.stringify(this.state.valueCheckboxDefault)}
             </Card>
           </Col>
         </Row>

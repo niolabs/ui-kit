@@ -13,8 +13,9 @@ export default class DocsPage extends React.Component {
   }
 
   toggle() {
+    const { dropdownOpen } = this.state;
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen,
+      dropdownOpen: !dropdownOpen,
     });
   }
 

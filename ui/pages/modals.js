@@ -13,8 +13,9 @@ export default class DocsPage extends React.Component {
   }
 
   toggle() {
+    const { modal } = this.state;
     this.setState({
-      modal: !this.state.modal,
+      modal: !modal,
     });
   }
 
@@ -81,7 +82,8 @@ render() {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </ModalBody>
             <ModalFooter>
-              <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
+              <Button color="primary" onClick={this.toggle}>Do Something</Button>
+              {' '}
               <Button color="secondary" onClick={this.toggle}>Cancel</Button>
             </ModalFooter>
           </Modal>

@@ -60,7 +60,13 @@ import { Nav, NavItem, NavLink } from '@nio/ui-kit';`
         <hr />
         <p>Link Based</p>
         <Nav>
-          <NavLink href="#">Link</NavLink> <NavLink href="#">Link</NavLink> <NavLink href="#">Another Link</NavLink> <NavLink disabled href="#">Disabled Link</NavLink>
+          <NavLink href="#">Link</NavLink>
+          {' '}
+          <NavLink href="#">Link</NavLink>
+          {' '}
+          <NavLink href="#">Another Link</NavLink>
+          {' '}
+          <NavLink disabled href="#">Disabled Link</NavLink>
         </Nav>
       </div>
     );

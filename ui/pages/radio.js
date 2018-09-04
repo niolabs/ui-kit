@@ -65,10 +65,12 @@ render() {
           }
         </Code>
         <br />
-        <Radio name="Possible Options" onChange={this.handleChange} options={this.options} defaultValue={this.state.defaultValue} /><br />
-        Current Value: {JSON.stringify(this.state.value)}
+        <Radio name="Possible Options" onChange={this.handleChange} options={this.options} defaultValue={this.state.defaultValue} />
+        <br />
+        Current Value:
+        {' '}
+        {JSON.stringify(this.state.value)}
       </div>
     );
   }
 }
-

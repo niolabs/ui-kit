@@ -90,10 +90,12 @@ import { Icon } from '@nio/ui-kit';`
         <Row>
           {iconList.map(icon => (
             <Col xs="6" sm="12" md="6" lg="4" xl="3" key={icon} className="text-center mb-4">
-              <Icon name={icon} size="3x" /><br /><br />
+              <Icon name={icon} size="3x" />
+              <br />
+              <br />
               <Code>{`<Icon name="${icon}" />`}</Code>
             </Col>
-        ))}
+          ))}
         </Row>
       </div>
     );
