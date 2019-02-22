@@ -1,32 +1,65 @@
 import React from 'react';
 
 import { Code, Chart } from '@nio/ui-kit';
+import stringify from 'json-stringify-pretty-compact';
 
-const randomData = () => Array.from({ length: 10 }, () => Math.floor(Math.random() * 100));
 
 export default class DocsPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.randomize = this.randomize.bind(this);
-    this.state = { datasets: [{ values: randomData() }, { values: randomData() }, { values: randomData() }], labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'] };
-  }
+  state = { linedata: false, bardata: false, singleaxisdata: false };
 
-  componentDidMount() {
+  componentDidMount = () => {
+    this.randomize();
     this.interval = setInterval(() => { this.randomize(); }, 3000);
-  }
+  };
 
-  componentWillUnmount() {
+  componentWillUnmount = () => {
     clearInterval(this.interval);
-  }
+  };
 
-  randomize() {
-    this.setState({ datasets: [{ values: randomData() }, { values: randomData() }, { values: randomData() }] });
-  }
+  randomData = () => Array.from({ length: 10 }, () => Math.floor(Math.random() * 100));
 
-  render() {
-    const { datasets, labels } = this.state;
+  replacer = (key, value) => {
+    if (value === '}') {
+      return `${value}\n`;
+    }
+    return value;
+  };
 
-    return (
+  randomize = () => {
+    const data1 = this.randomData();
+    const data2 = this.randomData();
+    const data3 = this.randomData();
+
+    this.setState({
+      linedata: {
+        datasets: [
+          { name: 'Some Data 1', chartType: 'line', values: data1 },
+          { name: 'Some Data 2', chartType: 'line', values: data2 },
+          { name: 'Some Data 3', chartType: 'line', values: data3 },
+        ],
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+      },
+      bardata: {
+        datasets: [
+          { name: 'Some Data 1', chartType: 'bar', values: data1 },
+          { name: 'Some Data 2', chartType: 'bar', values: data2 },
+          { name: 'Some Data 3', chartType: 'bar', values: data3 },
+        ],
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+      },
+      singleaxisdata: {
+        datasets: [
+          { name: 'Some Data 1', chartType: 'line', values: data1 },
+        ],
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+      },
+    });
+  };
+
+  render = () => {
+    const { linedata, bardata, singleaxisdata } = this.state;
+
+    return linedata && bardata && singleaxisdata && (
       <div>
         <h1>Chart</h1>
         <hr />
@@ -44,99 +77,92 @@ import { Chart } from '@nio/ui-kit';`
             `<Chart
   title="Bar Chart"
   type="bar"
-  data={${JSON.stringify({ labels, datasets })}}
+  data={${stringify(bardata, { maxLength: 180 })}}
+  barOptions={{
+    spaceRatio: 2,
+  }}
 />`}
         </Code>
         <hr />
         <Chart
           title="Bar Chart"
           type="bar"
-          data={{ labels, datasets }}
+          data={bardata}
+          barOptions={{
+            spaceRatio: 0.4,
+          }}
         />
         <hr />
         <Code>
           {
             `<Chart
-  title="Line Chart (heatline, regionfill)"
-  type="line"
-  data={${JSON.stringify({ labels, datasets })}}
-  show_dots={false}
-  heatline
-  region_fill
+  data={${stringify(linedata, { maxLength: 180 })}}
+  lineOptions={{
+    heatline: 1,
+    hideDots: 1,
+    regionFill: 1,
+  }}
 />`}
         </Code>
         <hr />
         <Chart
-          title="Line Chart (heatline, regionfill)"
-          type="line"
-          data={{ labels, datasets }}
-          show_dots={false}
-          heatline
-          region_fill
+          title="Line Chart (area fill, fade, hide dots)"
+          data={linedata}
+          lineOptions={{
+            heatline: 1,
+            hideDots: 1,
+            regionFill: 1,
+          }}
         />
         <hr />
         <Code>
           {
             `<Chart
-  title="Line Chart (no heatline, show_dots)"
-  type="line"
-  data={${JSON.stringify({ labels, datasets })}}
-  show_dots
+  data={${stringify(linedata, { maxLength: 180 })}}
+  lineOptions={{
+    hideLine: 1,
+    dotSize: 8,
+  }}
 />`}
         </Code>
         <hr />
         <Chart
-          title="Line Chart (no heatline, show_dots)"
-          type="line"
-          data={{ labels, datasets }}
-          show_dots
+          title="Line Chart (hide line - makes a scatter)"
+          data={linedata}
+          lineOptions={{
+            hideLine: 1,
+            dotSize: 8,
+          }}
         />
         <hr />
         <Code>
           {
             `<Chart
-  title="Pie Chart (only shows legend for first 6 data values objects)"
   type="pie"
-  data={${JSON.stringify({ labels, datasets: [datasets[0]] })}}
+  data={${stringify(singleaxisdata, { maxLength: 180 })}}
 />`}
         </Code>
         <hr />
         <Chart
           title="Pie Chart"
           type="pie"
-          data={{ labels, datasets: [datasets[0]] }}
+          data={singleaxisdata}
         />
         <hr />
         <Code>
           {
             `<Chart
-  title="Scatter Chart (requires minimum 3 values objects)"
-  type="scatter"
-  data={${JSON.stringify({ labels, datasets })}}
-/>`}
-        </Code>
-        <hr />
-        <Chart
-          title="Scatter Chart (requires minimum 3 values objects)"
-          type="scatter"
-          data={{ labels, datasets }}
-        />
-        <hr />
-        <Code>
-          {
-            `<Chart
-  title="Percentage Chart (1 values object)"
   type="percentage"
-  data={${JSON.stringify({ labels, datasets: [datasets[0]] })}}
+  data={${stringify(singleaxisdata, { maxLength: 180 })}}
 />`}
         </Code>
         <hr />
         <Chart
-          title="Percentage Chart (1 values object)"
+          title="Percentage Chart"
           type="percentage"
-          data={{ labels, datasets: [datasets[0]] }}
+          data={singleaxisdata}
         />
       </div>
     );
-  }
+  };
 }
