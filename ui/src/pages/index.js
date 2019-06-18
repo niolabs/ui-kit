@@ -49,7 +49,7 @@ export default class DocsPage extends React.Component {
         <hr />
         <h4>Apache 2.0 License</h4>
 
-        Copyright 2017-2018 n.io innovation, LLC
+        Copyright 2017-2019 n.io innovation, LLC
 
         Licensed under the Apache License, Version 2.0 (the License);
         you may not use this file except in compliance with the License.

@@ -4,7 +4,7 @@ import { Navbar, NavbarToggler, NavbarBrand, Nav, Collapse } from '@nio/ui-kit';
 import NavLinks from './navlinks';
 import Routes from './routes';
 
-import '../assets/app.scss';
+import '../app.scss';
 
 class App extends React.Component {
   constructor(props) {
