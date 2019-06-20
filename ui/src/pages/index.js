@@ -44,7 +44,7 @@ export default class DocsPage extends React.Component {
 
         <ul>
           <li><a href="https://reactstrap.github.io/components/alerts/" rel="noopener noreferrer" target="_blank">ReactStrap Docs</a></li>
-          <li><a href="https://frappe.github.io/charts/" rel="noopener noreferrer" target="_blank">Frappe Charts Docs</a></li>
+          <li><a href="https://apexcharts.com/react-chart-demos/" rel="noopener noreferrer" target="_blank">ApexCharts Docs</a></li>
         </ul>
         <hr />
         <h4>Apache 2.0 License</h4>

@@ -1,46 +1,50 @@
-import React, { Component, createRef } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Chart } from '../../../node_modules/frappe-charts/dist/frappe-charts.min.esm';
-import './styles.css';
+import ReactApexChart from 'react-apexcharts';
 
-export default class nioChart extends Component {
-  chartRef = createRef();
+export default class ThemedComponent extends Component {
+  render = () => {
+    const { options, series, colors, type, height, width } = this.props;
 
-  chart = null;
-
-  colors = ['#3cafda', '#55c58f', '#37c0c9', '#f3bc27', '#dd3b4c'];
-
-  componentDidMount = () => {
-    const { title, data, type, height, onSelect, ...rest } = this.props;
-
-    this.chart = new Chart(this.chartRef.current, { title, data, type, height, is_navigable: !!onSelect, colors: this.colors, ...rest });
-
-    if (onSelect) {
-      this.c.parent.addEventListener('data-select', onSelect);
-    }
+    return (
+      <ReactApexChart
+        options={options}
+        colors={colors}
+        series={series}
+        type={type}
+        height={height}
+        width={width}
+      />
+    );
   };
-
-  componentDidUpdate = () => {
-    const { data } = this.props;
-
-    if (this.chart.update) {
-      this.chart.update(data);
-    }
-  };
-
-  render = () => <div ref={this.chartRef} />;
 }
 
-nioChart.defaultProps = {
-  type: 'bar',
-  height: 250,
+ThemedComponent.defaultProps = {
+  type: 'line',
+  height: '250px',
+  width: '100%',
+  options: {
+    chart: {
+      id: 'line',
+    },
+    xaxis: {
+      categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+    },
+  },
+  series: [
+    {
+      name: 'series-1',
+      data: [30, 40, 45, 50, 49, 60, 70, 91],
+    },
+  ],
+  colors: ['#3cafda', '#55c58f', '#37c0c9', '#f3bc27', '#dd3b4c'],
 };
 
-nioChart.propTypes = {
-  id: PropTypes.string,
-  title: PropTypes.string,
-  data: PropTypes.object,
+ThemedComponent.propTypes = {
+  options: PropTypes.object,
+  series: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  colors: PropTypes.array,
   type: PropTypes.string,
-  height: PropTypes.number,
-  onSelect: PropTypes.func,
+  height: PropTypes.string,
+  width: PropTypes.string,
 };
