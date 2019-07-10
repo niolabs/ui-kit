@@ -1,23 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import ReactApexChart from 'react-apexcharts';
 
-export default class ThemedComponent extends Component {
-  render = () => {
-    const { options, series, colors, type, height, width } = this.props;
-
-    return (
-      <ReactApexChart
-        options={options}
-        colors={colors}
-        series={series}
-        type={type}
-        height={height}
-        width={width}
-      />
-    );
-  };
-}
+const ThemedComponent = ({ options, series, colors, type, height, width }) => (
+  <ReactApexChart
+    options={options}
+    colors={colors}
+    series={series}
+    type={type}
+    height={height}
+    width={width}
+  />
+);
 
 ThemedComponent.defaultProps = {
   type: 'line',
@@ -48,3 +42,5 @@ ThemedComponent.propTypes = {
   height: PropTypes.string,
   width: PropTypes.string,
 };
+
+export default ThemedComponent;

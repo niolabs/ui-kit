@@ -12,7 +12,7 @@ export default class DocsPage extends React.Component {
     piedata: false,
     radardata: false,
     scatterdata: false,
-    xAxis: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    xAxis: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   };
 
   componentDidMount = () => {

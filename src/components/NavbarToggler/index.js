@@ -2,21 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-class ThemedComponent extends React.Component {
-  render() {
-    const { isOpen, onClick, right, left } = this.props;
-    return (
-      <a onClick={() => onClick()} className={`navbar-toggler ${isOpen && 'navbar-toggler-open'} ${right && 'navbar-toggler-right'} ${left && 'navbar-toggler-left'}`}>
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-      </a>
-    );
-  }
-}
+const ThemedComponent = ({ isOpen, onClick, right, left }) => (
+  <a onClick={() => onClick()} className={`navbar-toggler ${isOpen && 'navbar-toggler-open'} ${right && 'navbar-toggler-right'} ${left && 'navbar-toggler-left'}`}>
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
+  </a>
+);
 
 ThemedComponent.propTypes = {
   right: PropTypes.bool,

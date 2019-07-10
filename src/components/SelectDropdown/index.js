@@ -41,17 +41,17 @@ class ThemedComponent extends React.Component {
 
   render() {
     const { placeholder = 'Please Choose', options, defaultValue, inverse, ...rest } = this.props;
-    const { value } = this.state;
+    const { value, dropdownOpen } = this.state;
     const optionsArray = !options.length ? [options] : options;
 
     return (
-      <Dropdown {...rest} className={inverse ? 'select-dropdown inverse' : 'select-dropdown'} isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+      <Dropdown {...rest} className={inverse ? 'select-dropdown inverse' : 'select-dropdown'} isOpen={dropdownOpen} toggle={this.toggle}>
         <DropdownToggle caret>
           {value !== false ? value : placeholder}
         </DropdownToggle>
         <DropdownMenu>
           { optionsArray && optionsArray.map(option => (
-            <DropdownItem key={`${option.value}`} onClick={() => this.handleClick(option.value)}>
+            <DropdownItem key={option.value} onClick={() => this.handleClick(option.value)}>
               {option.label}
             </DropdownItem>
           ))}
