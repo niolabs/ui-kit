@@ -314,6 +314,7 @@ import { Chart } from '@nio/ui-kit';`
         </Code>
         <hr />
         <Chart
+          height={300}
           type="pie"
           options={piedata.options}
           series={piedata.series}
@@ -329,6 +330,7 @@ import { Chart } from '@nio/ui-kit';`
         </Code>
         <hr />
         <Chart
+          height={300}
           type="donut"
           options={piedata.options}
           series={piedata.series}
