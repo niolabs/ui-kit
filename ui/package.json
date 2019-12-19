@@ -11,14 +11,11 @@
   "dependencies": {
     "@nio/ui-kit": "^2.1.2",
     "json-stringify-pretty-compact": "^2.0.0",
-    "mini-css-extract-plugin": "^0.8.2",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2",
-    "terser-webpack-plugin": "^2.3.1",
-    "webpack-merge": "^4.2.2"
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.7",
@@ -46,14 +43,17 @@
     "file-loader": "^5.0.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.2",
     "node-sass": "^4.13.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.2",
+    "terser-webpack-plugin": "^2.3.1",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
   }
 }
