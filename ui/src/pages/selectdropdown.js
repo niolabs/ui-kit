@@ -30,7 +30,14 @@ export default class DocsPage extends React.Component {
         <Code>
           {
             `// Import component (and relevant CSS)
-import { SelectDropdown } from '@nio/ui-kit';`
+import { SelectDropdown } from '@nio/ui-kit';
+this.options = [
+  { label: 'Option 1', value: 'Option 1' },
+  { label: 'Option 2', value: 'Option 2' },
+  { label: 'Option 3', value: 'Option 3' },
+  { label: 'Option 4', value: 'Option 4' },
+  { label: 'Option 5', value: 'Option 5' },
+];`
           }
         </Code>
         <hr />
