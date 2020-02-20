@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
-import { Col, Row, Card, Code } from '@nio/ui-kit';
-
-import { ToggleButton } from '../../../dist';
+import { Col, Row, Card, Code, ToggleButton } from '@nio/ui-kit';
 
 export const Check = () => (
   <svg width="14" height="10" viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg">
