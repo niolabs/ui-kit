@@ -17,8 +17,6 @@ export const X = () => (
 export default () => {
   const [value, setValue] = useState(false);
 
-  console.log(value);
-
   return (
     <div>
       <h1>Toggle</h1>
