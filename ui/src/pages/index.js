@@ -14,9 +14,7 @@ export default class DocsPage extends React.Component {
         <h4>Install</h4>
 
         <Code>
-          {
-            'npm install --save @nio/ui-kit;'
-          }
+          npm install --save @nio/ui-kit;
         </Code>
 
         <hr />
@@ -56,7 +54,7 @@ export default class DocsPage extends React.Component {
         You may obtain a copy of the License at
         {' '}
         <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="noopener noreferrer" target="_blank">http://www.apache.org/licenses/LICENSE-2.0</a>
-. Unless required by applicable law or agreed to in writing, software
+        . Unless required by applicable law or agreed to in writing, software
         distributed under the License is distributed on an AS IS BASIS,
         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
         See the License for the specific language governing permissions and

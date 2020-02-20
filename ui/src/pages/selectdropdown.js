@@ -1,6 +1,6 @@
 import React from 'react';
-
 import { SelectDropdown, Label, FormGroup, FormFeedback, Code } from '@nio/ui-kit';
+import stringify from 'json-stringify-pretty-compact';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -30,14 +30,7 @@ export default class DocsPage extends React.Component {
         <Code>
           {
             `// Import component (and relevant CSS)
-import { SelectDropdown } from '@nio/ui-kit';
-this.options = [
-  { label: 'Option 1', value: 'Option 1' },
-  { label: 'Option 2', value: 'Option 2' },
-  { label: 'Option 3', value: 'Option 3' },
-  { label: 'Option 4', value: 'Option 4' },
-  { label: 'Option 5', value: 'Option 5' },
-];`
+import { SelectDropdown } from '@nio/ui-kit';`
           }
         </Code>
         <hr />
@@ -48,7 +41,7 @@ this.options = [
   <Label>choose an item</Label>
   <SelectDropdown
     onChange={this.handleChange}
-    options={this.options}
+    options={${stringify(this.options)}}
   />
   <FormFeedback>This field is required</FormFeedback>
 </FormGroup>
@@ -56,7 +49,7 @@ this.options = [
   <Label>choose an item</Label>
   <SelectDropdown
     onChange={this.handleChange}
-    options={this.options}
+    options={${stringify(this.options, { maxLength: 180 })}}
   />
   <FormFeedback>Success</FormFeedback>
 </FormGroup>
@@ -64,7 +57,7 @@ this.options = [
   <Label>choose an item</Label>
   <SelectDropdown
     onChange={this.handleChange}
-    options={this.options}
+    options={${stringify(this.options, { maxLength: 180 })}}
   />
   <FormFeedback>Warning</FormFeedback>
 </FormGroup>
@@ -72,7 +65,7 @@ this.options = [
   <Label>choose an item</Label>
   <SelectDropdown
     onChange={this.handleChange}
-    options={this.options}
+    options={${stringify(this.options, { maxLength: 180 })}}
   />
   <FormFeedback>Error</FormFeedback>
 </FormGroup>`
@@ -119,8 +112,8 @@ this.options = [
   <Label>choose an item</Label>
   <SelectDropdown
     onChange={this.handleChange}
-    options={this.options}
-    defaultValue={this.options[0]}
+    options={${stringify(this.options, { maxLength: 180 })}}
+    defaultValue={${stringify(this.options[0], { maxLength: 180 })}}
   />
   <FormFeedback>This field is required</FormFeedback>
 </FormGroup>`
@@ -144,8 +137,8 @@ this.options = [
   <Label>choose an item</Label>
   <SelectDropdown
     onChange={this.handleChange}
-    options={this.options}
-    defaultValue={this.options[0]}
+    options={${stringify(this.options, { maxLength: 180 })}}
+    defaultValue={${stringify(this.options[0], { maxLength: 180 })}}
     inverse
   />
   <FormFeedback>This field is required</FormFeedback>

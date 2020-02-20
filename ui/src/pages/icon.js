@@ -88,7 +88,7 @@ import { Icon } from '@nio/ui-kit';`
         <h4>Inventory (shown at size 2x)</h4>
         <br />
         <Row>
-          {iconList.map(icon => (
+          {iconList.map((icon) => (
             <Col xs="6" sm="12" md="6" lg="4" xl="3" key={icon} className="text-center mb-4">
               <Icon name={icon} size="2x" />
               <br />

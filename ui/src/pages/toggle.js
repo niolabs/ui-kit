@@ -74,7 +74,7 @@ import { ToggleButton, Code } from '@nio/ui-kit';`
             <Card className="p-5">
               <ToggleButton
                 value={this.state.value1}
-                onToggle={value => this.setState({ value1: !value })}
+                onToggle={(value) => this.setState({ value1: !value })}
               />
             </Card>
           </Col>
@@ -110,21 +110,21 @@ import { ToggleButton, Code } from '@nio/ui-kit';`
                 inactiveLabel="monkeystuff"
                 activeLabel="no"
                 value={this.state.value2}
-                onToggle={value => this.setState({ value2: !value })}
+                onToggle={(value) => this.setState({ value2: !value })}
               />
               <br />
               <ToggleButton
                 inactiveLabel="monkeystuff"
                 activeLabel="donkeythings"
                 value={this.state.value2}
-                onToggle={value => this.setState({ value2: !value })}
+                onToggle={(value) => this.setState({ value2: !value })}
               />
               <br />
               <ToggleButton
                 inactiveLabel="omg this label is way too long"
                 activeLabel="i got you, fam"
                 value={this.state.value2}
-                onToggle={value => this.setState({ value2: !value })}
+                onToggle={(value) => this.setState({ value2: !value })}
               />
             </Card>
           </Col>
@@ -148,7 +148,7 @@ import { ToggleButton, Code } from '@nio/ui-kit';`
                 inactiveLabel={<X />}
                 activeLabel={<Check />}
                 value={this.state.value3}
-                onToggle={value => this.setState({ value3: !value })}
+                onToggle={(value) => this.setState({ value3: !value })}
               />
             </Card>
           </Col>
@@ -173,7 +173,7 @@ import { ToggleButton, Code } from '@nio/ui-kit';`
                 thumbIcon={<ThumbIcon />}
                 width={100}
                 value={this.state.value4}
-                onToggle={value => this.setState({ value4: !value })}
+                onToggle={(value) => this.setState({ value4: !value })}
               />
             </Card>
           </Col>

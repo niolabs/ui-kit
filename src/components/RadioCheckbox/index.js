@@ -1,8 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './styles.css';
 
-class ThemedComponent extends React.Component {
+export default class ThemedComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: [] };
@@ -15,7 +14,7 @@ class ThemedComponent extends React.Component {
     const { defaultValue } = this.props;
     if (defaultValue) {
       const valueArray = !defaultValue.length ? [defaultValue] : defaultValue;
-      valueArray.map(v => this.setValue(v.value));
+      valueArray.map((v) => this.setValue(v.value));
     }
   }
 
@@ -47,7 +46,7 @@ class ThemedComponent extends React.Component {
 
     return (
       <div {...rest}>
-        { optionsArray && optionsArray.map(option => (
+        { optionsArray && optionsArray.map((option) => (
           <div key={`${type}${option.value}`} onClick={() => this.handleClick(option.value)}>
             <div className={`radio-checkbox ${(this.state.value.indexOf(option.value) !== -1) ? 'show' : 'hidden'}`}>
               { type === 'checkbox' ? <div className="nio nio-check-mark" /> : <div className="dot" /> }
@@ -59,12 +58,3 @@ class ThemedComponent extends React.Component {
     );
   }
 }
-
-ThemedComponent.propTypes = {
-  type: PropTypes.string,
-  options: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
-  defaultValue: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
-  onChange: PropTypes.func,
-};
-
-export default ThemedComponent;

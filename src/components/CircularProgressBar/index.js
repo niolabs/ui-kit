@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './styles.css';
 
 const MIN_PERCENTAGE = 0;
@@ -30,10 +29,13 @@ export default class CircularProgressbar extends React.Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({
-      percentage: nextProps.percentage,
-    });
+  componentDidUpdate(prevProps) {
+    if (prevProps.percentage !== this.props.percentage) {
+      // eslint-disable-next-line react/no-did-update-set-state
+      this.setState({
+        percentage: this.props.percentage,
+      });
+    }
   }
 
   componentWillUnmount() {
@@ -114,22 +116,3 @@ export default class CircularProgressbar extends React.Component {
     );
   }
 }
-
-CircularProgressbar.propTypes = {
-  percentage: PropTypes.number.isRequired,
-  label: PropTypes.string,
-  color: PropTypes.string,
-  strokeWidth: PropTypes.number,
-  initialAnimation: PropTypes.bool,
-  counterClockwise: PropTypes.bool,
-  textForPercentage: PropTypes.func,
-};
-
-CircularProgressbar.defaultProps = {
-  strokeWidth: 6,
-  label: '',
-  color: 'primary',
-  initialAnimation: true,
-  counterClockwise: false,
-  textForPercentage: percentage => `${percentage}%`,
-};

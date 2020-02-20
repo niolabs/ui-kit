@@ -43,9 +43,9 @@ import { Tooltip, UncontrolledTooltip, Code } from '@nio/ui-kit';`
         </Code>
         <br />
         <p>
-Somewhere in here is a
+          Somewhere in here is a
           <a href="#" id="TooltipExample">tooltip</a>
-.
+          .
         </p>
         <Tooltip placement="right" isOpen={this.state.tooltipOpen} target="TooltipExample" toggle={this.toggle}>
           Hello world!
@@ -62,9 +62,9 @@ Somewhere in here is a
         </Code>
         <br />
         <p>
-Somewhere in here is a
+          Somewhere in here is a
           <a href="#" id="UncontrolledTooltipExample">tooltip</a>
-.
+          .
         </p>
         <UncontrolledTooltip placement="right" target="UncontrolledTooltipExample">
           Hello world!

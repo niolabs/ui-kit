@@ -1,6 +1,5 @@
 import hljs from 'highlight.js';
 import React from 'react';
-import PropTypes from 'prop-types';
 import './styles.css';
 
 export default class Code extends React.Component {
@@ -23,15 +22,6 @@ export default class Code extends React.Component {
   render() {
     const { children, className } = this.props;
 
-    return <pre><code className={className}>{children}</code></pre>;
+    return <pre><code className={className || 'javascript'}>{children}</code></pre>;
   }
 }
-
-Code.defaultProps = {
-  className: 'javascript',
-};
-
-Code.propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.string,
-};

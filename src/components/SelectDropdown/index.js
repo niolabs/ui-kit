@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './styles.css';
 
-class ThemedComponent extends React.Component {
+export default class ThemedComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: false, dropdownOpen: false };
@@ -17,7 +16,7 @@ class ThemedComponent extends React.Component {
     const { defaultValue } = this.props;
     if (defaultValue) {
       const valueArray = !defaultValue.length ? [defaultValue] : defaultValue;
-      valueArray.map(v => this.setValue(v.value));
+      valueArray.map((v) => this.setValue(v.value));
     }
   }
 
@@ -50,7 +49,7 @@ class ThemedComponent extends React.Component {
           {value !== false ? value : placeholder}
         </DropdownToggle>
         <DropdownMenu>
-          { optionsArray && optionsArray.map(option => (
+          { optionsArray && optionsArray.map((option) => (
             <DropdownItem key={option.value} onClick={() => this.handleClick(option.value)}>
               {option.label}
             </DropdownItem>
@@ -60,13 +59,3 @@ class ThemedComponent extends React.Component {
     );
   }
 }
-
-ThemedComponent.propTypes = {
-  placeholder: PropTypes.string,
-  inverse: PropTypes.bool,
-  options: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
-  defaultValue: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
-  onChange: PropTypes.func,
-};
-
-export default ThemedComponent;

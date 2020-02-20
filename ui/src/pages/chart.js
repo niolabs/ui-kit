@@ -4,16 +4,19 @@ import { Code, Chart } from '@nio/ui-kit';
 import stringify from 'json-stringify-pretty-compact';
 
 export default class DocsPage extends React.Component {
-  state = {
-    linedata: false,
-    columndata: false,
-    bardata: false,
-    bubbledata: false,
-    piedata: false,
-    radardata: false,
-    scatterdata: false,
-    xAxis: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      linedata: false,
+      columndata: false,
+      bardata: false,
+      bubbledata: false,
+      piedata: false,
+      radardata: false,
+      scatterdata: false,
+      xAxis: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    };
+  }
 
   componentDidMount = () => {
     this.randomize();
@@ -175,7 +178,7 @@ export default class DocsPage extends React.Component {
           xaxis: {
             tickAmount: 10,
             labels: {
-              formatter: val => parseFloat(val).toFixed(1),
+              formatter: (val) => parseFloat(val).toFixed(1),
             },
           },
         },
@@ -220,7 +223,8 @@ import { Chart } from '@nio/ui-kit';`
   type="bar"
   options={${stringify(bardata.options, { maxLength: 180 })}}
   series={${stringify(bardata.series, { maxLength: 180 })}}
-/>`}
+/>`
+}
         </Code>
         <hr />
         <Chart
@@ -235,7 +239,8 @@ import { Chart } from '@nio/ui-kit';`
   type="bar"
   options={${stringify(columndata.options, { maxLength: 180 })}}
   series={${stringify(columndata.series, { maxLength: 180 })}}
-/>`}
+/>`
+}
         </Code>
         <hr />
         <Chart
@@ -250,7 +255,8 @@ import { Chart } from '@nio/ui-kit';`
   type="line"
   options={${stringify(linedata.options, { maxLength: 180 })}}
   series={${stringify(linedata.series, { maxLength: 180 })}}
-/>`}
+/>`
+}
         </Code>
         <hr />
         <Chart
@@ -265,7 +271,8 @@ import { Chart } from '@nio/ui-kit';`
   type="area"
   options={${stringify(linedata.options, { maxLength: 180 })}}
   series={${stringify(linedata.series, { maxLength: 180 })}}
-/>`}
+/>`
+}
         </Code>
         <hr />
         <Chart
@@ -280,7 +287,8 @@ import { Chart } from '@nio/ui-kit';`
   type="bubble"
   options={${stringify(bubbledata.options, { maxLength: 180 })}}
   series={${stringify(bubbledata.series, { maxLength: 180 })}}
-/>`}
+/>`
+}
         </Code>
         <hr />
         <Chart
@@ -295,7 +303,8 @@ import { Chart } from '@nio/ui-kit';`
   type="scatter"
   options={${stringify(scatterdata.options, { maxLength: 180 })}}
   series={${stringify(scatterdata.series, { maxLength: 180 })}}
-/>`}
+/>`
+}
         </Code>
         <hr />
         <Chart
@@ -310,11 +319,11 @@ import { Chart } from '@nio/ui-kit';`
   type="pie"
   options={${stringify(piedata.options, { maxLength: 180 })}}
   series={${stringify(piedata.series, { maxLength: 180 })}}
-/>`}
+/>`
+}
         </Code>
         <hr />
         <Chart
-          height={300}
           type="pie"
           options={piedata.options}
           series={piedata.series}
@@ -326,11 +335,11 @@ import { Chart } from '@nio/ui-kit';`
   type="donut"
   options={${stringify(piedata.options, { maxLength: 180 })}}
   series={${stringify(piedata.series, { maxLength: 180 })}}
-/>`}
+/>`
+}
         </Code>
         <hr />
         <Chart
-          height={300}
           type="donut"
           options={piedata.options}
           series={piedata.series}
@@ -342,7 +351,8 @@ import { Chart } from '@nio/ui-kit';`
   type="radar"
   options={${stringify(radardata.options, { maxLength: 180 })}}
   series={${stringify(radardata.series, { maxLength: 180 })}}
-/>`}
+/>`
+}
         </Code>
         <hr />
         <Chart

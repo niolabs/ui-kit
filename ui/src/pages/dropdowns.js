@@ -71,7 +71,7 @@ render() {
         <br />
         <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
           <DropdownToggle caret>
-              Dropdown
+            Dropdown
           </DropdownToggle>
           <DropdownMenu>
             <DropdownItem header>Header</DropdownItem>

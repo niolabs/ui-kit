@@ -21,13 +21,14 @@ import { Code } from '@nio/ui-kit';`
           {
             `<Code>
   {
-    \`render(){
+    render() {
       return (
         <Example Component />
       )
-    }\`
+    }
   }
-</Code>`}
+</Code>`
+}
         </Code>
         <br />
         <Code>

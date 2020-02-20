@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { NavItem } from '@nio/ui-kit';
 
-const NavLinks = ({ toggleNav }) => (
+export default ({ toggleNav }) => (
   <div id="app-subnav">
     <NavItem>
       <NavLink onClick={() => toggleNav(true)} exact to="/">Home</NavLink>
@@ -124,9 +123,3 @@ const NavLinks = ({ toggleNav }) => (
     </NavItem>
   </div>
 );
-
-NavLinks.propTypes = {
-  toggleNav: PropTypes.func,
-};
-
-export default NavLinks;

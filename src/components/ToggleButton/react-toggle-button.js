@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 import { Motion, spring } from 'react-motion';
 import { reactToggle, reactToggleScreenReaderOnly, reactToggleTrack, reactToggleOn, reactToggleOff, reactToggleThumb, reactThumbCenteringContainer } from './styles';
@@ -25,81 +24,7 @@ const defaultColors = {
   },
 };
 
-const emptyStyle = {};
-
 export default class ToggleButton extends Component {
-  static displayName = 'Toggle';
-
-  static defaultProps = {
-    value: false,
-    onToggle: () => {},
-    colors: defaultColors,
-    passThroughInputProps: {},
-    activeLabel: 'ON',
-    containerStyle: emptyStyle,
-    activeLabelStyle: emptyStyle,
-    activeLabelStyleHover: emptyStyle,
-    inactiveLabel: 'OFF',
-    inactiveLabelStyle: emptyStyle,
-    inactiveLabelStyleHover: emptyStyle,
-    thumbStyle: emptyStyle,
-    thumbStyleHover: emptyStyle,
-    animateThumbStyleHover: () => {},
-    animateThumbStyleToggle: () => {},
-    trackStyle: emptyStyle,
-    trackStyleHover: emptyStyle,
-    animateTrackStyleHover: () => {},
-    animateTrackStyleToggle: () => {},
-    thumbAnimateRange: [1, 33],
-    internalSpringSetting: {
-      stiffness: 180,
-      damping: 22,
-    },
-    internalHoverSpringSetting: {
-      stiffness: 180,
-      damping: 20,
-    },
-  };
-
-  static propTypes = {
-    value: PropTypes.bool,
-    onToggle: PropTypes.func,
-    passThroughInputProps: PropTypes.object,
-    onClick: PropTypes.func,
-    colors: PropTypes.object,
-    activeLabel: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.object,
-    ]),
-    containerStyle: PropTypes.object,
-    activeLabelStyle: PropTypes.object,
-    activeLabelStyleHover: PropTypes.object,
-    activeThumbStyle: PropTypes.object,
-    activeThumbStyleHover: PropTypes.object,
-    inactiveLabel: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.object,
-    ]),
-    inactiveLabelStyle: PropTypes.object,
-    inactiveLabelStyleHover: PropTypes.object,
-    thumbStyle: PropTypes.object,
-    thumbStyleHover: PropTypes.object,
-    trackStyle: PropTypes.object,
-    trackStyleHover: PropTypes.object,
-    animateThumbStyleHover: PropTypes.func,
-    animateTrackStyleHover: PropTypes.func,
-    animateTrackStyleToggle: PropTypes.func,
-    animateThumbStyleToggle: PropTypes.func,
-    internalSpringSetting: PropTypes.object,
-    internalHoverSpringSetting: PropTypes.object,
-    thumbIcon: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.object,
-      PropTypes.bool,
-    ]),
-    thumbAnimateRange: PropTypes.array,
-  };
-
   constructor(props) {
     super(props);
     this.state = {
@@ -298,8 +223,7 @@ export default class ToggleButton extends Component {
               {...this.props.passThroughInputProps}
             />
           </div>
-        )
-      }
+        )}
       </Motion>
     );
   }
