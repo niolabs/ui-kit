@@ -21,7 +21,6 @@ import DividerPage from '../pages/divider';
 import DropdownsPage from '../pages/dropdowns';
 import FormPage from '../pages/form';
 import FormInversePage from '../pages/form-inverse';
-import IconPage from '../pages/icon';
 import InputGroupPage from '../pages/input-group';
 import JumbotronPage from '../pages/jumbotron';
 import LayoutPage from '../pages/layout';
@@ -48,7 +47,6 @@ const Routes = () => (
     <Route component={ClockPage} path="/clock" />
     <Route component={CodePage} path="/code" />
     <Route component={DividerPage} path="/divider" />
-    <Route component={IconPage} path="/icon" />
     <Route component={LoaderPage} path="/loader" />
     <Route component={TogglePage} path="/toggle" />
     <Route component={RadioCheckboxPage} path="/radiocheckbox" />

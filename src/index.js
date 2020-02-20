@@ -4,13 +4,10 @@ export { default as Loader } from './components/Loader';
 export { default as ToggleButton } from './components/ToggleButton';
 export { default as RadioCheckbox } from './components/RadioCheckbox';
 export { default as Code } from './components/Code';
-export { default as Icon } from './components/Icon';
 export { default as SelectDropdown } from './components/SelectDropdown';
 export { default as RangeSlider } from './components/RangeSlider';
 export { default as Clock } from './components/Clock';
 export { default as CircularProgressBar } from './components/CircularProgressBar';
-
-// themed frappe chart components
 export { default as Chart } from './components/Chart';
 
 // themed reactstrap components

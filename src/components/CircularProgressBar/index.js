@@ -9,7 +9,7 @@ const FULL_RADIUS = 50;
 const CENTER_X = 50;
 const CENTER_Y = 50;
 
-export default class CircularProgressbar extends React.Component {
+class CircularProgressbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -116,3 +116,14 @@ export default class CircularProgressbar extends React.Component {
     );
   }
 }
+
+CircularProgressbar.defaultProps = {
+  strokeWidth: 6,
+  label: '',
+  color: 'primary',
+  initialAnimation: true,
+  counterClockwise: false,
+  textForPercentage: (percentage) => `${percentage}%`,
+};
+
+export default CircularProgressbar;

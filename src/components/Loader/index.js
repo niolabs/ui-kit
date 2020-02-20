@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-export default ({ color }) => (
+export default ({ color = 'primary' }) => (
   <div className="loader">
     <div className={`outer ${color}`} />
     <div className={`middle ${color}`} />

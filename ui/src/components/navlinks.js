@@ -26,9 +26,6 @@ export default ({ toggleNav }) => (
       <NavLink onClick={() => toggleNav(true)} to="/divider">Divider</NavLink>
     </NavItem>
     <NavItem>
-      <NavLink onClick={() => toggleNav(true)} to="/icon">Icon</NavLink>
-    </NavItem>
-    <NavItem>
       <NavLink onClick={() => toggleNav(true)} to="/loader">Loader</NavLink>
     </NavItem>
     <NavItem>
