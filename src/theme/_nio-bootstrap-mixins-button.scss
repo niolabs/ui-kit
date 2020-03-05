@@ -46,10 +46,8 @@
 
   &.disabled,
   &:disabled {
-    background-color: #e6e9ee !important;
-    border-color: #ced4da !important;
-    color: #9daab1 !important;
-    box-shadow: none !important;
+    opacity: .5;
+    cursor: not-allowed;
   }
 }
 
