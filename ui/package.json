@@ -9,7 +9,7 @@
   "author": "nioinnovation",
   "license": "UNLICENSED",
   "dependencies": {
-    "@nio/ui-kit": "^2.2.2",
+    "@nio/ui-kit": "^2.2.3",
     "json-stringify-pretty-compact": "^2.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
