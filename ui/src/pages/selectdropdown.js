@@ -44,30 +44,6 @@ import { SelectDropdown } from '@nio/ui-kit';`
     options={${stringify(this.options)}}
   />
   <FormFeedback>This field is required</FormFeedback>
-</FormGroup>
-<FormGroup color="success">
-  <Label>choose an item</Label>
-  <SelectDropdown
-    onChange={this.handleChange}
-    options={${stringify(this.options, { maxLength: 180 })}}
-  />
-  <FormFeedback>Success</FormFeedback>
-</FormGroup>
-<FormGroup color="warning">
-  <Label>choose an item</Label>
-  <SelectDropdown
-    onChange={this.handleChange}
-    options={${stringify(this.options, { maxLength: 180 })}}
-  />
-  <FormFeedback>Warning</FormFeedback>
-</FormGroup>
-<FormGroup color="danger">
-  <Label>choose an item</Label>
-  <SelectDropdown
-    onChange={this.handleChange}
-    options={${stringify(this.options, { maxLength: 180 })}}
-  />
-  <FormFeedback>Error</FormFeedback>
 </FormGroup>`
           }
         </Code>
@@ -79,30 +55,6 @@ import { SelectDropdown } from '@nio/ui-kit';`
             options={this.options}
           />
           <FormFeedback>This field is required</FormFeedback>
-        </FormGroup>
-        <FormGroup color="success">
-          <Label>choose an item</Label>
-          <SelectDropdown
-            onChange={this.handleChange}
-            options={this.options}
-          />
-          <FormFeedback>Success</FormFeedback>
-        </FormGroup>
-        <FormGroup color="warning">
-          <Label>choose an item</Label>
-          <SelectDropdown
-            onChange={this.handleChange}
-            options={this.options}
-          />
-          <FormFeedback>Warning</FormFeedback>
-        </FormGroup>
-        <FormGroup color="danger">
-          <Label>choose an item</Label>
-          <SelectDropdown
-            onChange={this.handleChange}
-            options={this.options}
-          />
-          <FormFeedback>Error</FormFeedback>
         </FormGroup>
         <hr />
         <h4>Default Value</h4>
@@ -129,43 +81,6 @@ import { SelectDropdown } from '@nio/ui-kit';`
           />
           <FormFeedback>This field is required</FormFeedback>
         </FormGroup>
-        <hr />
-        <h4>Inverse</h4>
-        <Code>
-          {
-            `<FormGroup>
-  <Label>choose an item</Label>
-  <SelectDropdown
-    onChange={this.handleChange}
-    options={${stringify(this.options, { maxLength: 180 })}}
-    defaultValue={${stringify(this.options[0], { maxLength: 180 })}}
-    inverse
-  />
-  <FormFeedback>This field is required</FormFeedback>
-</FormGroup>`
-          }
-        </Code>
-        <br />
-        <div style={{ backgroundColor: '#354042', padding: '1rem' }}>
-          <FormGroup>
-            <Label>choose an item</Label>
-            <SelectDropdown
-              onChange={this.handleChange}
-              options={this.options}
-              inverse
-            />
-            <FormFeedback>This field is required</FormFeedback>
-          </FormGroup>
-          <FormGroup color="success">
-            <Label>choose an item</Label>
-            <SelectDropdown
-              onChange={this.handleChange}
-              options={this.options}
-              inverse
-            />
-            <FormFeedback>Success</FormFeedback>
-          </FormGroup>
-        </div>
       </div>
     );
   }

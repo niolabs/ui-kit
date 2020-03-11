@@ -1,6 +1,6 @@
 {
   "name": "@nio/ui-kit",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "A toolkit for building nio front ends. Based on ReactJS, Reactstrap, ApexCharts, and CSS Modules",
   "deploymentUrl": "uikit.niolabs.com",
   "main": "dist/index.js",
@@ -40,6 +40,7 @@
     "react-clock": "^2.4.0",
     "react-dom": "^16.13.0",
     "react-rangeslider": "^2.2.0",
+    "react-select": "^3.0.8",
     "react-toggle": "^4.1.1",
     "reactstrap": "^8.4.1"
   },
@@ -78,7 +79,7 @@
     "eslint-config-postcss": "^4.0.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "rimraf": "^3.0.2",
     "sass-lint": "^1.13.1"
