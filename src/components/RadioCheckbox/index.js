@@ -22,16 +22,15 @@ export default class ThemedComponent extends React.Component {
     let { value } = this.state;
     const isRadio = this.props.type === 'radio';
 
-    if (value.indexOf(v) === -1 && isRadio) {
+    if (value.indexOf(v) !== -1 && isRadio) {
+      console.log('not unsetting radio');
+    } else if (value.indexOf(v) === -1 && isRadio) {
       value = [v];
     } else if (value.indexOf(v) === -1) {
       value.push(v);
-    } else if (isRadio) {
-      value = [];
     } else {
       value.splice(value.indexOf(v), 1);
     }
-
     this.setState({ value });
     this.props.onChange(!this.props.options.length || isRadio ? value[0] : value);
   }
@@ -46,10 +45,11 @@ export default class ThemedComponent extends React.Component {
 
     return (
       <div {...rest}>
-        { optionsArray && optionsArray.map((option) => (
+        {optionsArray
+        && optionsArray.map((option) => (
           <div key={`${type}${option.value}`} onClick={() => this.handleClick(option.value)}>
-            <div className={`radio-checkbox ${(this.state.value.indexOf(option.value) !== -1) ? 'show' : 'hidden'}`}>
-              { type === 'checkbox' ? <div className="nio nio-check-mark" /> : <div className="dot" /> }
+            <div className={`radio-checkbox ${this.state.value.indexOf(option.value) !== -1 ? 'show' : 'hidden'}`}>
+              {type === 'checkbox' ? <span className="checkmark">&#10004;</span> : <div className="dot" />}
             </div>
             <div className="radio-checkbox-label">{option.label}</div>
           </div>

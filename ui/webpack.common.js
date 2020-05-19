@@ -50,10 +50,12 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({ filename: '[chunkhash].min.css' }),
     new OptimizeCssAssetsPlugin({ assetNameRegExp: /\.css$/g, cssProcessor: cssNano, cssProcessorOptions: { discardComments: { removeAll: true } }, canPrint: true }),
-    new CopyWebpackPlugin([
-      { from: path.join(__dirname, '/src/assets/images/'), to: 'images/' },
-      { from: path.join(__dirname, '/src/assets/fonts/'), to: 'fonts/' },
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: path.join(__dirname, '/src/assets/images/'), to: 'images/' },
+        { from: path.join(__dirname, '/src/assets/fonts/'), to: 'fonts/' },
+      ],
+    }),
   ],
 
   module: {

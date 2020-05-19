@@ -42,6 +42,7 @@ import { ToggleButton, Code } from '@nio/ui-kit';`
           </Code>
           <Card className="p-5">
             <ToggleButton
+              checked={value}
               onChange={(e) => setValue(e.target.checked)}
             />
           </Card>
@@ -71,6 +72,7 @@ import { ToggleButton, Code } from '@nio/ui-kit';`
                 checked: <div>doing the thing</div>,
                 unchecked: <div>not doing the thing</div>,
               }}
+              checked={value}
               onChange={(e) => setValue(e.target.checked)}
             />
           </Card>
@@ -78,4 +80,4 @@ import { ToggleButton, Code } from '@nio/ui-kit';`
       </Row>
     </div>
   );
-}
+};
