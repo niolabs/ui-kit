@@ -20,10 +20,11 @@ export default class ThemedComponent extends React.Component {
 
   setValue(v) {
     let { value } = this.state;
-    const isRadio = this.props.type === 'radio';
+    const { required, onChange, options, type } = this.props;
+    const isRadio = type === 'radio';
 
-    if (value.indexOf(v) !== -1 && isRadio) {
-      console.log('not unsetting radio');
+    if (value.indexOf(v) !== -1 && isRadio && required) {
+      console.log('not unsetting required radio');
     } else if (value.indexOf(v) === -1 && isRadio) {
       value = [v];
     } else if (value.indexOf(v) === -1) {
@@ -32,7 +33,7 @@ export default class ThemedComponent extends React.Component {
       value.splice(value.indexOf(v), 1);
     }
     this.setState({ value });
-    this.props.onChange(!this.props.options.length || isRadio ? value[0] : value);
+    onChange(!options.length || isRadio ? value[0] : value);
   }
 
   handleClick(v) {

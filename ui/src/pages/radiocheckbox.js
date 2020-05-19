@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Col, Card, RadioCheckbox, Code } from '../../../dist';
+import { Row, Col, Card, RadioCheckbox, Code } from '@nio/ui-kit';
 
 export default class DocsPage extends React.Component {
   constructor(props) {
@@ -119,6 +119,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
               {
                 `<RadioCheckbox
   type="radio"
+  required
   onChange={this.handleChange}
   options={[
     { label: 'Option 1', value: 'Option 1' },
@@ -133,6 +134,7 @@ import { RadioCheckbox } from '@nio/ui-kit';`
             <Card className="p-3">
               <RadioCheckbox
                 type="radio"
+                required
                 onChange={this.handleChangeRadioArray}
                 options={[
                   { label: 'Option 1', value: 'Option 1' },
