@@ -48,7 +48,7 @@ export default class ThemedComponent extends React.Component {
       <div {...rest}>
         {optionsArray
         && optionsArray.map((option) => (
-          <div key={`${type}${option.value}`} onClick={() => this.handleClick(option.value)}>
+          <div key={`${type}${option.value}${option.label}`} onClick={() => this.handleClick(option.value)}>
             <div className={`radio-checkbox ${this.state.value.indexOf(option.value) !== -1 ? 'show' : 'hidden'}`}>
               {type === 'checkbox' ? <span className="checkmark">&#10004;</span> : <div className="dot" />}
             </div>

@@ -10,7 +10,7 @@ module.exports = merge(common, {
     host: '0.0.0.0',
     contentBase: path.join(__dirname, 'public'),
     compress: true,
-    port: 3000,
+    port: 3001,
     historyApiFallback: true,
     filename: '[chunkhash].min.js',
     https: true,
